@@ -7,6 +7,7 @@
             L_DISABLE_3D = false;
         </script>
     
+
     <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
     <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
@@ -14,6 +15,8 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://unpkg.com/@geoapify/leaflet-address-search-plugin@^1/dist/L.Control.GeoapifyAddressSearch.min.css" />
+    <script src="https://unpkg.com/@geoapify/leaflet-address-search-plugin@^1/dist/L.Control.GeoapifyAddressSearch.min.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
     <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
@@ -101,7 +104,71 @@
             );
 
             
+    
+                let marker = null;
+                let suggestionMarkers = [];
 
+                const suggestionsMarkerIcon = L.icon({
+                  iconUrl: `https://api.geoapify.com/v1/icon?type=awesome&color=%2352b74c&size=x-large&icon=tree&noWhiteCircle=true&scaleFactor=2&apiKey=539497abf6e14d67b2617c1da801811e` /* get an API Key on https://myprojects.geoapify.com */,
+                  iconSize: [25, 37], // size of the icon
+                  iconAnchor: [12.5, 34], // the point on the icon which will correspond to the marker's location, substruct the shadow
+                  popupAnchor: [0, -36] // the point from which the popup should open relative to the iconAnchor
+                });
+
+                const resultMarkerIcon = L.icon({
+                  iconUrl: `https://api.geoapify.com/v1/icon?type=awesome&color=%2352b74c&size=x-large&icon=tree&noWhiteCircle=true&scaleFactor=2&apiKey=539497abf6e14d67b2617c1da801811e` /* get an API Key on https://myprojects.geoapify.com */,
+                  iconSize: [31, 46],
+                  iconAnchor: [15.5, 42],
+                  popupAnchor: [0, -45] 
+                }); 
+
+                const addressSearchControl = L.control.addressSearch("539497abf6e14d67b2617c1da801811e" /* get an API Key on https://myprojects.geoapify.com */, {
+                  position: 'bottomleft',
+                  resultCallback: (address) => {
+                    removeMarkers();
+
+                    if (!address) {
+                      return;
+                    }
+
+                    marker = L.marker([address.lat, address.lon], {icon: resultMarkerIcon}).addTo(map_3d5da1d34c7f432b8aa874f819934449);
+                    if (address.bbox && address.bbox.lat1 !== address.bbox.lat2 && address.bbox.lon1 !== address.bbox.lon2) {
+                      map.fitBounds([[address.bbox.lat1, address.bbox.lon1], [address.bbox.lat2, address.bbox.lon2]], { padding: [100, 100] })
+                    } else {
+                      map_3d5da1d34c7f432b8aa874f819934449.setView([address.lat, address.lon], 15);
+                    }
+                  },
+                  suggestionsCallback: (suggestions) => {    
+                    removeMarkers();
+
+                    if (!suggestions || !suggestions.length) {
+                      return;
+                    }
+
+                    const bbox = L.latLngBounds();
+                    suggestions.forEach(suggestion => {
+                      bbox.extend([suggestion.lat, suggestion.lon]);
+                      suggestionMarkers.push(L.marker([suggestion.lat, suggestion.lon], {icon: suggestionsMarkerIcon}).bindPopup(suggestion.formatted).addTo(map_3d5da1d34c7f432b8aa874f819934449));
+                    });
+
+                    if (bbox.isValid) {
+                      map_3d5da1d34c7f432b8aa874f819934449.fitBounds(bbox, { padding: [100, 100] })
+                    } else {
+                      map_3d5da1d34c7f432b8aa874f819934449.setView([suggestions[0].lat, suggestions[0].lon], 15);
+                    }
+                  }
+                }).addTo(map_3d5da1d34c7f432b8aa874f819934449);
+
+                function removeMarkers() {
+                    if (marker) {
+                      marker.remove();
+                    }
+
+                    if (suggestionMarkers) {
+                      suggestionMarkers.forEach(marker => marker.remove());
+                      suggestionMarkers = [];
+                    }
+                }
         
     
             var tile_layer_0197c4e428a248a789ff775277c06182 = L.tileLayer(
@@ -121,7 +188,8 @@
                 {"attribution": "\u0026copy; \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"http://cartodb.com/attributions\"\u003eCartoDB\u003c/a\u003e, CartoDB \u003ca href =\"http://cartodb.com/attributions\"\u003eattributions\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
             ).addTo(map_3d5da1d34c7f432b8aa874f819934449);
         
-    
+
+
     var color_map_c6c5488f9a304f10af32fc697e008f02 = {};
 
     
@@ -134,43 +202,7 @@
               .domain([-1.0, 1.0])
               .range([0, 400]);
 
-    color_map_c6c5488f9a304f10af32fc697e008f02.legend = L.control({position: 'topright'});
-    color_map_c6c5488f9a304f10af32fc697e008f02.legend.onAdd = function (map) {var div = L.DomUtil.create('div', 'legend'); return div};
-    color_map_c6c5488f9a304f10af32fc697e008f02.legend.addTo(map_3d5da1d34c7f432b8aa874f819934449);
 
-    color_map_c6c5488f9a304f10af32fc697e008f02.xAxis = d3.svg.axis()
-        .scale(color_map_c6c5488f9a304f10af32fc697e008f02.x)
-        .orient("top")
-        .tickSize(1)
-        .tickValues([-1.0, 0.0, 1.0]);
-
-    color_map_c6c5488f9a304f10af32fc697e008f02.svg = d3.select(".legend.leaflet-control").append("svg")
-        .attr("id", 'legend')
-        .attr("width", 450)
-        .attr("height", 40);
-
-    color_map_c6c5488f9a304f10af32fc697e008f02.g = color_map_c6c5488f9a304f10af32fc697e008f02.svg.append("g")
-        .attr("class", "key")
-        .attr("transform", "translate(25,16)");
-
-    color_map_c6c5488f9a304f10af32fc697e008f02.g.selectAll("rect")
-        .data(color_map_c6c5488f9a304f10af32fc697e008f02.color.range().map(function(d, i) {
-          return {
-            x0: i ? color_map_c6c5488f9a304f10af32fc697e008f02.x(color_map_c6c5488f9a304f10af32fc697e008f02.color.domain()[i - 1]) : color_map_c6c5488f9a304f10af32fc697e008f02.x.range()[0],
-            x1: i < color_map_c6c5488f9a304f10af32fc697e008f02.color.domain().length ? color_map_c6c5488f9a304f10af32fc697e008f02.x(color_map_c6c5488f9a304f10af32fc697e008f02.color.domain()[i]) : color_map_c6c5488f9a304f10af32fc697e008f02.x.range()[1],
-            z: d
-          };
-        }))
-      .enter().append("rect")
-        .attr("height", 10)
-        .attr("x", function(d) { return d.x0; })
-        .attr("width", function(d) { return d.x1 - d.x0; })
-        .style("fill", function(d) { return d.z; });
-
-    color_map_c6c5488f9a304f10af32fc697e008f02.g.call(color_map_c6c5488f9a304f10af32fc697e008f02.xAxis).append("text")
-        .attr("class", "caption")
-        .attr("y", 21)
-        .text('Republican Margin (%)');
     
         function geo_json_efbf978233cd46d59ffc9647439bb950_styler(feature) {
             switch(feature.id) {
