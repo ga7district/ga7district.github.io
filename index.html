@@ -134,30 +134,7 @@
                     marker = L.marker([address.lat, address.lon], {icon: resultMarkerIcon}).addTo(map_3d5da1d34c7f432b8aa874f819934449);
                     if (address.bbox && address.bbox.lat1 !== address.bbox.lat2 && address.bbox.lon1 !== address.bbox.lon2) {
                       map.fitBounds([[address.bbox.lat1, address.bbox.lon1], [address.bbox.lat2, address.bbox.lon2]], { padding: [100, 100] })
-                    } else {
-                      map_3d5da1d34c7f432b8aa874f819934449.setView([address.lat, address.lon], 15);
-                    }
-                  },
-                  suggestionsCallback: (suggestions) => {    
-                    removeMarkers();
-
-                    if (!suggestions || !suggestions.length) {
-                      return;
-                    }
-
-                    const bbox = L.latLngBounds();
-                    suggestions.forEach(suggestion => {
-                      bbox.extend([suggestion.lat, suggestion.lon]);
-                      suggestionMarkers.push(L.marker([suggestion.lat, suggestion.lon], {icon: suggestionsMarkerIcon}).bindPopup(suggestion.formatted).addTo(map_3d5da1d34c7f432b8aa874f819934449));
-                    });
-
-                    if (bbox.isValid) {
-                      map_3d5da1d34c7f432b8aa874f819934449.fitBounds(bbox, { padding: [100, 100] })
-                    } else {
-                      map_3d5da1d34c7f432b8aa874f819934449.setView([suggestions[0].lat, suggestions[0].lon], 15);
-                    }
-                  }
-                }).addTo(map_3d5da1d34c7f432b8aa874f819934449);
+                    }}}).addTo(map_3d5da1d34c7f432b8aa874f819934449);
 
                 function removeMarkers() {
                     if (marker) {
