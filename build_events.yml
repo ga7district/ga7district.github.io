@@ -1,0 +1,44 @@
+name: Build events.json
+
+on:
+  # Run every day at 11:05 UTC (7:05 AM New York when not on DST; adjust to taste)
+  schedule:
+    - cron: "5 11 * * *"
+  # Allow manual runs from the Actions tab
+  workflow_dispatch: {}
+
+permissions:
+  contents: write  # needed to push the updated events.json
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: true  # push using GITHUB_TOKEN
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
+
+      - name: Build events.json
+        run: |
+          python build_events.py
+          test -f events.json && echo "events.json built."
+
+      # Option A: auto-commit changed files (simple & reliable)
+      - name: Commit & push if changed
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "chore: update events.json [skip ci]"
+          file_pattern: "events.json"
