@@ -1,27 +1,27 @@
 #!/usr/bin/env python3
-# build_events.py — Aggregates events into events.json for events.html
+# build_events.py — Aggregates events from several chamber sites into events.json for events.html
 
 import json
 import re
 import sys
 import time
-from datetime import datetime
-from urllib.parse import urljoin, urlparse
+from datetime import datetime, timedelta
+from urllib.parse import urljoin, urlparse, urlunparse, parse_qsl, urlencode
 
 import requests
 from bs4 import BeautifulSoup
 
-# Optional libs (already in your requirements)
+# Optional libs (already in requirements.txt)
 import feedparser
 from icalendar import Calendar
 
 # ---------- HTTP ----------
 SESSION = requests.Session()
 SESSION.headers.update({
-    "User-Agent": "LocalEventsAggregator/1.1 (+congressional office) PythonRequests"
+    "User-Agent": "LocalEventsAggregator/1.2 (+congressional office) PythonRequests"
 })
 REQUEST_TIMEOUT = 30
-SLEEP_BETWEEN = 0.25  # be polite to host sites
+SLEEP_BETWEEN = 0.25  # be polite
 
 def fetch(url):
     r = SESSION.get(url, timeout=REQUEST_TIMEOUT)
@@ -60,7 +60,6 @@ def try_parse_date(s):
     s = s.strip()
     # ISO-ish quick path
     try:
-        # normalize "YYYY-MM-DD HH:MM:SS" → "YYYY-MM-DDTHH:MM:SS"
         if " " in s and "T" not in s and re.match(r"\d{4}-\d{2}-\d{2}\s", s):
             s2 = s.replace(" ", "T", 1)
         else:
@@ -94,11 +93,47 @@ def normalize_event(title, start=None, end=None, all_day=False, location="", url
         "description": clean_text(description),
     }
 
-# ---------- JSON-LD extraction ----------
-def jsonld_event_times(soup):
+def domain_of(u: str) -> str:
+    try:
+        return urlparse(u).netloc.lower()
+    except Exception:
+        return ""
+
+def strip_tracking_params(u: str) -> str:
     """
-    Try to pull start/end via schema.org/Event JSON-LD.
-    Returns (start_dt, end_dt) or (None, None).
+    Remove common tracking/query noise while preserving important parts.
+    """
+    p = urlparse(u)
+    # keep only "id" if present; drop utm etc.
+    allowed = {"id"}
+    q = [(k, v) for k, v in parse_qsl(p.query, keep_blank_values=True) if k in allowed]
+    new_q = urlencode(q, doseq=True)
+    # drop fragments
+    clean = p._replace(query=new_q, fragment="")
+    # normalize scheme/host lower-case; drop trailing slash later if needed
+    return urlunparse(clean)
+
+def canonical_from_head(soup, base_url: str) -> str | None:
+    """
+    If a <link rel="canonical"> exists, return its absolute URL.
+    """
+    link = soup.find("link", rel=lambda v: v and "canonical" in v.lower())
+    if link and link.get("href"):
+        return urljoin(base_url, link["href"])
+    return None
+
+def extract_growthzone_id(u: str) -> str | None:
+    """
+    Extract numeric event ID from GrowthZone/ChamberMaster URLs:
+    .../events/<slug>-9074/details
+    """
+    m = re.search(r"/events/[^/]*-(\d+)/(?:details|details/)?", urlparse(u).path)
+    return m.group(1) if m else None
+
+# ---------- JSON-LD + title extraction ----------
+def jsonld_event_info(soup):
+    """
+    Return (name, start, end) if found in schema.org/Event JSON-LD.
     """
     for tag in soup.find_all("script", type="application/ld+json"):
         try:
@@ -108,35 +143,67 @@ def jsonld_event_times(soup):
 
         def scan(obj):
             if not isinstance(obj, dict):
-                return None, None
-            # @graph container
+                return None
+            # graph container
             if "@graph" in obj and isinstance(obj["@graph"], list):
                 for g in obj["@graph"]:
-                    st, en = scan(g)
-                    if st:
-                        return st, en
-            # Direct Event
+                    res = scan(g)
+                    if res:
+                        return res
+            # Event node
             types = obj.get("@type")
-            if (isinstance(types, str) and types.lower() == "event") or \
-               (isinstance(types, list) and any(t.lower() == "event" for t in types if isinstance(t, str))):
-                s = obj.get("startDate"); e = obj.get("endDate")
+            is_event = False
+            if isinstance(types, str):
+                is_event = types.lower() == "event"
+            elif isinstance(types, list):
+                is_event = any(isinstance(t, str) and t.lower() == "event" for t in types)
+            if is_event:
+                name = clean_text(obj.get("name", "") or "")
+                s = obj.get("startDate")
+                e = obj.get("endDate")
                 sd = try_parse_date(s) if s else None
                 ed = try_parse_date(e) if e else None
-                if sd:
-                    return sd, ed
-            return None, None
+                return name or None, sd, ed
+            return None
 
-        # List or single
         if isinstance(data, list):
             for item in data:
-                sd, ed = scan(item)
-                if sd:
-                    return sd, ed
+                res = scan(item)
+                if res:
+                    return res
         elif isinstance(data, dict):
-            sd, ed = scan(data)
-            if sd:
-                return sd, ed
-    return None, None
+            res = scan(data)
+            if res:
+                return res
+    return None, None, None
+
+def extract_title(dsoup: BeautifulSoup, url: str) -> str:
+    """
+    Robust title extraction: JSON-LD name → og:title → h1/h2 → <title>
+    """
+    name, _, _ = jsonld_event_info(dsoup)
+    if name:
+        return name
+
+    og = dsoup.find("meta", attrs={"property": "og:title"})
+    if og and og.get("content"):
+        return clean_text(og["content"])
+
+    h = dsoup.find(["h1", "h2"], string=True)
+    if h:
+        return clean_text(h.get_text())
+
+    # fall back to <title> minus site suffix
+    t = dsoup.find("title")
+    if t and t.string:
+        # common pattern: "<Event Name> - Chamber Name"
+        return clean_text(re.split(r"\s+[–|-]\s+", t.string)[0])
+
+    # last resort: slug from URL
+    slug = urlparse(url).path.rstrip("/").split("/")[-2:-1] or urlparse(url).path.rstrip("/").split("/")[-1:]
+    if slug:
+        return clean_text(slug[0].replace("-", " ").replace("_", " ")).title()
+    return "(Untitled)"
 
 # ---------- Detail page parser ----------
 DATE_PATTERNS = [
@@ -149,7 +216,6 @@ DATE_PATTERNS = [
 ]
 
 def parse_address_fallback(text):
-    # very light address-y fallback
     m = re.search(r"\d{2,5}\s+[A-Za-z][A-Za-z0-9 .,'&-]{3,}\s+(?:Ave|Ave\.|St|St\.|Rd|Rd\.|Blvd|Blvd\.|Dr|Dr\.|Hwy|Pkwy|Way|Lane|Ln|Ct|Cir|Trail|Trl)\b.*?(?:\n|,|$)", text, re.I)
     return clean_text(m.group(0))[:200] if m else ""
 
@@ -162,19 +228,19 @@ def parse_detail_page(url, source_label):
 
     dsoup = BeautifulSoup(dr.text, "html.parser")
 
-    # Title (prefer h1/h2)
-    title = "(Untitled)"
-    h = dsoup.find(["h1","h2"], string=True)
-    if h:
-        title = clean_text(h.get_text())
+    # Use canonical URL if present (helps dedupe)
+    canon = canonical_from_head(dsoup, url) or url
+    canon = strip_tracking_params(canon)
+
+    # Title (robust; fixes FOCO untitled)
+    title = extract_title(dsoup, canon)
 
     # Start/End: JSON-LD first
-    start, end = jsonld_event_times(dsoup)
+    _, start, end = jsonld_event_info(dsoup)
 
     # Text fallback patterns
     if not start:
         text = dsoup.get_text("\n", strip=True)
-        # Pattern 1
         m = DATE_PATTERNS[0].search(text)
         if m:
             date_str, times = m.group(1), m.group(2)
@@ -185,7 +251,6 @@ def parse_detail_page(url, source_label):
                     end = try_parse_date(f"{date_str} {tm[1]}")
             else:
                 start = try_parse_date(date_str)
-        # Pattern 2
         if not start:
             m2 = DATE_PATTERNS[1].search(text)
             if m2:
@@ -195,7 +260,6 @@ def parse_detail_page(url, source_label):
                 start = try_parse_date(f"{date_str} {t1}")
                 if t2:
                     end = try_parse_date(f"{date_str} {t2}")
-        # Pattern 3
         if not start:
             m3 = DATE_PATTERNS[2].search(text)
             if m3:
@@ -203,14 +267,13 @@ def parse_detail_page(url, source_label):
 
     # Location
     loc = ""
-    # Prefer a Google Maps link text if present
     map_link = dsoup.find("a", href=re.compile(r"(?:maps\.app|google\.com/maps)", re.I))
     if map_link:
         loc = clean_text(map_link.get_text())
     if not loc:
         loc = parse_address_fallback(dsoup.get_text(" ", strip=True))
 
-    # Description: grab a paragraph near a "Description/Details" header, otherwise first decent paragraph
+    # Description: near "Description/Details/About"
     desc = ""
     hdr = dsoup.find(lambda t: t.name in ["h2","h3","h4"] and re.search(r"(description|details|about)", t.get_text(), re.I))
     if hdr:
@@ -223,23 +286,16 @@ def parse_detail_page(url, source_label):
         if p:
             desc = clean_text(p.get_text(" ", strip=True))[:600]
 
-    all_day = False
-    if start and isinstance(start, datetime) and end is None:
-        # if exact time wasn't found and JSON-LD gave date only, could be all-day, but keep False unless clearly date-only
-        pass
+    all_day = False  # conservative
 
-    return normalize_event(title, start, end, all_day, loc, url, source_label, desc)
+    return normalize_event(title, start, end, all_day, loc, canon, source_label, desc)
 
 # ---------- List page crawlers ----------
 def collect_detail_links(list_url, soup):
-    """
-    Collect likely event detail links from a listing page.
-    Handles GrowthZone/ChamberMaster and generic patterns.
-    """
     links = set()
     base = list_url
 
-    # Common GrowthZone/ChamberMaster detail pattern
+    # GrowthZone/ChamberMaster detail pattern
     for a in soup.select("a[href*='/events/details/']"):
         href = a.get("href")
         if href:
@@ -251,13 +307,15 @@ def collect_detail_links(list_url, soup):
         if href:
             links.add(urljoin(base, href))
 
-    # Generic 'event' links with ids (Cherokee etc.)
+    # Generic 'event' links with obvious IDs
     for a in soup.select("a[href*='event']"):
         href = a.get("href")
-        if href and ("id=" in href or "/event/" in href or href.endswith("/event") or "details" in href.lower()):
-            links.add(urljoin(base, href))
+        if not href:
+            continue
+        u = urljoin(base, href)
+        if ("id=" in u) or ("/event/" in u) or u.endswith("/event") or ("details" in u.lower()):
+            links.add(u)
 
-    # De-dupe cross-page anchors to full URLs in same host
     return sorted(links)
 
 def crawl_list_page(list_url, source_label):
@@ -272,7 +330,7 @@ def crawl_list_page(list_url, source_label):
     detail_links = collect_detail_links(list_url, soup)
 
     if not detail_links:
-        # Some calendars render an initial month via a nested iframe or widget; try to follow iframes
+        # Some calendars render via iframes; try to follow them
         for iframe in soup.select("iframe[src]"):
             src = urljoin(list_url, iframe["src"])
             try:
@@ -313,7 +371,7 @@ def from_ics(u):
             dtend   = comp.get("dtend").dt if comp.get("dtend") else None
             all_day = (hasattr(dtstart, "hour") is False) if dtstart else False
             url_val = str(comp.get("url", "")) if comp.get("url") else ""
-            out.append(normalize_event(title, dtstart, dtend, all_day, loc, url_val, source=u, description=desc))
+            out.append(normalize_event(title, dtstart, dtend, all_day, loc, strip_tracking_params(url_val), source=u, description=desc))
     except Exception as e:
         print(f"[ICS] {u}: {e}", file=sys.stderr)
     return out
@@ -324,7 +382,7 @@ def from_rss(u):
         d = feedparser.parse(u)
         for e in d.entries:
             title = e.get("title", "") or "(Untitled)"
-            link  = e.get("link", "")
+            link  = strip_tracking_params(e.get("link", "") or "")
             desc  = e.get("summary", "") or e.get("description", "")
             start = None
             for k in ("start_time", "published", "updated", "created"):
@@ -346,19 +404,63 @@ def main():
     for u in RSS_URLS:
         all_events += from_rss(u)
 
-    # Your six sources
+    # Crawl your six sources
     for list_url, label in LIST_SOURCES:
         print(f"[crawl] {label}: {list_url}")
         all_events += crawl_list_page(list_url, label)
 
-    # Deduplicate by (title, start, source, url)
+    # ---------- De-duplication ----------
+    # Normalize URLs and build multiple candidate keys
     seen = set()
     dedup = []
+    aux_index = {}  # (domain, title_lower) -> list of (idx, start_dt)
+
+    def as_dt(iso_s):
+        return datetime.fromisoformat(iso_s) if iso_s else None
+
     for e in all_events:
-        key = (e["title"].lower(), e["start"], e["source"], e["url"])
-        if key in seen:
+        # Prefer canonical/clean URL already set in parse_detail_page; still sanitize here:
+        e["url"] = strip_tracking_params(e["url"])
+        dom = domain_of(e["url"])
+
+        # Key 1: explicit GrowthZone ID if present
+        gzid = extract_growthzone_id(e["url"])
+        k1 = ("gzid", dom, gzid) if gzid else None
+
+        # Key 2: exact URL
+        k2 = ("url", e["url"])
+
+        # Key 3: fuzzy — same domain + same title (lower) + start within ±2 minutes
+        tl = e["title"].lower().strip()
+        sd = as_dt(e["start"])
+
+        dup = False
+        if k1 and gzid:
+            if k1 in seen:
+                dup = True
+            else:
+                seen.add(k1)
+
+        if not dup:
+            if k2 in seen:
+                dup = True
+            else:
+                seen.add(k2)
+
+        if not dup and tl and sd:
+            key3 = ("title_date", dom, tl)
+            near_list = aux_index.setdefault(key3, [])
+            # see if any existing event is within 2 minutes
+            for _, existing_dt in near_list:
+                if existing_dt and abs((sd - existing_dt).total_seconds()) <= 120:
+                    dup = True
+                    break
+            if not dup:
+                near_list.append((len(dedup), sd))
+
+        if dup:
             continue
-        seen.add(key)
+
         dedup.append(e)
 
     # Sort by start date ascending (nulls last)
@@ -372,6 +474,4 @@ def main():
     print(f"Wrote events.json with {len(dedup)} events")
 
 if __name__ == "__main__":
-    # lazy import used inside jsonld_event_times
-    import json  # noqa: E402
     main()
