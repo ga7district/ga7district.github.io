@@ -1,68 +1,76 @@
 #!/usr/bin/env python3
-# build_events.py
-# Aggregate local events into a normalized events.json for use by events.html
+# build_events.py — Aggregates events into events.json for events.html
 
 import json
 import re
 import sys
 import time
-import traceback
 from datetime import datetime
-from urllib.parse import urljoin
+from urllib.parse import urljoin, urlparse
 
 import requests
 from bs4 import BeautifulSoup
 
-# Optional libs; install via requirements.txt
-import feedparser                # For RSS/Atom
-from icalendar import Calendar   # For ICS/iCal
+# Optional libs (already in your requirements)
+import feedparser
+from icalendar import Calendar
 
-
-# --------------------
-# 0) HTTP defaults
-# --------------------
+# ---------- HTTP ----------
 SESSION = requests.Session()
 SESSION.headers.update({
-    "User-Agent": "LocalEventsAggregator/1.0 (+contact: congressional office) PythonRequests"
+    "User-Agent": "LocalEventsAggregator/1.1 (+congressional office) PythonRequests"
 })
 REQUEST_TIMEOUT = 30
+SLEEP_BETWEEN = 0.25  # be polite to host sites
 
+def fetch(url):
+    r = SESSION.get(url, timeout=REQUEST_TIMEOUT)
+    r.raise_for_status()
+    return r
 
-# --------------------
-# 1) Configure sources
-# --------------------
-# Tip: many cities, chambers, libraries, universities publish ICS/RSS
-ICS_URLS = [
-    # Example: "https://example.gov/calendar.ics",
+# ---------- Sources (your 6) ----------
+GNFCC_LIST      = "https://gzdev.gnfcc.com/chamber-events"
+CHEROKEE_LIST   = "https://cherokeechamber.com/programs-events/chamber-calendar/"
+DAWSON_LIST     = "https://business.dawsonchamber.org/events/calendar"
+DLC_LIST        = "https://members.dlcchamber.org/events"
+GHCC_LIST       = "https://members.ghcc.com/events"
+FOCO_LIST       = "https://web.focochamber.org/events?oe=true"
+
+LIST_SOURCES = [
+    (GNFCC_LIST,    "GNFCC Chamber"),
+    (CHEROKEE_LIST, "Cherokee Chamber"),
+    (DAWSON_LIST,   "Dawson Chamber"),
+    (DLC_LIST,      "DLC Chamber"),
+    (GHCC_LIST,     "GHCC"),
+    (FOCO_LIST,     "Forsyth County Chamber"),
 ]
 
-RSS_URLS = [
-    # Example: "https://example.gov/events/feed/",
-]
+# ---------- Generic helpers ----------
+def clean_text(s: str) -> str:
+    return re.sub(r"\s+", " ", (s or "").strip())
 
-# Your three sites:
-GNFCC_CAL_LIST = "https://gzdev.gnfcc.com/chamber-events"  # We'll crawl list → detail pages
-CHEROKEE_WIDGETS_LIST = "https://widgets.cherokeechamber.com/feeds/events/event.aspx?cid=94&wid=701"
-ROTARY_FORSYTH_CAL = "https://www.rotaryclubofforsythcounty.org/?p=calendar"  # dynamic via JS (stubbed)
-
-
-# --------------------
-# 2) Helpers
-# --------------------
 def to_iso(dt):
     if isinstance(dt, datetime):
         return dt.isoformat()
-    return dt  # already a string or None
-
-def clean_text(s):
-    return re.sub(r"\s+", " ", (s or "").strip())
+    return dt
 
 def try_parse_date(s):
-    """Best-effort date parser without extra deps."""
     if not s:
         return None
+    s = s.strip()
+    # ISO-ish quick path
+    try:
+        # normalize "YYYY-MM-DD HH:MM:SS" → "YYYY-MM-DDTHH:MM:SS"
+        if " " in s and "T" not in s and re.match(r"\d{4}-\d{2}-\d{2}\s", s):
+            s2 = s.replace(" ", "T", 1)
+        else:
+            s2 = s
+        return datetime.fromisoformat(s2.replace("Z", "+00:00"))
+    except Exception:
+        pass
+    # Common US formats
     fmts = [
-        "%Y-%m-%d", "%Y-%m-%d %H:%M", "%Y-%m-%d %H:%M:%S",
+        "%Y-%m-%d", "%Y-%m-%d %H:%M", "%Y-%m-%d %I:%M %p", "%Y-%m-%d %H:%M:%S",
         "%m/%d/%Y", "%m/%d/%y", "%m/%d/%Y %H:%M", "%m/%d/%Y %I:%M %p",
         "%b %d, %Y", "%b %d, %Y %I:%M %p", "%B %d, %Y", "%B %d, %Y %I:%M %p",
         "%Y%m%dT%H%M%S", "%Y%m%d"
@@ -71,7 +79,7 @@ def try_parse_date(s):
         try:
             return datetime.strptime(s, f)
         except ValueError:
-            pass
+            continue
     return None
 
 def normalize_event(title, start=None, end=None, all_day=False, location="", url="", source="", description=""):
@@ -83,21 +91,213 @@ def normalize_event(title, start=None, end=None, all_day=False, location="", url
         "location": clean_text(location),
         "url": url,
         "source": source,
-        "description": clean_text(description)
+        "description": clean_text(description),
     }
 
-def fetch(url):
-    r = SESSION.get(url, timeout=REQUEST_TIMEOUT)
-    r.raise_for_status()
-    return r
+# ---------- JSON-LD extraction ----------
+def jsonld_event_times(soup):
+    """
+    Try to pull start/end via schema.org/Event JSON-LD.
+    Returns (start_dt, end_dt) or (None, None).
+    """
+    for tag in soup.find_all("script", type="application/ld+json"):
+        try:
+            data = json.loads(tag.string or "")
+        except Exception:
+            continue
 
-def safe_get_text(el):
-    return el.get_text(" ", strip=True) if el else ""
+        def scan(obj):
+            if not isinstance(obj, dict):
+                return None, None
+            # @graph container
+            if "@graph" in obj and isinstance(obj["@graph"], list):
+                for g in obj["@graph"]:
+                    st, en = scan(g)
+                    if st:
+                        return st, en
+            # Direct Event
+            types = obj.get("@type")
+            if (isinstance(types, str) and types.lower() == "event") or \
+               (isinstance(types, list) and any(t.lower() == "event" for t in types if isinstance(t, str))):
+                s = obj.get("startDate"); e = obj.get("endDate")
+                sd = try_parse_date(s) if s else None
+                ed = try_parse_date(e) if e else None
+                if sd:
+                    return sd, ed
+            return None, None
 
+        # List or single
+        if isinstance(data, list):
+            for item in data:
+                sd, ed = scan(item)
+                if sd:
+                    return sd, ed
+        elif isinstance(data, dict):
+            sd, ed = scan(data)
+            if sd:
+                return sd, ed
+    return None, None
 
-# --------------------
-# 3) Generic fetchers (ICS, RSS)
-# --------------------
+# ---------- Detail page parser ----------
+DATE_PATTERNS = [
+    # "Thursday, August 14, 2025 (5:30 PM - 7:00 PM)"
+    re.compile(r"([A-Za-z]+,\s+[A-Za-z]+\s+\d{1,2},\s+\d{4})\s*\(([^)]+)\)"),
+    # "Thursday, August 14, 2025 5:30 PM - 7:00 PM" (no parentheses)
+    re.compile(r"([A-Za-z]+,\s+[A-Za-z]+\s+\d{1,2},\s+\d{4})\s+(\d{1,2}:\d{2}\s*(?:AM|PM))(?:\s*[-–]\s*(\d{1,2}:\d{2}\s*(?:AM|PM)))?", re.I),
+    # "August 14, 2025 at 5:30 PM"
+    re.compile(r"([A-Za-z]+\s+\d{1,2},\s+\d{4})\s+(?:at|@)\s+(\d{1,2}:\d{2}\s*(?:AM|PM))", re.I),
+]
+
+def parse_address_fallback(text):
+    # very light address-y fallback
+    m = re.search(r"\d{2,5}\s+[A-Za-z][A-Za-z0-9 .,'&-]{3,}\s+(?:Ave|Ave\.|St|St\.|Rd|Rd\.|Blvd|Blvd\.|Dr|Dr\.|Hwy|Pkwy|Way|Lane|Ln|Ct|Cir|Trail|Trl)\b.*?(?:\n|,|$)", text, re.I)
+    return clean_text(m.group(0))[:200] if m else ""
+
+def parse_detail_page(url, source_label):
+    try:
+        dr = fetch(url)
+    except Exception as e:
+        print(f"[detail] fetch error {url}: {e}", file=sys.stderr)
+        return None
+
+    dsoup = BeautifulSoup(dr.text, "html.parser")
+
+    # Title (prefer h1/h2)
+    title = "(Untitled)"
+    h = dsoup.find(["h1","h2"], string=True)
+    if h:
+        title = clean_text(h.get_text())
+
+    # Start/End: JSON-LD first
+    start, end = jsonld_event_times(dsoup)
+
+    # Text fallback patterns
+    if not start:
+        text = dsoup.get_text("\n", strip=True)
+        # Pattern 1
+        m = DATE_PATTERNS[0].search(text)
+        if m:
+            date_str, times = m.group(1), m.group(2)
+            tm = re.findall(r"(\d{1,2}:\d{2}\s*(?:AM|PM))", times, re.I)
+            if tm:
+                start = try_parse_date(f"{date_str} {tm[0]}")
+                if len(tm) > 1:
+                    end = try_parse_date(f"{date_str} {tm[1]}")
+            else:
+                start = try_parse_date(date_str)
+        # Pattern 2
+        if not start:
+            m2 = DATE_PATTERNS[1].search(text)
+            if m2:
+                date_str = m2.group(1)
+                t1 = m2.group(2)
+                t2 = m2.group(3)
+                start = try_parse_date(f"{date_str} {t1}")
+                if t2:
+                    end = try_parse_date(f"{date_str} {t2}")
+        # Pattern 3
+        if not start:
+            m3 = DATE_PATTERNS[2].search(text)
+            if m3:
+                start = try_parse_date(f"{m3.group(1)} {m3.group(2)}")
+
+    # Location
+    loc = ""
+    # Prefer a Google Maps link text if present
+    map_link = dsoup.find("a", href=re.compile(r"(?:maps\.app|google\.com/maps)", re.I))
+    if map_link:
+        loc = clean_text(map_link.get_text())
+    if not loc:
+        loc = parse_address_fallback(dsoup.get_text(" ", strip=True))
+
+    # Description: grab a paragraph near a "Description/Details" header, otherwise first decent paragraph
+    desc = ""
+    hdr = dsoup.find(lambda t: t.name in ["h2","h3","h4"] and re.search(r"(description|details|about)", t.get_text(), re.I))
+    if hdr:
+        parts = []
+        for sib in hdr.find_all_next(["p","li"], limit=14):
+            parts.append(sib.get_text(" ", strip=True))
+        desc = clean_text(" ".join(parts))[:1200]
+    if not desc:
+        p = dsoup.find("p")
+        if p:
+            desc = clean_text(p.get_text(" ", strip=True))[:600]
+
+    all_day = False
+    if start and isinstance(start, datetime) and end is None:
+        # if exact time wasn't found and JSON-LD gave date only, could be all-day, but keep False unless clearly date-only
+        pass
+
+    return normalize_event(title, start, end, all_day, loc, url, source_label, desc)
+
+# ---------- List page crawlers ----------
+def collect_detail_links(list_url, soup):
+    """
+    Collect likely event detail links from a listing page.
+    Handles GrowthZone/ChamberMaster and generic patterns.
+    """
+    links = set()
+    base = list_url
+
+    # Common GrowthZone/ChamberMaster detail pattern
+    for a in soup.select("a[href*='/events/details/']"):
+        href = a.get("href")
+        if href:
+            links.add(urljoin(base, href))
+
+    # GNFCC pattern
+    for a in soup.select("a[href*='/chamber-events/Details/']"):
+        href = a.get("href")
+        if href:
+            links.add(urljoin(base, href))
+
+    # Generic 'event' links with ids (Cherokee etc.)
+    for a in soup.select("a[href*='event']"):
+        href = a.get("href")
+        if href and ("id=" in href or "/event/" in href or href.endswith("/event") or "details" in href.lower()):
+            links.add(urljoin(base, href))
+
+    # De-dupe cross-page anchors to full URLs in same host
+    return sorted(links)
+
+def crawl_list_page(list_url, source_label):
+    out = []
+    try:
+        r = fetch(list_url)
+    except Exception as e:
+        print(f"[list] fetch error {list_url}: {e}", file=sys.stderr)
+        return out
+
+    soup = BeautifulSoup(r.text, "html.parser")
+    detail_links = collect_detail_links(list_url, soup)
+
+    if not detail_links:
+        # Some calendars render an initial month via a nested iframe or widget; try to follow iframes
+        for iframe in soup.select("iframe[src]"):
+            src = urljoin(list_url, iframe["src"])
+            try:
+                ir = fetch(src)
+                isoup = BeautifulSoup(ir.text, "html.parser")
+                detail_links.extend(collect_detail_links(src, isoup))
+            except Exception as e:
+                print(f"[iframe] fetch error {src}: {e}", file=sys.stderr)
+
+    seen_links = set()
+    for href in detail_links:
+        if href in seen_links:
+            continue
+        seen_links.add(href)
+        ev = parse_detail_page(href, source_label)
+        if ev:
+            out.append(ev)
+        time.sleep(SLEEP_BETWEEN)
+
+    return out
+
+# ---------- (Optional) ICS/RSS generic support ----------
+ICS_URLS = []  # add if you obtain ICS links
+RSS_URLS = []  # add if you obtain RSS links
+
 def from_ics(u):
     out = []
     try:
@@ -106,7 +306,7 @@ def from_ics(u):
         for comp in cal.walk():
             if comp.name != "VEVENT":
                 continue
-            title = str(comp.get("summary", ""))
+            title = str(comp.get("summary", "")) or "(Untitled)"
             desc = str(comp.get("description", ""))
             loc  = str(comp.get("location", ""))
             dtstart = comp.get("dtstart").dt if comp.get("dtstart") else None
@@ -115,7 +315,7 @@ def from_ics(u):
             url_val = str(comp.get("url", "")) if comp.get("url") else ""
             out.append(normalize_event(title, dtstart, dtend, all_day, loc, url_val, source=u, description=desc))
     except Exception as e:
-        print(f"[ICS] Error {u}: {e}", file=sys.stderr)
+        print(f"[ICS] {u}: {e}", file=sys.stderr)
     return out
 
 def from_rss(u):
@@ -125,8 +325,7 @@ def from_rss(u):
         for e in d.entries:
             title = e.get("title", "") or "(Untitled)"
             link  = e.get("link", "")
-            desc  = e.get("summary", "") or e.get("description","")
-            # Find any time-like field commonly present
+            desc  = e.get("summary", "") or e.get("description", "")
             start = None
             for k in ("start_time", "published", "updated", "created"):
                 val = e.get(k)
@@ -134,180 +333,23 @@ def from_rss(u):
                     start = try_parse_date(val) or start
             out.append(normalize_event(title, start, None, False, "", link, source=u, description=desc))
     except Exception as e:
-        print(f"[RSS] Error {u}: {e}", file=sys.stderr)
+        print(f"[RSS] {u}: {e}", file=sys.stderr)
     return out
 
-
-# --------------------
-# 3b) Site-specific scrapers
-# --------------------
-def gnfcc_events():
-    """
-    Crawl the GNFCC Chamber Events list, then follow each /chamber-events/Details/... page.
-    """
-    out = []
-    try:
-        r = fetch(GNFCC_CAL_LIST)
-        soup = BeautifulSoup(r.text, "html.parser")
-
-        # Collect every link that points to a Details page
-        detail_links = []
-        for a in soup.select("a[href*='/chamber-events/Details/']"):
-            href = a.get("href", "")
-            if href:
-                full = urljoin(GNFCC_CAL_LIST, href)
-                if full not in detail_links:
-                    detail_links.append(full)
-
-        for href in detail_links:
-            try:
-                dr = fetch(href)
-                dsoup = BeautifulSoup(dr.text, "html.parser")
-
-                # Title (usually h1)
-                title_el = dsoup.find(["h1","h2"], string=True)
-                title = clean_text(title_el.get_text()) if title_el else "(Untitled)"
-
-                # Date/Time pattern like: "Thursday, August 14, 2025 (5:30 PM - 7:00 PM) (EDT)"
-                text = dsoup.get_text("\n", strip=True)
-                start = end = None
-                all_day = False
-                m = re.search(r"([A-Za-z]+,\s+[A-Za-z]+\s+\d{1,2},\s+\d{4})\s*\(([^)]+)\)", text)
-                if m:
-                    date_str = m.group(1)
-                    times = m.group(2)
-                    tm = re.findall(r"(\d{1,2}:\d{2}\s*(?:AM|PM))", times, re.I)
-                    if tm:
-                        start = try_parse_date(f"{date_str} {tm[0]}")
-                        if len(tm) > 1:
-                            end = try_parse_date(f"{date_str} {tm[1]}")
-                    else:
-                        start = try_parse_date(date_str)
-                        all_day = True
-
-                # Location: prefer Google Maps link text; fallback to addressy text
-                loc = ""
-                loc_el = dsoup.find("a", href=re.compile(r"(?:maps\.app|google\.com/maps)", re.I))
-                if loc_el:
-                    loc = clean_text(loc_el.get_text())
-                else:
-                    addr = re.search(r"\d{2,5}\s+[A-Za-z].{5,100}", text)
-                    if addr:
-                        loc = clean_text(addr.group(0))[:200]
-
-                # Description: look for a "Description" header then collect following paragraphs
-                desc = ""
-                desc_hdr = dsoup.find(lambda t: t.name in ["h2","h3"] and "Description" in t.get_text())
-                if desc_hdr:
-                    parts = []
-                    for sib in desc_hdr.find_all_next(["p","li"], limit=12):
-                        parts.append(sib.get_text(" ", strip=True))
-                    desc = clean_text(" ".join(parts))[:1200]
-
-                out.append(normalize_event(title, start, end, all_day, loc, href, source="GNFCC Chamber", description=desc))
-                time.sleep(0.2)  # be polite
-            except Exception as e:
-                print(f"[GNFCC] Detail error {href}: {e}", file=sys.stderr)
-    except Exception as e:
-        print(f"[GNFCC] List error: {e}", file=sys.stderr)
-    return out
-
-
-def cherokee_events():
-    """
-    Crawl the Cherokee Chamber widgets list, follow each event (id=...), parse.
-    """
-    out = []
-    try:
-        r = fetch(CHEROKEE_WIDGETS_LIST)
-        soup = BeautifulSoup(r.text, "html.parser")
-
-        # Links look like ...event.aspx?cid=94&id=4048&wid=701
-        links = []
-        for a in soup.select("a[href*='event.aspx?'][href*='id=']"):
-            href = a.get("href")
-            if href:
-                full = urljoin(CHEROKEE_WIDGETS_LIST, href)
-                if full not in links:
-                    links.append(full)
-
-        for href in links:
-            try:
-                dr = fetch(href)
-                dsoup = BeautifulSoup(dr.text, "html.parser")
-
-                # Title (often last h1/h2 near the top)
-                title = "(Untitled)"
-                h_candidates = dsoup.find_all(["h1","h2"], string=True)
-                if h_candidates:
-                    title = clean_text(h_candidates[-1].get_text())
-
-                page_text = dsoup.get_text("\n", strip=True)
-
-                # Start/End like: "Start: Thursday, August 14, 2025 at 4:00 PM"
-                start_m = re.search(
-                    r"Start:\s*([A-Za-z]+,\s+[A-Za-z]+\s+\d{1,2},\s+\d{4})\s+at\s+(\d{1,2}:\d{2}\s*(AM|PM))",
-                    page_text, re.I)
-                end_m = re.search(
-                    r"End:\s*([A-Za-z]+,\s+[A-Za-z]+\s+\d{1,2},\s+\d{4})\s+at\s+(\d{1,2}:\d{2}\s*(AM|PM))",
-                    page_text, re.I)
-                start = try_parse_date(f"{start_m.group(1)} {start_m.group(2)}") if start_m else None
-                end   = try_parse_date(f"{end_m.group(1)} {end_m.group(2)}") if end_m else None
-
-                # Location: prefer Google Maps block; fallback to an address-like match
-                loc = ""
-                venue = dsoup.find("a", href=re.compile(r"maps\.google\.com", re.I))
-                if venue:
-                    loc = clean_text(venue.parent.get_text(" ", strip=True).replace("Get directions:", ""))[:200]
-                else:
-                    m = re.search(r"[A-Za-z][A-Za-z &'.,-]{2,100}\s+\d{1,5}\s+[A-Za-z].{3,80}", page_text)
-                    if m:
-                        loc = clean_text(m.group(0))[:200]
-
-                # Description: near a "Details" header
-                desc = ""
-                details_hdr = dsoup.find(lambda t: t.name in ["h2","h3"] and "Details" in t.get_text())
-                if details_hdr:
-                    p = details_hdr.find_next("p")
-                    if p:
-                        desc = clean_text(p.get_text(" ", strip=True))[:1200]
-
-                out.append(normalize_event(title, start, end, False, loc, href, source="Cherokee Chamber", description=desc))
-                time.sleep(0.2)
-            except Exception as e:
-                print(f"[Cherokee] Detail error {href}: {e}", file=sys.stderr)
-    except Exception as e:
-        print(f"[Cherokee] List error: {e}", file=sys.stderr)
-    return out
-
-
-def rotary_forsyth_events_stub():
-    """
-    The Rotary site renders events via JavaScript (DACdb) and doesn't expose a stable
-    public HTML/ICS endpoint here. This stub returns an empty list but documents the source.
-    If you obtain a public ICS/RSS, add it to ICS_URLS/RSS_URLS above.
-    """
-    print("[Rotary Forsyth] Skipped: dynamic calendar (DACdb) with no public ICS/RSS configured.", file=sys.stderr)
-    return []
-
-
-# --------------------
-# 4) Main
-# --------------------
+# ---------- Main ----------
 def main():
     all_events = []
 
-    # Generic sources
+    # Generic feeds if you add any
     for u in ICS_URLS:
         all_events += from_ics(u)
-
     for u in RSS_URLS:
         all_events += from_rss(u)
 
-    # Site-specific sources
-    all_events += gnfcc_events()
-    all_events += cherokee_events()
-    all_events += rotary_forsyth_events_stub()
+    # Your six sources
+    for list_url, label in LIST_SOURCES:
+        print(f"[crawl] {label}: {list_url}")
+        all_events += crawl_list_page(list_url, label)
 
     # Deduplicate by (title, start, source, url)
     seen = set()
@@ -319,9 +361,9 @@ def main():
         seen.add(key)
         dedup.append(e)
 
-    # Sort by start date ascending (missing dates last)
-    def sort_key(e):
-        s = e["start"]
+    # Sort by start date ascending (nulls last)
+    def sort_key(ev):
+        s = ev["start"]
         return (1, "") if not s else (0, s)
     dedup.sort(key=sort_key)
 
@@ -330,4 +372,6 @@ def main():
     print(f"Wrote events.json with {len(dedup)} events")
 
 if __name__ == "__main__":
+    # lazy import used inside jsonld_event_times
+    import json  # noqa: E402
     main()
