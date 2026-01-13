@@ -241,29 +241,48 @@ def parse_detail_page(url, source_label):
     # Text fallback patterns
     if not start:
         text = dsoup.get_text("\n", strip=True)
-        m = DATE_PATTERNS[0].search(text)
-        if m:
-            date_str, times = m.group(1), m.group(2)
-            tm = re.findall(r"(\d{1,2}:\d{2}\s*(?:AM|PM))", times, re.I)
-            if tm:
-                start = try_parse_date(f"{date_str} {tm[0]}")
-                if len(tm) > 1:
-                    end = try_parse_date(f"{date_str} {tm[1]}")
-            else:
-                start = try_parse_date(date_str)
+
+        # Try all patterns
+        for pattern in DATE_PATTERNS:
+            m = pattern.search(text)
+            if m:
+                if pattern == DATE_PATTERNS[0]:  # Pattern with parentheses
+                    date_str, times = m.group(1), m.group(2)
+                    tm = re.findall(r"(\d{1,2}:\d{2}\s*(?:AM|PM))", times, re.I)
+                    if tm:
+                        start = try_parse_date(f"{date_str} {tm[0]}")
+                        if len(tm) > 1:
+                            end = try_parse_date(f"{date_str} {tm[1]}")
+                    else:
+                        start = try_parse_date(date_str)
+                elif pattern == DATE_PATTERNS[1]:  # Pattern without parentheses
+                    date_str = m.group(1)
+                    t1 = m.group(2)
+                    t2 = m.group(3) if len(m.groups()) >= 3 else None
+                    start = try_parse_date(f"{date_str} {t1}")
+                    if t2:
+                        end = try_parse_date(f"{date_str} {t2}")
+                elif pattern == DATE_PATTERNS[2]:  # Pattern with "at"
+                    start = try_parse_date(f"{m.group(1)} {m.group(2)}")
+
+                if start:
+                    break
+
+        # Additional patterns for GrowthZone/ChamberMaster date formats
         if not start:
-            m2 = DATE_PATTERNS[1].search(text)
-            if m2:
-                date_str = m2.group(1)
-                t1 = m2.group(2)
-                t2 = m2.group(3)
-                start = try_parse_date(f"{date_str} {t1}")
-                if t2:
-                    end = try_parse_date(f"{date_str} {t2}")
-        if not start:
-            m3 = DATE_PATTERNS[2].search(text)
-            if m3:
-                start = try_parse_date(f"{m3.group(1)} {m3.group(2)}")
+            # Try to find dates like "Wednesday Jan 14, 2026" or "January 14, 2026"
+            date_match = re.search(r"(?:Monday|Tuesday|Wednesday|Thursday|Friday|Saturday|Sunday)\s+([A-Za-z]+\s+\d{1,2},\s+\d{4})", text, re.I)
+            if not date_match:
+                date_match = re.search(r"([A-Za-z]+\s+\d{1,2},\s+\d{4})", text)
+
+            if date_match:
+                date_str = date_match.group(1)
+                # Look for times near this date
+                time_match = re.search(r"(\d{1,2}:\d{2}\s*(?:AM|PM))", text[max(0, date_match.start()-100):date_match.end()+200], re.I)
+                if time_match:
+                    start = try_parse_date(f"{date_str} {time_match.group(1)}")
+                else:
+                    start = try_parse_date(date_str)
 
     # Location
     loc = ""
@@ -418,6 +437,10 @@ def main():
     def as_dt(iso_s):
         return datetime.fromisoformat(iso_s) if iso_s else None
 
+    def normalize_title(title):
+        """Normalize title for comparison by removing extra spaces and punctuation"""
+        return re.sub(r'[^\w\s]', '', title.lower().strip())
+
     for e in all_events:
         # Prefer canonical/clean URL already set in parse_detail_page; still sanitize here:
         e["url"] = strip_tracking_params(e["url"])
@@ -430,8 +453,8 @@ def main():
         # Key 2: exact URL
         k2 = ("url", e["url"])
 
-        # Key 3: fuzzy — same domain + same title (lower) + start within ±2 minutes
-        tl = e["title"].lower().strip()
+        # Key 3: fuzzy — same domain + same title (lower) + start within ±2 minutes OR both null
+        tl = normalize_title(e["title"])
         sd = as_dt(e["start"])
 
         dup = False
@@ -447,12 +470,18 @@ def main():
             else:
                 seen.add(k2)
 
-        if not dup and tl and sd:
+        # Enhanced fuzzy matching
+        if not dup and tl:
             key3 = ("title_date", dom, tl)
             near_list = aux_index.setdefault(key3, [])
-            # see if any existing event is within 2 minutes
+            # Check for duplicates based on title and date
             for _, existing_dt in near_list:
-                if existing_dt and abs((sd - existing_dt).total_seconds()) <= 120:
+                # If both have dates, check if within 2 minutes
+                if sd and existing_dt and abs((sd - existing_dt).total_seconds()) <= 120:
+                    dup = True
+                    break
+                # If both have null dates, consider it a duplicate (same title, same domain, no date)
+                if sd is None and existing_dt is None:
                     dup = True
                     break
             if not dup:
