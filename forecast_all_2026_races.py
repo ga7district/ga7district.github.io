@@ -30,6 +30,7 @@ import numpy as np
 import random
 import sys
 import os
+import json
 
 # =============================================================================
 # MODEL COEFFICIENTS (Empirically derived from 2020-2024 data)
@@ -516,7 +517,40 @@ def main():
     forecast_path = os.path.join(output_dir, 'house_2026_forecast.csv')
     forecast_df.to_csv(forecast_path, index=False)
     print(f"\n✓ Forecast saved to: {forecast_path}")
-    
+
+    # Save simulation summary to JSON for web display
+    sim_summary = {
+        'generic_ballot': generic_ballot,
+        'n_simulations': n_simulations,
+        'point_estimate': {
+            'dem_seats': int((forecast_df['predicted_winner'] == 'D').sum()),
+            'rep_seats': int((forecast_df['predicted_winner'] == 'R').sum())
+        },
+        'simulation': {
+            'dem_mean': float(house_sim['d_mean']),
+            'dem_median': float(house_sim['d_median']),
+            'dem_std': float(house_sim['d_std']),
+            'dem_min': int(house_sim['d_min']),
+            'dem_max': int(house_sim['d_max']),
+            'dem_majority_pct': float(house_sim['d_majority_pct']),
+            'rep_majority_pct': float(100 - house_sim['d_majority_pct']),
+            'percentiles': {
+                '5': int(np.percentile(house_sim['d_seats'], 5)),
+                '10': int(np.percentile(house_sim['d_seats'], 10)),
+                '25': int(np.percentile(house_sim['d_seats'], 25)),
+                '50': int(np.percentile(house_sim['d_seats'], 50)),
+                '75': int(np.percentile(house_sim['d_seats'], 75)),
+                '90': int(np.percentile(house_sim['d_seats'], 90)),
+                '95': int(np.percentile(house_sim['d_seats'], 95))
+            }
+        }
+    }
+
+    sim_path = os.path.join(output_dir, 'simulation_summary.json')
+    with open(sim_path, 'w') as f:
+        json.dump(sim_summary, f, indent=2)
+    print(f"✓ Simulation summary saved to: {sim_path}")
+
     # Print summary
     print_summary(forecast_df, generic_ballot, house_sim)
     

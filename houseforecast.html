@@ -429,14 +429,16 @@
     </div>
 
     <script>
-        // Global data variable
+        // Global data variables
         let allRaces = [];
+        let simulationData = null;
 
-        // Load CSV data
+        // Load CSV and JSON data
         async function loadForecast() {
             try {
-                const response = await fetch('house_2026_forecast.csv');
-                const text = await response.text();
+                // Load race data
+                const csvResponse = await fetch('house_2026_forecast.csv');
+                const text = await csvResponse.text();
                 const rows = text.split('\n').slice(1); // Skip header
 
                 const data = rows.filter(row => row.trim()).map(row => {
@@ -458,6 +460,15 @@
                 });
 
                 allRaces = data;
+
+                // Load simulation summary
+                try {
+                    const simResponse = await fetch('simulation_summary.json');
+                    simulationData = await simResponse.json();
+                } catch (simError) {
+                    console.warn('Could not load simulation summary:', simError);
+                }
+
                 updateDashboard(data);
                 setupSearchAndFilter();
             } catch (error) {
@@ -467,17 +478,26 @@
 
         function updateDashboard(data) {
             // Summary cards
-            const demSeats = data.filter(d => d.predicted_winner === 'D').length;
-            const repSeats = data.filter(d => d.predicted_winner === 'R').length;
-            const genericBallot = data[0].generic_ballot;
+            let demSeats, repSeats, genericBallot, demProb;
+
+            // Use simulation data if available, otherwise use point estimates
+            if (simulationData) {
+                demSeats = Math.round(simulationData.simulation.dem_mean);
+                repSeats = 435 - demSeats;
+                genericBallot = simulationData.generic_ballot;
+                demProb = simulationData.simulation.dem_majority_pct;
+            } else {
+                demSeats = data.filter(d => d.predicted_winner === 'D').length;
+                repSeats = data.filter(d => d.predicted_winner === 'R').length;
+                genericBallot = data[0].generic_ballot;
+                // Simplified probability calculation
+                demProb = demSeats >= 218 ? Math.min(95, 50 + (demSeats - 218) * 2) : Math.max(5, 50 - (218 - demSeats) * 2);
+            }
 
             document.getElementById('dem-seats').textContent = demSeats;
             document.getElementById('rep-seats').textContent = repSeats;
             document.getElementById('generic-ballot').textContent =
                 genericBallot > 0 ? `D+${genericBallot.toFixed(1)}` : `R+${Math.abs(genericBallot).toFixed(1)}`;
-
-            // Calculate majority probability (simplified - you'd need simulation data)
-            const demProb = demSeats >= 218 ? Math.min(95, 50 + (demSeats - 218) * 2) : Math.max(5, 50 - (218 - demSeats) * 2);
             document.getElementById('dem-prob').textContent = demProb.toFixed(1) + '%';
 
             // Rating distribution chart
