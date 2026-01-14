@@ -191,6 +191,69 @@
             font-size: 0.9rem;
         }
 
+        .search-box {
+            margin-bottom: 1.5rem;
+            display: flex;
+            gap: 1rem;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .search-box input {
+            flex: 1;
+            min-width: 250px;
+            padding: 0.75rem 1rem;
+            border: 2px solid #e0e0e0;
+            border-radius: 8px;
+            font-size: 1rem;
+            transition: border-color 0.2s;
+        }
+
+        .search-box input:focus {
+            outline: none;
+            border-color: #667eea;
+        }
+
+        .search-box select {
+            padding: 0.75rem 1rem;
+            border: 2px solid #e0e0e0;
+            border-radius: 8px;
+            font-size: 1rem;
+            background: white;
+            cursor: pointer;
+            transition: border-color 0.2s;
+        }
+
+        .search-box select:focus {
+            outline: none;
+            border-color: #667eea;
+        }
+
+        .table-info {
+            margin-bottom: 1rem;
+            color: #7f8c8d;
+            font-size: 0.9rem;
+        }
+
+        .table-container {
+            max-height: 600px;
+            overflow-y: auto;
+            border: 1px solid #ecf0f1;
+            border-radius: 8px;
+        }
+
+        .table-container table {
+            margin: 0;
+        }
+
+        .table-container thead th {
+            position: sticky;
+            top: 0;
+            z-index: 10;
+            background: #f8f9fa;
+            box-shadow: 0 2px 2px -1px rgba(0,0,0,0.1);
+        }
+
         @media (max-width: 768px) {
             .header h1 {
                 font-size: 1.8rem;
@@ -202,6 +265,16 @@
 
             .card .value {
                 font-size: 2rem;
+            }
+
+            .search-box {
+                flex-direction: column;
+                align-items: stretch;
+            }
+
+            .search-box input,
+            .search-box select {
+                width: 100%;
             }
         }
     </style>
@@ -250,23 +323,71 @@
         </div>
 
         <div class="race-table">
+            <h2>All 435 House Races</h2>
+            <div class="search-box">
+                <input type="text" id="search-input" placeholder="Search by district, incumbent, or state (e.g., CA-01, Pelosi, Texas)...">
+                <select id="rating-filter">
+                    <option value="">All Ratings</option>
+                    <option value="Safe D">Safe D</option>
+                    <option value="Likely D">Likely D</option>
+                    <option value="Lean D">Lean D</option>
+                    <option value="Tilt D">Tilt D</option>
+                    <option value="Toss-up">Toss-up</option>
+                    <option value="Tilt R">Tilt R</option>
+                    <option value="Lean R">Lean R</option>
+                    <option value="Likely R">Likely R</option>
+                    <option value="Safe R">Safe R</option>
+                </select>
+                <select id="party-filter">
+                    <option value="">All Parties</option>
+                    <option value="D">Democrat</option>
+                    <option value="R">Republican</option>
+                    <option value="Open">Open Seat</option>
+                </select>
+            </div>
+            <div class="table-info">
+                Showing <span id="race-count">0</span> of 435 races
+            </div>
+            <div class="table-container">
+                <table id="all-races-table">
+                    <thead>
+                        <tr>
+                            <th>District</th>
+                            <th>Incumbent</th>
+                            <th>Party</th>
+                            <th>PVI</th>
+                            <th>Dem Win %</th>
+                            <th>Rep Win %</th>
+                            <th>Rating</th>
+                            <th>Margin</th>
+                        </tr>
+                    </thead>
+                    <tbody id="all-races-tbody">
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div class="race-table" style="margin-top: 2rem;">
             <h2>Top 50 Most Competitive Races</h2>
-            <table id="competitive-table">
-                <thead>
-                    <tr>
-                        <th>District</th>
-                        <th>Incumbent</th>
-                        <th>Party</th>
-                        <th>PVI</th>
-                        <th>Dem Win %</th>
-                        <th>Rep Win %</th>
-                        <th>Rating</th>
-                        <th>Margin</th>
-                    </tr>
-                </thead>
-                <tbody id="competitive-tbody">
-                </tbody>
-            </table>
+            <div class="table-container" style="max-height: 400px;">
+                <table id="competitive-table">
+                    <thead>
+                        <tr>
+                            <th>District</th>
+                            <th>Incumbent</th>
+                            <th>Party</th>
+                            <th>PVI</th>
+                            <th>Dem Win %</th>
+                            <th>Rep Win %</th>
+                            <th>Rating</th>
+                            <th>Margin</th>
+                        </tr>
+                    </thead>
+                    <tbody id="competitive-tbody">
+                    </tbody>
+                </table>
+            </div>
         </div>
 
         <div class="race-table" style="margin-top: 2rem;">
@@ -308,6 +429,9 @@
     </div>
 
     <script>
+        // Global data variable
+        let allRaces = [];
+
         // Load CSV data
         async function loadForecast() {
             try {
@@ -328,11 +452,14 @@
                         margin: parseFloat(cols[9]),
                         predicted_winner: cols[10],
                         is_flip: cols[14] === 'True',
+                        is_open: cols[5] === 'True',
                         generic_ballot: parseFloat(cols[8])
                     };
                 });
 
+                allRaces = data;
                 updateDashboard(data);
+                setupSearchAndFilter();
             } catch (error) {
                 console.error('Error loading forecast:', error);
             }
@@ -463,6 +590,79 @@
                     dateStyle: 'full',
                     timeStyle: 'short'
                 });
+        }
+
+        // Search and filter functionality
+        function setupSearchAndFilter() {
+            const searchInput = document.getElementById('search-input');
+            const ratingFilter = document.getElementById('rating-filter');
+            const partyFilter = document.getElementById('party-filter');
+
+            // Initial render
+            renderAllRacesTable(allRaces);
+
+            // Event listeners
+            searchInput.addEventListener('input', filterRaces);
+            ratingFilter.addEventListener('change', filterRaces);
+            partyFilter.addEventListener('change', filterRaces);
+        }
+
+        function filterRaces() {
+            const searchTerm = document.getElementById('search-input').value.toLowerCase();
+            const ratingFilter = document.getElementById('rating-filter').value;
+            const partyFilter = document.getElementById('party-filter').value;
+
+            let filtered = allRaces.filter(race => {
+                // Search filter
+                const matchesSearch = searchTerm === '' ||
+                    race.district.toLowerCase().includes(searchTerm) ||
+                    race.incumbent.toLowerCase().includes(searchTerm);
+
+                // Rating filter
+                const matchesRating = ratingFilter === '' || race.rating === ratingFilter;
+
+                // Party filter
+                let matchesParty = true;
+                if (partyFilter === 'Open') {
+                    matchesParty = race.is_open;
+                } else if (partyFilter !== '') {
+                    matchesParty = race.party === partyFilter;
+                }
+
+                return matchesSearch && matchesRating && matchesParty;
+            });
+
+            renderAllRacesTable(filtered);
+        }
+
+        function renderAllRacesTable(races) {
+            const tbody = document.getElementById('all-races-tbody');
+            tbody.innerHTML = '';
+
+            // Sort by competitiveness (closest to 50-50)
+            const sorted = [...races].sort((a, b) => {
+                const aComp = Math.abs(a.d_win_pct - 50);
+                const bComp = Math.abs(b.d_win_pct - 50);
+                return aComp - bComp;
+            });
+
+            sorted.forEach(race => {
+                const row = tbody.insertRow();
+                const flipBadge = race.is_flip ? '<span class="flip-badge">FLIP</span>' : '';
+                row.innerHTML = `
+                    <td><strong>${race.district}</strong> ${flipBadge}</td>
+                    <td>${race.incumbent}</td>
+                    <td>${race.party}</td>
+                    <td>${race.pvi}</td>
+                    <td>${race.d_win_pct.toFixed(1)}%</td>
+                    <td>${race.r_win_pct.toFixed(1)}%</td>
+                    <td><span class="rating ${race.rating.toLowerCase().replace(' ', '-')}">${race.rating}</span></td>
+                    <td>${race.margin > 0 ? 'D' : 'R'}+${Math.abs(race.margin).toFixed(1)}</td>
+                `;
+            });
+
+            // Update count
+            document.getElementById('race-count').textContent = races.length;
         }
 
         // Load data on page load
