@@ -1,4 +1,4 @@
-# 2026 U.S. House Election Forecast
+# Forecast Info
 
 An empirical election forecasting model for the 2026 House elections, automatically updated daily with the latest polling data.
 
