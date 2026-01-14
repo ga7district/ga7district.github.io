@@ -410,17 +410,17 @@
 
         <div class="methodology">
             <h2>Methodology</h2>
-            <p><strong>Model:</strong> Democratic Margin = -0.24 + 1.03 × PVI - 0.51 × WAR + 0.19 × Generic Ballot</p>
+            <p><strong>Model:</strong> Democratic Margin =  β₀ + β₁×PVI + β₂×Win-Above-Replacement (Candidate Quality) + β₃×Generic_Ballot</p>
             <p><strong>Data Source:</strong> Empirically derived from 1,157 contested House races (2020-2024)</p>
             <p><strong>Model Performance:</strong> R² = 0.892 (89.2% of variance explained), RMSE = 5.35 points</p>
-            <p><strong>Simulation:</strong> Each race simulated 1,000 times using Monte Carlo method with model uncertainty</p>
+            <p><strong>Simulation:</strong> Each race simulated 1,000 times using the Monte Carlo method with model uncertainty</p>
             <p><strong>Variables:</strong></p>
             <ul>
                 <li><strong>PVI (Partisan Voter Index):</strong> Measures how Democratic or Republican a district is relative to the nation</li>
                 <li><strong>WAR (Wins Above Replacement):</strong> Measures candidate quality based on past performance</li>
                 <li><strong>Generic Ballot:</strong> National poll average of D vs R for Congress</li>
             </ul>
-            <p><strong>Updates:</strong> This forecast updates daily at 6:00 AM ET with the latest RCP Generic Ballot average.</p>
+            <p><strong>Updates: </strong> This forecast updates daily at 6:00 AM ET with the latest RCP Generic Ballot average.</p>
         </div>
 
         <div class="last-updated" id="last-updated">
