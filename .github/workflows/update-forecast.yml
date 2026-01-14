@@ -27,6 +27,7 @@ jobs:
       - name: Run forecast update
         run: |
           python update_forecast.py
+          python forecast_all_2026_races.py
 
       - name: Commit and push if changes
         run: |
