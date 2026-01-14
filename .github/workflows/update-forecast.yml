@@ -27,10 +27,19 @@ jobs:
       - name: Run forecast update
         run: |
           python update_forecast.py
-          
+
+      - name: Verify files were created
+        run: |
+          echo "Checking for output files..."
+          ls -lah house_2026_forecast.csv simulation_summary.json
+          echo "CSV file size:"
+          wc -l house_2026_forecast.csv
+          echo "JSON file contents:"
+          cat simulation_summary.json
+
       - name: Commit and push if changes
         run: |
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
-          git add house_2026_forecast.csv
+          git add house_2026_forecast.csv simulation_summary.json
           git diff --quiet && git diff --staged --quiet || (git commit -m "Auto-update forecast $(date +'%Y-%m-%d %H:%M:%S UTC')" && git push)
