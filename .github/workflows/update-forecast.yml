@@ -28,7 +28,7 @@ jobs:
         run: |
           python update_forecast.py
           
-      - name: Run forecast update
+      - name: Run forecast update2
         run: |  
           python forecast_all_2026_races.py
           
