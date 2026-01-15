@@ -6,21 +6,21 @@
     "rep_seats": 214
   },
   "simulation": {
-    "dem_mean": 219.476,
+    "dem_mean": 218.982,
     "dem_median": 219.0,
-    "dem_std": 4.927618491725998,
-    "dem_min": 201,
-    "dem_max": 239,
-    "dem_majority_pct": 64.8,
-    "rep_majority_pct": 35.2,
+    "dem_std": 4.902211337753606,
+    "dem_min": 203,
+    "dem_max": 233,
+    "dem_majority_pct": 62.7,
+    "rep_majority_pct": 37.3,
     "percentiles": {
       "5": 211,
       "10": 213,
       "25": 216,
       "50": 219,
-      "75": 223,
-      "90": 226,
-      "95": 227
+      "75": 222,
+      "90": 225,
+      "95": 226
     }
   }
 }
