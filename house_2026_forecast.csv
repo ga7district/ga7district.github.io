@@ -1,436 +1,436 @@
 district_id,incumbent_2025,incumbent_party,pvi_string,pvi_numeric,is_open_seat,retirement_reason,war,generic_ballot,predicted_margin,predicted_winner,d_win_pct,r_win_pct,race_rating,potential_flip,sim_avg_margin,sim_margin_std
-MI-07,Tom Barrett,R,EVEN,0.0,False,,1.4,4.8,-0.06,R,50.9,49.1,Tilt D,False,0.01,5.17
-NY-17,Mike Lawler,R,D+1,1.0,False,,3.8,4.8,-0.26,R,52.0,48.0,Tilt D,False,0.19,5.35
-AZ-01,David Schweikert,R,R+1,-1.0,True,Running for Governor,0.0,4.8,-0.37,R,47.6,52.4,Tilt R,False,-0.35,5.34
-CO-08,Gabe Evans,R,EVEN,0.0,False,,2.1,4.8,-0.42,R,42.7,57.3,Tilt R,False,-0.73,5.31
-PA-07,Ryan MacKenzie,R,R+1,-1.0,False,,0.1,4.8,-0.43,R,46.6,53.4,Tilt R,False,-0.45,5.32
-OH-01,Greg Landsman,D,R+2,-2.0,False,,-1.7,4.8,-0.53,R,49.7,50.3,Tilt R,True,-0.26,5.43
-NJ-07,Thomas Kean Jr.,R,EVEN,0.0,False,,0.0,4.8,0.66,D,52.8,47.2,Tilt D,True,0.46,5.43
-MT-01,Ryan Zinke,R,R+5,-5.0,False,,-7.1,4.8,-0.86,R,46.1,53.9,Tilt R,False,-0.58,5.13
-AK-AL,Nick Begich,R,R+6,-6.0,False,,-9.1,4.8,-0.87,R,43.9,56.1,Tilt R,False,-0.86,5.16
-IA-03,Zach Nunn,R,R+2,-2.0,False,,-4.6,4.8,0.95,D,55.5,44.5,Tilt D,True,0.9,5.34
-VA-02,Jen Kiggans,R,EVEN,0.0,False,,-1.1,4.8,1.22,D,58.2,41.8,Tilt D,True,1.21,5.18
-CO-03,Jeff Hurd,R,R+5,-5.0,False,,-6.3,4.8,-1.27,R,40.6,59.4,Tilt R,False,-1.13,5.01
-WI-03,Derrick Van Orden,R,R+3,-3.0,False,,-7.3,4.8,1.31,D,60.3,39.7,Tilt D,True,1.3,5.19
-TX-34,Vicente Gonzalez,D,EVEN,0.0,False,,-1.3,4.8,1.32,D,59.5,40.5,Tilt D,False,1.41,5.53
-FL-13,Anna Paulina Luna,R,R+5,-5.0,False,,-6.1,4.8,-1.37,R,38.3,61.7,Tilt R,False,-1.41,5.33
-NY-03,Tom Suozzi,D,EVEN,0.0,False,,-1.9,4.8,1.63,D,63.4,36.6,Tilt D,False,1.87,5.28
-WA-03,Marie Gluesenkamp Perez,D,R+2,-2.0,False,,-6.0,4.8,1.67,D,64.5,35.5,Tilt D,False,1.92,5.28
-NV-03,Susie Lee,D,D+1,1.0,False,,-0.3,4.8,1.84,D,65.3,34.7,Tilt D,False,1.79,5.24
-CA-48,Darrell Issa,R,EVEN,0.0,False,,-2.4,4.8,1.89,D,65.2,34.8,Tilt D,True,2.11,5.39
-PA-08,Rob Bresnahan,R,R+4,-4.0,False,,-2.9,4.8,-1.98,R,35.1,64.9,Tilt R,False,-2.06,5.24
-OH-13,Emilia Sykes,D,D+1,1.0,False,,-0.6,4.8,2.0,D,67.8,32.2,Tilt D,False,2.39,5.4
-OH-09,Marcy Kaptur,D,R+5,-5.0,False,,-4.8,4.8,-2.04,R,33.2,66.8,Tilt R,True,-2.42,5.09
-FL-23,Jared Moskowitz,D,D+2,2.0,False,,1.3,4.8,2.06,D,64.0,36.0,Tilt D,False,1.94,5.39
-PA-10,Scott Perry,R,R+3,-3.0,False,,-8.8,4.8,2.08,D,66.9,33.1,Tilt D,True,2.06,5.18
-NC-01,Don Davis,D,R+4,-4.0,False,,-2.6,4.8,-2.14,R,36.6,63.4,Tilt R,True,-2.15,5.47
-NY-01,Nick LaLota,R,R+4,-4.0,False,,-2.5,4.8,-2.19,R,34.2,65.8,Tilt R,False,-2.1,5.32
-AZ-02,Eli Crane,R,R+7,-7.0,False,,-8.5,4.8,-2.21,R,36.1,63.9,Tilt R,False,-2.07,5.37
-NM-02,Gabe Vasquez,D,EVEN,0.0,False,,-3.1,4.8,2.25,D,68.2,31.8,Tilt D,False,2.31,5.54
-IA-01,Mariannette Miller-Meeks,R,R+4,-4.0,False,,-11.3,4.8,2.33,D,65.7,34.3,Tilt D,True,2.27,5.16
-WI-01,Bryan Steil,R,R+2,-2.0,False,,1.8,4.8,-2.33,R,32.2,67.8,Tilt R,False,-2.53,5.43
-MI-10,John James,R,R+3,-3.0,True,Running for Governor,0.0,4.8,-2.44,R,32.5,67.5,Tilt R,False,-2.6,5.64
-AZ-06,Juan Ciscomani,R,EVEN,0.0,False,,-3.7,4.8,2.56,D,68.5,31.5,Tilt D,True,2.51,5.28
-NH-01,Chris Pappas,D,D+2,2.0,True,Running for Senate,0.0,4.8,2.72,D,71.1,28.9,Tilt D,False,3.07,5.35
-FL-07,Cory Mills,R,R+5,-5.0,False,,-3.4,4.8,-2.76,R,32.3,67.7,Tilt R,False,-2.72,5.24
-VA-01,Rob Wittman,R,R+3,-3.0,False,,0.7,4.8,-2.8,R,32.5,67.5,Tilt R,False,-2.5,5.39
-PA-01,Brian Fitzpatrick,R,D+1,1.0,False,,8.8,4.8,-2.82,R,29.4,70.6,Tilt R,False,-2.93,5.3
-TX-28,Henry Cuellar,D,R+2,-2.0,False,,-8.3,4.8,2.85,D,71.7,28.3,Tilt D,False,3.02,5.26
-FL-15,Laurel Lee,R,R+5,-5.0,False,,-2.6,4.8,-3.17,R,26.5,73.5,Tilt R,False,-3.14,5.26
-CT-05,Jahana Hayes,D,D+3,3.0,False,,1.1,4.8,3.19,D,73.2,26.8,Tilt D,False,3.12,5.32
-CA-49,Mike Levin,D,D+5,5.0,False,,4.9,4.8,3.3,D,72.1,27.9,Tilt D,False,3.26,5.3
-OR-06,Andrea Salinas,D,D+6,6.0,False,,6.9,4.8,3.31,D,75.8,24.2,Lean D,False,3.27,5.13
-VA-07,Eugene Vindman,D,D+2,2.0,False,,-1.2,4.8,3.34,D,76.0,24.0,Lean D,False,3.5,5.3
-MI-04,Bill Huizenga,R,R+3,-3.0,False,,2.0,4.8,-3.46,R,27.7,72.3,Tilt R,False,-3.23,5.4
-IA-02,Ashley Hinson,R,R+4,-4.0,True,Running for Senate,0.0,4.8,-3.47,R,26.1,73.9,Tilt R,False,-3.29,5.27
-ME-02,Jared Golden,D,R+4,-4.0,True,Retiring,0.0,4.8,-3.47,R,26.4,73.6,Tilt R,True,-3.4,5.35
-IL-06,Sean Casten,D,D+3,3.0,False,,0.4,4.8,3.55,D,74.6,25.4,Tilt D,False,3.59,5.32
-FL-04,Aaron Bean,R,R+5,-5.0,False,,-1.8,4.8,-3.58,R,25.4,74.6,Tilt R,False,-3.72,5.36
-NH-02,Maggie Goodlander,D,D+2,2.0,False,,-1.7,4.8,3.59,D,74.5,25.5,Tilt D,False,3.68,5.31
-OR-04,Val Hoyle,D,D+6,6.0,False,,6.3,4.8,3.62,D,72.9,27.1,Tilt D,False,3.51,5.45
-TX-15,Monica De La Cruz,R,R+7,-7.0,False,,-5.6,4.8,-3.69,R,26.1,73.9,Tilt R,False,-3.67,5.28
-MN-02,Angie Craig,D,D+3,3.0,True,Running for Senate,0.0,4.8,3.75,D,77.1,22.9,Lean D,False,3.81,5.07
-NE-02,Don Bacon,R,D+3,3.0,True,Retiring,0.0,4.8,3.75,D,75.1,24.9,Lean D,True,3.53,5.42
-NY-19,Josh Riley,D,D+1,1.0,False,,-4.1,4.8,3.79,D,78.3,21.7,Lean D,False,3.9,5.35
-CO-04,Lauren Boebert,R,R+9,-9.0,False,,-9.2,4.8,-3.91,R,25.7,74.3,Tilt R,False,-3.7,5.34
-AZ-04,Greg Stanton,D,D+4,4.0,False,,1.7,4.8,3.91,D,78.2,21.8,Lean D,False,4.0,5.32
-NV-01,Dina Titus,D,D+2,2.0,False,,-2.4,4.8,3.95,D,76.9,23.1,Lean D,False,3.93,5.32
-NJ-09,Nellie Pou,D,D+2,2.0,False,,-2.4,4.8,3.95,D,74.1,25.9,Tilt D,False,3.75,5.58
-NY-04,Laura Gillen,D,D+2,2.0,False,,-2.5,4.8,4.0,D,76.7,23.3,Lean D,False,4.04,5.47
-MI-08,Kristen McDonald Rivet,D,R+1,-1.0,False,,-8.6,4.8,4.04,D,77.7,22.3,Lean D,False,4.0,5.5
-IN-01,Frank J. Mrvan,D,D+1,1.0,False,,-4.6,4.8,4.05,D,78.7,21.3,Lean D,False,4.14,5.32
-WA-08,Kim Schrier,D,D+3,3.0,False,,-0.7,4.8,4.11,D,76.5,23.5,Lean D,False,3.91,5.22
-MD-06,April McClain Delaney,D,D+3,3.0,False,,-0.8,4.8,4.16,D,79.4,20.6,Lean D,False,4.36,5.41
-VA-10,Suhas Subramanyam,D,D+6,6.0,False,,5.1,4.8,4.23,D,77.8,22.2,Lean D,False,4.1,5.42
-AZ-08,Abe Hamadeh,R,R+8,-8.0,False,,-6.4,4.8,-4.31,R,19.8,80.2,Lean R,False,-4.48,5.33
-IL-17,Eric Sorensen,D,D+3,3.0,False,,-1.1,4.8,4.32,D,79.2,20.8,Lean D,False,4.54,5.59
-CA-06,Ami Bera,D,D+4,4.0,False,,0.9,4.8,4.32,D,80.0,20.0,Lean D,False,4.5,5.41
-OR-05,Janelle Bynum,D,D+4,4.0,False,,0.9,4.8,4.32,D,78.6,21.4,Lean D,False,4.09,5.24
-NV-04,Steven Horsford,D,D+2,2.0,False,,-3.2,4.8,4.36,D,79.5,20.5,Lean D,False,4.62,5.45
-IL-14,Lauren Underwood,D,D+3,3.0,False,,-1.3,4.8,4.42,D,80.1,19.9,Lean D,False,4.61,5.37
-TX-35,Greg Casar,D,R+3,-3.0,False,,3.9,4.8,-4.44,R,19.4,80.6,Lean R,True,-4.28,5.16
-TX-09,Al Green,D,R+5,-5.0,False,,0.0,4.8,-4.5,R,19.2,80.8,Lean R,True,-4.43,5.3
-PA-17,Chris Deluzio,D,D+3,3.0,False,,-1.8,4.8,4.68,D,80.6,19.4,Lean D,False,4.83,5.4
-CA-03,Kevin Kiley,R,D+5,5.0,False,,2.1,4.8,4.74,D,79.9,20.1,Lean D,True,4.46,5.34
-OH-15,Mike Carey,R,R+6,-6.0,False,,-1.3,4.8,-4.87,R,19.4,80.6,Lean R,False,-4.7,5.5
-MI-03,Hillary Scholten,D,D+4,4.0,False,,-0.4,4.8,4.99,D,81.3,18.7,Lean D,False,4.88,5.42
-FL-22,Lois Frankel,D,D+4,4.0,False,,-0.5,4.8,5.04,D,84.0,16.0,Lean D,False,5.11,5.22
-FL-25,Debbie Wasserman Schultz,D,D+5,5.0,False,,1.3,4.8,5.15,D,83.1,16.9,Lean D,False,5.11,5.23
-IL-11,Bill Foster,D,D+6,6.0,False,,3.1,4.8,5.26,D,83.0,17.0,Lean D,False,5.13,5.29
-NJ-02,Jeff Van Drew,R,R+5,-5.0,False,,1.6,4.8,-5.32,R,16.1,83.9,Lean R,False,-5.21,5.36
-NJ-05,Josh Gottheimer,D,D+2,2.0,False,,-5.1,4.8,5.34,D,82.5,17.5,Lean D,False,5.26,5.55
-SC-01,Nancy Mace,R,R+6,-6.0,True,Running for Governor,0.0,4.8,-5.53,R,14.3,85.7,Lean R,False,-5.69,5.35
-NC-03,Greg Murphy,R,R+6,-6.0,False,,0.0,4.8,-5.53,R,15.8,84.2,Lean R,False,-5.2,5.15
-TN-05,Andy Ogles,R,R+8,-8.0,False,,-3.9,4.8,-5.6,R,13.8,86.2,Lean R,False,-5.8,5.41
-NJ-11,Mikie Sherrill,D,D+5,5.0,True,Resigned - Now Governor,0.0,4.8,5.82,D,85.2,14.8,Lean D,False,5.69,5.37
-IL-08,Raja Krishnamoorthi,D,D+5,5.0,True,Running for Senate,0.0,4.8,5.82,D,84.6,15.4,Lean D,False,5.61,5.35
-CO-05,Jeff Crank,R,R+5,-5.0,False,,2.6,4.8,-5.84,R,14.2,85.8,Lean R,False,-5.62,5.29
-AR-02,French Hill,R,R+8,-8.0,False,,-3.3,4.8,-5.91,R,11.8,88.2,Lean R,False,-5.95,5.41
-FL-16,Vern Buchanan,R,R+7,-7.0,False,,-1.0,4.8,-6.05,R,13.2,86.8,Lean R,False,-6.02,5.31
-NM-03,Teresa Leger Fernandez,D,D+3,3.0,False,,-4.5,4.8,6.06,D,86.9,13.1,Lean D,False,5.95,5.41
-PA-06,Chrissy Houlahan,D,D+6,6.0,False,,1.5,4.8,6.08,D,85.6,14.4,Lean D,False,5.97,5.54
-MN-01,Brad Finstad,R,R+6,-6.0,False,,1.1,4.8,-6.1,R,11.7,88.3,Lean R,False,-6.05,5.27
-MN-08,Pete Stauber,R,R+7,-7.0,False,,-0.9,4.8,-6.1,R,12.8,87.2,Lean R,False,-6.25,5.53
-MA-09,Bill Keating,D,D+6,6.0,False,,1.4,4.8,6.13,D,87.8,12.2,Lean D,False,6.46,5.47
-WI-08,Tony Wied,R,R+8,-8.0,False,,-2.8,4.8,-6.16,R,13.4,86.6,Lean R,False,-6.13,5.38
-KS-03,Sharice Davids,D,D+2,2.0,False,,-6.7,4.8,6.16,D,86.7,13.3,Lean D,False,6.23,5.4
-NC-07,David Rouzer,R,R+8,-8.0,False,,-2.6,4.8,-6.26,R,14.1,85.9,Lean R,False,-5.93,5.43
-GA-02,Sanford Bishop,D,D+4,4.0,False,,-3.0,4.8,6.32,D,88.8,11.2,Lean D,False,6.43,5.21
-CA-01,Doug LaMalfa,R,D+7,7.0,False,,2.9,4.8,6.39,D,89.5,10.5,Lean D,True,6.45,5.43
-NC-09,Richard Hudson,R,R+8,-8.0,False,,-2.3,4.8,-6.42,R,11.6,88.4,Lean R,False,-6.47,5.47
-VA-05,John McGuire,R,R+6,-6.0,False,,1.8,4.8,-6.46,R,11.5,88.5,Lean R,False,-6.39,5.37
-NC-05,Virginia Foxx,R,R+9,-9.0,False,,-4.1,4.8,-6.53,R,10.8,89.2,Lean R,False,-6.9,5.42
-NJ-03,Herb Conaway,D,D+5,5.0,False,,-1.4,4.8,6.54,D,90.6,9.4,Likely D,False,6.66,5.39
-KY-06,Andy Barr,R,R+7,-7.0,True,Running for Senate,0.0,4.8,-6.57,R,10.7,89.3,Lean R,False,-6.45,5.4
-TX-24,Beth Van Duyne,R,R+7,-7.0,False,,0.0,4.8,-6.57,R,10.4,89.6,Lean R,False,-6.62,5.34
-NV-02,Mark Amodei,R,R+7,-7.0,False,,0.0,4.8,-6.57,R,11.8,88.2,Lean R,False,-6.61,5.31
-CA-47,Dave Min,D,D+6,6.0,False,,0.4,4.8,6.64,D,87.5,12.5,Lean D,False,6.6,5.46
-NE-01,Mike Flood,R,R+6,-6.0,False,,2.2,4.8,-6.66,R,10.2,89.8,Lean R,False,-6.84,5.44
-CA-50,Scott Peters,D,D+8,8.0,False,,4.1,4.8,6.81,D,89.6,10.4,Lean D,False,6.9,5.45
-OH-07,Max Miller,R,R+7,-7.0,False,,0.6,4.8,-6.87,R,9.4,90.6,Likely R,False,-6.84,5.3
-NY-18,Pat Ryan,D,D+2,2.0,False,,-8.1,4.8,6.88,D,89.0,11.0,Lean D,False,6.93,5.47
-AL-02,Shomari Figures,D,D+5,5.0,False,,-2.2,4.8,6.95,D,90.3,9.7,Likely D,False,6.99,5.47
-PA-12,Summer Lee,D,D+10,10.0,False,,7.8,4.8,6.98,D,91.7,8.3,Likely D,False,7.19,5.4
-FL-27,Maria Elvira Salazar,R,R+6,-6.0,False,,3.0,4.8,-7.07,R,9.7,90.3,Likely R,False,-7.05,5.25
-SC-02,Joe Wilson,R,R+7,-7.0,False,,1.1,4.8,-7.13,R,8.5,91.5,Likely R,False,-7.18,5.31
-OK-05,Stephanie Bice,R,R+9,-9.0,False,,-2.6,4.8,-7.3,R,9.0,91.0,Likely R,False,-7.15,5.31
-NM-01,Melanie Stansbury,D,D+7,7.0,False,,1.1,4.8,7.32,D,89.9,10.1,Lean D,False,7.19,5.36
-NY-22,John Mannion,D,D+4,4.0,False,,-5.1,4.8,7.4,D,90.5,9.5,Likely D,False,7.39,5.56
-NY-02,Andrew Garbarino,R,R+6,-6.0,False,,3.7,4.8,-7.43,R,8.4,91.6,Likely R,False,-7.29,5.48
-FL-09,Darren Soto,D,D+4,4.0,False,,-5.3,4.8,7.5,D,91.8,8.2,Likely D,False,7.45,5.42
-IL-13,Nikki Budzinski,D,D+5,5.0,False,,-3.3,4.8,7.51,D,92.4,7.6,Likely D,False,7.66,5.26
-GA-01,Buddy Carter,R,R+8,-8.0,True,Running for Senate,0.0,4.8,-7.6,R,7.9,92.1,Likely R,False,-7.43,5.49
-MO-02,Ann Wagner,R,R+9,-9.0,False,,-2.0,4.8,-7.6,R,8.0,92.0,Likely R,False,-7.62,5.44
-RI-02,Seth Magaziner,D,D+4,4.0,False,,-5.8,4.8,7.76,D,92.8,7.2,Likely D,False,7.85,5.4
-CT-02,Joe Courtney,D,D+4,4.0,False,,-5.8,4.8,7.76,D,94.1,5.9,Likely D,False,7.97,5.25
-CA-22,David Valadao,R,D+8,8.0,False,,2.2,4.8,7.79,D,92.6,7.4,Likely D,True,8.0,5.41
-NC-11,Chuck Edwards,R,R+9,-9.0,False,,-1.5,4.8,-7.86,R,7.2,92.8,Likely R,False,-7.74,5.34
-CO-07,Brittany Pettersen,D,D+8,8.0,False,,2.0,4.8,7.89,D,91.4,8.6,Likely D,False,7.53,5.42
-FL-11,Daniel Webster,R,R+8,-8.0,False,,0.6,4.8,-7.91,R,7.5,92.5,Likely R,False,-8.17,5.58
-NJ-06,Frank Pallone,D,D+5,5.0,False,,-4.1,4.8,7.92,D,92.5,7.5,Likely D,False,8.14,5.47
-FL-21,Brian Mast,R,R+7,-7.0,False,,2.7,4.8,-7.95,R,6.6,93.4,Likely R,False,-7.97,5.36
-GA-12,Rick Allen,R,R+7,-7.0,False,,2.7,4.8,-7.95,R,7.8,92.2,Likely R,False,-7.79,5.41
-CA-40,Young Kim,R,R+7,-7.0,False,,2.8,4.8,-8.0,R,6.9,93.1,Likely R,False,-8.19,5.46
-FL-14,Kathy Castor,D,D+5,5.0,False,,-4.3,4.8,8.02,D,92.9,7.1,Likely D,False,7.98,5.5
-CA-42,Robert Garcia,D,D+8,8.0,False,,1.7,4.8,8.04,D,92.9,7.1,Likely D,False,8.06,5.34
-IN-05,Victoria Spartz,R,R+8,-8.0,False,,0.9,4.8,-8.06,R,6.3,93.7,Likely R,False,-8.0,5.39
-CA-21,Jim Costa,D,D+10,10.0,False,,5.4,4.8,8.21,D,92.9,7.1,Likely D,False,8.2,5.38
-WA-10,Marilyn Strickland,D,D+9,9.0,False,,3.1,4.8,8.36,D,94.2,5.8,Likely D,False,8.56,5.45
-MD-01,Andy Harris,R,R+8,-8.0,False,,1.6,4.8,-8.42,R,5.7,94.3,Likely R,False,-8.5,5.33
-SC-04,William Timmons,R,R+11,-11.0,False,,-4.4,4.8,-8.44,R,5.3,94.7,Likely R,False,-8.15,5.3
-OH-08,Warren Davidson,R,R+10,-10.0,False,,-2.3,4.8,-8.48,R,6.1,93.9,Likely R,False,-8.48,5.46
-TX-22,Troy Nehls,R,R+9,-9.0,True,Retiring,0.0,4.8,-8.63,R,4.5,95.5,Likely R,False,-8.91,5.31
-FL-03,Kat Cammack,R,R+10,-10.0,False,,-2.0,4.8,-8.64,R,6.2,93.8,Likely R,False,-8.59,5.49
-CA-26,Julia Brownley,D,D+10,10.0,False,,4.5,4.8,8.67,D,94.3,5.7,Likely D,False,8.54,5.44
-TX-23,Tony Gonzales,R,R+7,-7.0,False,,4.2,4.8,-8.72,R,4.4,95.6,Likely R,False,-8.93,5.32
-FL-02,Neal Dunn,R,R+8,-8.0,False,,2.3,4.8,-8.78,R,4.0,96.0,Likely R,False,-8.75,5.24
-CA-51,Sara Jacobs,D,D+10,10.0,False,,4.2,4.8,8.82,D,96.1,3.9,Likely D,False,9.02,5.16
-CA-04,Mike Thompson,D,D+9,9.0,False,,2.1,4.8,8.87,D,94.7,5.3,Likely D,False,8.75,5.24
-WI-06,Glenn Grothman,R,R+8,-8.0,False,,2.5,4.8,-8.88,R,4.9,95.1,Likely R,False,-8.75,5.25
-CA-23,Jay Obernolte,R,R+9,-9.0,False,,0.5,4.8,-8.89,R,5.7,94.3,Likely R,False,-8.8,5.44
-NC-13,Brad Knott,R,R+11,-11.0,False,,-3.5,4.8,-8.9,R,4.1,95.9,Likely R,False,-8.71,5.22
-MA-01,Richard Neal,D,D+8,8.0,False,,0.0,4.8,8.91,D,93.9,6.1,Likely D,False,8.8,5.55
-OH-10,Mike Turner,R,R+5,-5.0,False,,8.7,4.8,-8.97,R,4.5,95.5,Likely R,False,-8.97,5.4
-CT-03,Rosa DeLauro,D,D+8,8.0,False,,-0.1,4.8,8.97,D,95.5,4.5,Likely D,False,8.69,5.12
-DE-AL,Sarah McBride,D,D+8,8.0,False,,-0.1,4.8,8.97,D,95.0,5.0,Likely D,False,9.2,5.48
-WA-06,Emily Randall,D,D+10,10.0,False,,3.9,4.8,8.98,D,95.2,4.8,Likely D,False,8.74,5.28
-NJ-01,Donald Norcross,D,D+10,10.0,False,,3.9,4.8,8.98,D,94.8,5.2,Likely D,False,9.06,5.5
-MO-05,Emanuel Cleaver,D,R+9,-9.0,False,,0.7,4.8,-8.99,R,4.1,95.9,Likely R,True,-9.0,5.27
-PA-04,Madeleine Dean,D,D+8,8.0,False,,-0.3,4.8,9.07,D,96.3,3.7,Likely D,False,9.23,5.17
-WA-05,Michael Baumgartner,R,R+5,-5.0,False,,8.9,4.8,-9.07,R,4.0,96.0,Likely R,False,-9.18,5.28
-NC-14,Tim Moore,R,R+11,-11.0,False,,-3.0,4.8,-9.16,R,4.1,95.9,Likely R,False,-9.38,5.41
-NC-10,Pat Harrigan,R,R+10,-10.0,False,,-0.9,4.8,-9.2,R,3.4,96.6,Likely R,False,-9.47,5.28
-NC-08,Mark Harris,R,R+11,-11.0,False,,-2.7,4.8,-9.31,R,3.2,96.8,Likely R,False,-9.29,5.1
-MI-01,Jack Bergman,R,R+11,-11.0,False,,-2.6,4.8,-9.36,R,4.8,95.2,Likely R,False,-9.21,5.51
-KS-02,Derek Schmidt,R,R+10,-10.0,False,,-0.4,4.8,-9.46,R,3.6,96.4,Likely R,False,-9.44,5.27
-TX-32,Julie Johnson,D,R+9,-9.0,False,,1.7,4.8,-9.5,R,3.9,96.1,Likely R,True,-9.43,5.12
-CA-27,George Whitesides,D,D+8,8.0,False,,-1.3,4.8,9.58,D,96.5,3.5,Likely D,False,9.68,5.48
-MN-06,Tom Emmer,R,R+10,-10.0,False,,-0.1,4.8,-9.61,R,3.3,96.7,Likely R,False,-9.71,5.16
-WA-04,Dan Newhouse,R,R+10,-10.0,True,Retiring,0.0,4.8,-9.66,R,4.5,95.5,Likely R,False,-9.66,5.4
-TX-38,Wesley Hunt,R,R+10,-10.0,True,Running for Senate,0.0,4.8,-9.66,R,4.1,95.9,Likely R,False,-9.66,5.4
-NY-21,Elise Stefanik,R,R+10,-10.0,True,Retiring,0.0,4.8,-9.66,R,2.5,97.5,Likely R,False,-9.87,5.15
-CA-05,Tom McClintock,R,R+9,-9.0,False,,2.0,4.8,-9.66,R,2.5,97.5,Likely R,False,-9.85,5.33
-TN-07,Mark Green,R,R+10,-10.0,True,Resigned,0.0,4.8,-9.66,R,2.4,97.6,Likely R,False,-9.66,5.04
-AZ-05,Andy Biggs,R,R+10,-10.0,True,Running for Governor,0.0,4.8,-9.66,R,4.4,95.6,Likely R,False,-9.5,5.57
-CA-45,Derek Tran,D,D+7,7.0,False,,-3.9,4.8,9.88,D,96.3,3.7,Likely D,False,9.84,5.39
-CA-25,Raul Ruiz,D,D+7,7.0,False,,-4.0,4.8,9.93,D,96.8,3.2,Likely D,False,9.99,5.37
-MI-11,Haley Stevens,D,D+9,9.0,True,Running for Senate,0.0,4.8,9.95,D,96.6,3.4,Likely D,False,9.9,5.4
-FL-05,John Rutherford,R,R+10,-10.0,False,,0.6,4.8,-9.97,R,2.6,97.4,Likely R,False,-9.97,5.36
-PA-11,Lloyd Smucker,R,R+11,-11.0,False,,-1.1,4.8,-10.13,R,3.8,96.2,Likely R,False,-9.84,5.35
-CA-07,Doris Matsui,D,D+9,9.0,False,,-0.5,4.8,10.2,D,96.2,3.8,Likely D,False,9.82,5.46
-UT-01,Blake Moore,R,D+12,12.0,False,,5.4,4.8,10.27,D,96.4,3.6,Likely D,True,10.1,5.49
-OK-01,Kevin Hern,R,R+11,-11.0,False,,-0.5,4.8,-10.44,R,2.7,97.3,Likely R,False,-10.26,5.14
-TX-05,Lance Gooden,R,R+12,-12.0,False,,-2.3,4.8,-10.55,R,2.7,97.3,Likely R,False,-10.5,5.45
-NC-06,Addison McDowell,R,R+11,-11.0,False,,0.0,4.8,-10.69,R,2.0,98.0,Likely R,False,-10.6,5.19
-GA-10,Mike Collins,R,R+11,-11.0,True,Running for Senate,0.0,4.8,-10.69,R,2.7,97.3,Likely R,False,-10.58,5.39
-WI-07,Tom Tiffany,R,R+11,-11.0,True,Running for Governor,0.0,4.8,-10.69,R,2.9,97.1,Likely R,False,-10.68,5.42
-IL-16,Darin LaHood,R,R+11,-11.0,False,,0.0,4.8,-10.69,R,2.8,97.2,Likely R,False,-10.68,5.39
-TX-21,Chip Roy,R,R+11,-11.0,True,Running for AG,0.0,4.8,-10.69,R,0.8,99.2,Safe R,False,-10.77,5.2
-SC-05,Ralph Norman,R,R+11,-11.0,True,Running for Governor,0.0,4.8,-10.69,R,2.2,97.8,Likely R,False,-10.62,5.32
-MN-03,Kelly Morrison,D,D+11,11.0,False,,2.4,4.8,10.78,D,98.3,1.7,Likely D,False,10.8,5.48
-TX-36,Brian Babin,R,R+12,-12.0,False,,-1.8,4.8,-10.8,R,2.2,97.8,Likely R,False,-10.66,5.37
-FL-08,Mike Haridopolos,R,R+11,-11.0,False,,0.2,4.8,-10.8,R,2.2,97.8,Likely R,False,-10.82,5.13
-FL-17,Greg Steube,R,R+11,-11.0,False,,0.5,4.8,-10.95,R,2.3,97.7,Likely R,False,-11.04,5.37
-CA-02,Jared Huffman,D,D+12,12.0,False,,4.0,4.8,10.99,D,97.8,2.2,Likely D,False,11.11,5.27
-IL-10,Brad Schneider,D,D+12,12.0,False,,4.0,4.8,10.99,D,97.5,2.5,Likely D,False,10.9,5.43
-NY-11,Nicole Malliotakis,R,R+10,-10.0,False,,2.6,4.8,-11.0,R,1.1,98.9,Likely R,False,-10.98,5.29
-CO-06,Jason Crow,D,D+11,11.0,False,,1.9,4.8,11.04,D,98.0,2.0,Likely D,False,11.02,5.22
-PA-16,Mike Kelly,R,R+11,-11.0,False,,0.7,4.8,-11.05,R,1.3,98.7,Likely R,False,-11.0,5.16
-FL-28,Carlos A. Giménez,R,R+10,-10.0,False,,2.7,4.8,-11.05,R,2.5,97.5,Likely R,False,-11.02,5.34
-NY-06,Grace Meng,D,D+6,6.0,False,,-8.4,4.8,11.16,D,98.2,1.8,Likely D,False,11.24,5.42
-WI-05,Scott Fitzgerald,R,R+11,-11.0,False,,1.0,4.8,-11.21,R,2.3,97.7,Likely R,False,-11.19,5.41
-NY-20,Paul Tonko,D,D+8,8.0,False,,-4.6,4.8,11.27,D,98.5,1.5,Likely D,False,11.17,5.13
-TX-31,John Carter,R,R+11,-11.0,False,,1.2,4.8,-11.31,R,1.8,98.2,Likely R,False,-11.22,5.45
-GA-07,Rich McCormick,R,R+11,-11.0,False,,1.4,4.8,-11.41,R,1.1,98.9,Likely R,False,-11.4,5.39
-MO-03,Bob Onder,R,R+13,-13.0,False,,-2.4,4.8,-11.53,R,1.4,98.6,Likely R,False,-11.39,5.6
-TX-26,Brandon Gill,R,R+11,-11.0,False,,1.8,4.8,-11.62,R,1.2,98.8,Likely R,False,-11.7,5.29
-MD-02,Johnny Olszewski,D,D+10,10.0,False,,-1.4,4.8,11.7,D,98.8,1.2,Likely D,False,11.87,5.26
-TX-10,Michael McCaul,R,R+12,-12.0,True,Retiring,0.0,4.8,-11.73,R,1.0,99.0,Likely R,False,-11.66,5.29
-NY-25,Joseph Morelle,D,D+10,10.0,False,,-1.5,4.8,11.75,D,98.6,1.4,Likely D,False,11.79,5.29
-TX-07,Lizzie Fletcher,D,D+12,12.0,False,,2.5,4.8,11.76,D,98.3,1.7,Likely D,False,11.85,5.44
-TX-12,Craig Goldman,R,R+11,-11.0,False,,2.2,4.8,-11.82,R,1.7,98.3,Likely R,False,-11.59,5.29
-KY-03,Morgan McGarvey,D,D+10,10.0,False,,-1.7,4.8,11.85,D,98.6,1.4,Likely D,False,11.69,5.3
-OH-14,David Joyce,R,R+10,-10.0,False,,4.3,4.8,-11.87,R,0.7,99.3,Safe R,False,-11.93,5.31
-MA-06,Seth Moulton,D,D+11,11.0,True,Running for Senate,0.0,4.8,12.01,D,99.0,1.0,Safe D,False,12.13,5.39
-MA-04,Jake Auchincloss,D,D+11,11.0,False,,0.0,4.8,12.01,D,99.2,0.8,Safe D,False,12.04,5.28
-ME-01,Chellie Pingree,D,D+11,11.0,False,,0.0,4.8,12.01,D,99.1,0.9,Safe D,False,12.25,5.49
-MA-03,Lori Trahan,D,D+11,11.0,False,,0.0,4.8,12.01,D,98.8,1.2,Likely D,False,11.93,5.55
-IN-02,Rudy Yakym,R,R+13,-13.0,False,,-1.2,4.8,-12.14,R,0.6,99.4,Safe R,False,-12.49,5.22
-VA-06,Ben Cline,R,R+12,-12.0,False,,1.1,4.8,-12.29,R,1.0,99.0,Likely R,False,-12.35,5.36
-CT-04,Jim Himes,D,D+13,13.0,False,,3.4,4.8,12.33,D,99.3,0.7,Safe D,False,12.28,5.3
-MD-03,Sarah Elfreth,D,D+12,12.0,False,,1.3,4.8,12.38,D,98.5,1.5,Likely D,False,12.34,5.36
-CA-31,Gil Cisneros,D,D+12,12.0,False,,1.3,4.8,12.38,D,98.8,1.2,Likely D,False,12.38,5.5
-KS-04,Ron Estes,R,R+12,-12.0,False,,1.3,4.8,-12.39,R,1.0,99.0,Likely R,False,-12.3,5.24
-SC-07,Russell Fry,R,R+12,-12.0,False,,1.4,4.8,-12.44,R,1.3,98.7,Likely R,False,-12.28,5.25
-OH-05,Bob Latta,R,R+12,-12.0,False,,1.5,4.8,-12.5,R,0.8,99.2,Safe R,False,-12.34,5.29
-MS-02,Bennie Thompson,D,D+11,11.0,False,,-1.0,4.8,12.52,D,99.3,0.7,Safe D,False,12.67,5.4
-CA-24,Salud Carbajal,D,D+13,13.0,False,,3.0,4.8,12.53,D,99.2,0.8,Safe D,False,12.67,5.39
-SC-06,Jim Clyburn,D,D+13,13.0,False,,3.0,4.8,12.53,D,99.2,0.8,Safe D,False,12.7,5.32
-GA-14,Marjorie Taylor Greene,R,R+19,-19.0,False,,-12.5,4.8,-12.54,R,1.1,98.9,Likely R,False,-12.61,5.24
-CA-13,Adam Gray,D,D+9,9.0,False,,-5.2,4.8,12.61,D,99.5,0.5,Safe D,False,12.45,5.41
-CA-39,Mark Takano,D,D+13,13.0,False,,2.8,4.8,12.64,D,98.5,1.5,Likely D,False,12.39,5.26
-TX-06,Jake Ellzey,R,R+14,-14.0,False,,-2.1,4.8,-12.71,R,1.0,99.0,Likely R,False,-12.7,5.34
-AZ-09,Paul Gosar,R,R+15,-15.0,False,,-4.0,4.8,-12.77,R,0.5,99.5,Safe R,False,-12.91,5.19
-FL-10,Maxwell Frost,D,D+13,13.0,False,,2.5,4.8,12.79,D,99.4,0.6,Safe D,False,12.79,5.13
-NJ-08,Rob Menendez,D,D+15,15.0,False,,6.3,4.8,12.91,D,99.3,0.7,Safe D,False,12.82,5.24
-CA-09,Josh Harder,D,D+12,12.0,False,,0.1,4.8,12.99,D,99.4,0.6,Safe D,False,12.98,5.52
-TX-04,Pat Fallon,R,R+13,-13.0,False,,0.5,4.8,-13.01,R,0.6,99.4,Safe R,False,-13.23,5.16
-TX-20,Joaquin Castro,D,D+12,12.0,False,,0.0,4.8,13.04,D,99.1,0.9,Safe D,False,13.21,5.26
-CA-35,Norma Torres,D,D+12,12.0,False,,0.0,4.8,13.04,D,99.2,0.8,Safe D,False,12.71,5.22
-NY-23,Nick Langworthy,R,R+10,-10.0,False,,6.7,4.8,-13.1,R,0.8,99.2,Safe R,False,-12.82,5.46
-MO-04,Mark Alford,R,R+13,-13.0,False,,0.9,4.8,-13.22,R,0.7,99.3,Safe R,False,-13.25,5.3
-NY-24,Claudia Tenney,R,R+11,-11.0,False,,5.0,4.8,-13.26,R,0.4,99.6,Safe R,False,-13.32,5.39
-FL-18,Scott Franklin,R,R+14,-14.0,False,,-1.0,4.8,-13.28,R,0.7,99.3,Safe R,False,-13.14,5.29
-ID-02,Mike Simpson,R,R+13,-13.0,False,,1.2,4.8,-13.37,R,0.6,99.4,Safe R,False,-13.59,5.51
-TX-27,Michael Cloud,R,R+14,-14.0,False,,-0.8,4.8,-13.38,R,0.1,99.9,Safe R,False,-13.49,5.13
-FL-01,Matt Gaetz,R,R+18,-18.0,False,,-8.5,4.8,-13.56,R,1.1,98.9,Likely R,False,-13.45,5.35
-WA-01,Suzan DelBene,D,D+15,15.0,False,,4.9,4.8,13.62,D,99.5,0.5,Safe D,False,13.49,5.31
-MS-03,Michael Guest,R,R+14,-14.0,False,,0.0,4.8,-13.79,R,0.3,99.7,Safe R,False,-13.6,5.52
-FL-19,Byron Donalds,R,R+14,-14.0,True,Running for Governor,0.0,4.8,-13.79,R,0.4,99.6,Safe R,False,-13.94,5.14
-FL-06,Michael Waltz,R,R+14,-14.0,True,Resigned - NSA,0.0,4.8,-13.79,R,0.7,99.3,Safe R,False,-13.72,5.32
-CA-38,Linda Sánchez,D,D+14,14.0,False,,2.4,4.8,13.87,D,99.2,0.8,Safe D,False,14.0,5.39
-AL-07,Terri Sewell,D,D+13,13.0,False,,0.2,4.8,13.97,D,99.3,0.7,Safe D,False,13.83,5.5
-NJ-12,Bonnie Watson Coleman,D,D+13,13.0,True,Retiring,0.0,4.8,14.07,D,99.4,0.6,Safe D,False,14.13,5.21
-MA-02,Jim McGovern,D,D+13,13.0,False,,0.0,4.8,14.07,D,98.9,1.1,Likely D,False,13.92,5.4
-MI-06,Debbie Dingell,D,D+12,12.0,False,,-2.0,4.8,14.07,D,99.6,0.4,Safe D,False,14.15,5.53
-AZ-07,Raúl Grijalva,D,D+13,13.0,True,Deceased,0.0,4.8,14.07,D,99.5,0.5,Safe D,False,14.01,5.35
-TX-17,Pete Sessions,R,R+14,-14.0,False,,0.7,4.8,-14.15,R,0.7,99.3,Safe R,False,-14.11,5.42
-WA-02,Rick Larsen,D,D+12,12.0,False,,-2.2,4.8,14.17,D,99.7,0.3,Safe D,False,14.22,5.27
-AR-03,Steve Womack,R,R+13,-13.0,False,,2.9,4.8,-14.25,R,0.3,99.7,Safe R,False,-14.18,5.49
-TX-03,Keith Self,R,R+14,-14.0,False,,1.0,4.8,-14.3,R,0.5,99.5,Safe R,False,-13.99,5.42
-LA-06,Cleo Fields,D,D+8,8.0,False,,-10.5,4.8,14.3,D,99.8,0.2,Safe D,False,14.2,5.36
-CT-01,John B. Larson,D,D+12,12.0,False,,-2.5,4.8,14.32,D,99.7,0.3,Safe D,False,14.35,5.29
-IN-09,Erin Houchin,R,R+15,-15.0,False,,-0.9,4.8,-14.36,R,0.5,99.5,Safe R,False,-14.4,5.28
-CA-33,Pete Aguilar,D,D+13,13.0,False,,-1.1,4.8,14.64,D,99.8,0.2,Safe D,False,14.59,5.3
-GA-03,Brian Jack,R,R+15,-15.0,False,,-0.3,4.8,-14.67,R,0.0,100.0,Safe R,False,-14.47,5.32
-MI-05,Tim Walberg,R,R+13,-13.0,False,,3.9,4.8,-14.76,R,0.1,99.9,Safe R,False,-14.82,5.44
-GA-11,Barry Loudermilk,R,R+12,-12.0,False,,6.0,4.8,-14.8,R,0.3,99.7,Safe R,False,-14.52,5.55
-AL-05,Dale Strong,R,R+15,-15.0,False,,0.0,4.8,-14.82,R,0.7,99.3,Safe R,False,-15.01,5.48
-MT-02,Troy Downing,R,R+15,-15.0,False,,0.0,4.8,-14.82,R,0.1,99.9,Safe R,False,-14.77,5.42
-CA-20,Vince Fong,R,R+15,-15.0,False,,0.0,4.8,-14.82,R,0.3,99.7,Safe R,False,-14.78,5.29
-SD-AL,Dusty Johnson,R,R+15,-15.0,True,Running for Governor,0.0,4.8,-14.82,R,0.2,99.8,Safe R,False,-14.86,5.46
-IA-04,Randy Feenstra,R,R+15,-15.0,True,Running for Governor,0.0,4.8,-14.82,R,0.0,100.0,Safe R,False,-14.73,5.23
-PA-14,Guy Reschenthaler,R,R+17,-17.0,False,,-4.0,4.8,-14.83,R,0.4,99.6,Safe R,False,-15.15,5.3
-OR-02,Cliff Bentz,R,R+14,-14.0,False,,2.1,4.8,-14.87,R,0.5,99.5,Safe R,False,-14.8,5.66
-OH-06,Michael Rulli,R,R+16,-16.0,False,,-1.5,4.8,-15.08,R,0.2,99.8,Safe R,False,-15.2,5.32
-TX-02,Dan Crenshaw,R,R+15,-15.0,False,,0.7,4.8,-15.18,R,0.1,99.9,Safe R,False,-15.07,5.31
-IN-06,Jefferson Shreve,R,R+16,-16.0,False,,-1.3,4.8,-15.19,R,0.1,99.9,Safe R,False,-15.06,5.5
-NJ-04,Chris Smith,R,R+14,-14.0,False,,2.9,4.8,-15.28,R,0.1,99.9,Safe R,False,-15.62,5.16
-NY-26,Tim Kennedy,D,D+11,11.0,False,,-6.7,4.8,15.45,D,99.9,0.1,Safe D,False,15.58,5.37
-GA-08,Austin Scott,R,R+15,-15.0,False,,1.3,4.8,-15.49,R,0.1,99.9,Safe R,False,-15.44,5.4
-MI-02,John Moolenaar,R,R+15,-15.0,False,,1.8,4.8,-15.75,R,0.1,99.9,Safe R,False,-15.36,5.33
-IN-04,Jim Baird,R,R+15,-15.0,False,,1.8,4.8,-15.75,R,0.0,100.0,Safe R,False,-15.93,5.31
-CA-28,Judy Chu,D,D+15,15.0,False,,0.6,4.8,15.83,D,99.9,0.1,Safe D,False,15.99,5.31
-TX-08,Morgan Luttrell,R,R+16,-16.0,True,Retiring,0.0,4.8,-15.85,R,0.1,99.9,Safe R,False,-15.76,5.43
-NC-02,Deborah Ross,D,D+15,15.0,False,,0.5,4.8,15.88,D,99.9,0.1,Safe D,False,16.02,5.49
-RI-01,Gabe Amo,D,D+12,12.0,False,,-6.3,4.8,16.27,D,99.8,0.2,Safe D,False,16.19,5.45
-PA-05,Mary Gay Scanlon,D,D+15,15.0,False,,-0.5,4.8,16.39,D,100.0,0.0,Safe D,False,16.33,5.44
-TX-14,Randy Weber,R,R+17,-17.0,False,,-0.5,4.8,-16.63,R,0.0,100.0,Safe R,False,-16.77,5.14
-GA-09,Andrew Clyde,R,R+17,-17.0,False,,-0.5,4.8,-16.63,R,0.1,99.9,Safe R,False,-16.75,5.24
-CA-32,Brad Sherman,D,D+17,17.0,False,,2.8,4.8,16.77,D,100.0,0.0,Safe D,False,16.8,5.37
-MO-06,Sam Graves,R,R+16,-16.0,False,,1.8,4.8,-16.78,R,0.1,99.9,Safe R,False,-16.69,5.36
-TN-06,John Rose,R,R+17,-17.0,True,Running for Governor,0.0,4.8,-16.89,R,0.0,100.0,Safe R,False,-16.82,5.29
-OK-04,Tom Cole,R,R+17,-17.0,False,,0.4,4.8,-17.09,R,0.0,100.0,Safe R,False,-17.17,5.19
-TX-16,Veronica Escobar,D,D+18,18.0,False,,4.0,4.8,17.18,D,99.8,0.2,Safe D,False,17.35,5.3
-IL-01,Jonathan Jackson,D,D+18,18.0,False,,3.8,4.8,17.28,D,100.0,0.0,Safe D,False,17.12,5.19
-KS-01,Tracey Mann,R,R+16,-16.0,False,,2.9,4.8,-17.34,R,0.0,100.0,Safe R,False,-17.55,5.39
-OH-12,Troy Balderson,R,R+17,-17.0,False,,0.9,4.8,-17.35,R,0.0,100.0,Safe R,False,-17.68,5.28
-CA-41,Ken Calvert,R,D+13,13.0,False,,-6.4,4.8,17.36,D,99.7,0.3,Safe D,True,17.02,5.18
-CA-10,Mark DeSaulnier,D,D+18,18.0,False,,3.3,4.8,17.54,D,100.0,0.0,Safe D,False,17.59,5.21
-MD-05,Steny Hoyer,D,D+17,17.0,False,,1.2,4.8,17.59,D,100.0,0.0,Safe D,False,17.58,5.32
-TN-03,Chuck Fleischmann,R,R+18,-18.0,False,,-0.6,4.8,-17.61,R,0.0,100.0,Safe R,False,-17.16,5.31
-MI-09,Lisa McClain,R,R+16,-16.0,False,,3.5,4.8,-17.65,R,0.0,100.0,Safe R,False,-17.79,5.48
-IN-03,Marlin Stutzman,R,R+16,-16.0,False,,3.5,4.8,-17.65,R,0.0,100.0,Safe R,False,-17.78,5.58
-TN-02,Tim Burchett,R,R+17,-17.0,False,,1.5,4.8,-17.66,R,0.0,100.0,Safe R,False,-17.77,5.38
-AL-06,Gary Palmer,R,R+20,-20.0,False,,-4.5,4.8,-17.67,R,0.0,100.0,Safe R,False,-17.62,5.34
-MN-04,Betty McCollum,D,D+18,18.0,False,,3.0,4.8,17.69,D,100.0,0.0,Safe D,False,17.89,5.33
-FL-26,Mario Díaz-Balart,R,R+16,-16.0,False,,3.6,4.8,-17.7,R,0.1,99.9,Safe R,False,-17.89,5.49
-VA-04,Jennifer McClellan,D,D+17,17.0,False,,0.9,4.8,17.74,D,100.0,0.0,Safe D,False,17.63,5.42
-MS-01,Trent Kelly,R,R+18,-18.0,False,,-0.1,4.8,-17.87,R,0.0,100.0,Safe R,False,-17.76,5.1
-KY-04,Thomas Massie,R,R+18,-18.0,False,,0.0,4.8,-17.92,R,0.1,99.9,Safe R,False,-18.14,5.37
-TX-25,Roger Williams,R,R+18,-18.0,False,,0.0,4.8,-17.92,R,0.0,100.0,Safe R,False,-18.26,5.52
-IL-03,Delia Ramirez,D,D+17,17.0,False,,0.2,4.8,18.1,D,99.9,0.1,Safe D,False,18.2,5.08
-IL-04,Chuy García,D,D+17,17.0,True,Retiring,0.0,4.8,18.2,D,99.9,0.1,Safe D,False,18.01,5.4
-VT-AL,Becca Balint,D,D+17,17.0,False,,-0.3,4.8,18.36,D,100.0,0.0,Safe D,False,18.27,5.32
-CA-46,Lou Correa,D,D+15,15.0,False,,-4.6,4.8,18.5,D,100.0,0.0,Safe D,False,18.42,5.35
-ND-AL,Julie Fedorchak,R,R+18,-18.0,False,,1.2,4.8,-18.53,R,0.0,100.0,Safe R,False,-18.59,5.35
-MN-07,Michelle Fischbach,R,R+18,-18.0,False,,1.3,4.8,-18.58,R,0.0,100.0,Safe R,False,-19.08,5.18
-UT-02,Celeste Maloy,R,R+19,-19.0,False,,-0.4,4.8,-18.74,R,0.0,100.0,Safe R,False,-18.8,5.21
-PA-09,Dan Meuser,R,R+19,-19.0,False,,-0.2,4.8,-18.85,R,0.0,100.0,Safe R,False,-18.82,5.55
-VA-11,Gerry Connolly,D,D+18,18.0,True,Deceased,0.0,4.8,19.23,D,99.8,0.2,Safe D,False,19.4,5.42
-IL-02,Robin Kelly,D,D+18,18.0,True,Running for Senate,0.0,4.8,19.23,D,100.0,0.0,Safe D,False,19.28,5.27
-FL-12,Gus Bilirakis,R,R+17,-17.0,False,,4.6,4.8,-19.25,R,0.0,100.0,Safe R,False,-19.12,5.49
-FL-24,Frederica Wilson,D,D+18,18.0,False,,-0.5,4.8,19.49,D,100.0,0.0,Safe D,False,19.51,5.19
-NY-14,Alexandria Ocasio-Cortez,D,D+19,19.0,False,,1.5,4.8,19.5,D,100.0,0.0,Safe D,False,19.16,5.38
-PA-15,Glenn Thompson,R,R+19,-19.0,False,,1.4,4.8,-19.67,R,0.0,100.0,Safe R,False,-19.64,5.42
-HI-02,Jill Tokuda,D,D+12,12.0,False,,-13.0,4.8,19.71,D,100.0,0.0,Safe D,False,19.47,5.22
-CA-18,Zoe Lofgren,D,D+22,22.0,False,,6.9,4.8,19.82,D,100.0,0.0,Safe D,False,19.7,5.51
-IN-08,Mark Messmer,R,R+18,-18.0,False,,4.0,4.8,-19.97,R,0.0,100.0,Safe R,False,-20.21,5.47
-IL-15,Mary Miller,R,R+20,-20.0,False,,0.0,4.8,-19.98,R,0.0,100.0,Safe R,False,-20.09,5.48
-CA-36,Ted Lieu,D,D+21,21.0,False,,4.5,4.8,20.02,D,100.0,0.0,Safe D,False,20.06,5.3
-OH-04,Jim Jordan,R,R+22,-22.0,False,,-3.9,4.8,-20.05,R,0.0,100.0,Safe R,False,-20.04,5.28
-TX-33,Marc Veasey,D,D+19,19.0,True,Retiring,0.0,4.8,20.27,D,99.9,0.1,Safe D,False,20.12,5.31
-IL-09,Jan Schakowsky,D,D+19,19.0,True,Retiring,0.0,4.8,20.27,D,100.0,0.0,Safe D,False,20.59,5.37
-WV-01,Carol Miller,R,R+22,-22.0,False,,-3.2,4.8,-20.4,R,0.0,100.0,Safe R,False,-20.54,5.15
-OH-03,Joyce Beatty,D,D+20,20.0,False,,1.6,4.8,20.48,D,100.0,0.0,Safe D,False,20.61,5.4
-TN-04,Scott DesJarlais,R,R+21,-21.0,False,,-1.0,4.8,-20.5,R,0.0,100.0,Safe R,False,-20.7,5.52
-CO-02,Joe Neguse,D,D+20,20.0,False,,1.4,4.8,20.58,D,100.0,0.0,Safe D,False,20.73,5.38
-CA-19,Jimmy Panetta,D,D+19,19.0,False,,-0.7,4.8,20.63,D,100.0,0.0,Safe D,False,20.71,5.43
-IL-05,Mike Quigley,D,D+19,19.0,False,,-0.7,4.8,20.63,D,100.0,0.0,Safe D,False,20.73,5.19
-AR-04,Bruce Westerman,R,R+20,-20.0,False,,1.7,4.8,-20.85,R,0.0,100.0,Safe R,False,-20.84,5.32
-VA-03,Bobby Scott,D,D+18,18.0,False,,-3.2,4.8,20.88,D,100.0,0.0,Safe D,False,20.86,5.47
-LA-05,Julia Letlow,R,R+18,-18.0,False,,5.8,4.8,-20.89,R,0.0,100.0,Safe R,False,-21.01,5.44
-KY-02,Brett Guthrie,R,R+20,-20.0,False,,2.1,4.8,-21.06,R,0.0,100.0,Safe R,False,-21.18,5.3
-WV-02,Riley Moore,R,R+20,-20.0,False,,2.2,4.8,-21.11,R,0.0,100.0,Safe R,False,-21.18,5.44
-IN-07,André Carson,D,D+21,21.0,False,,2.3,4.8,21.15,D,100.0,0.0,Safe D,False,21.45,5.15
-VA-09,Morgan Griffith,R,R+22,-22.0,False,,-1.4,4.8,-21.33,R,0.0,100.0,Safe R,False,-21.18,5.42
-LA-01,Steve Scalise,R,R+19,-19.0,False,,4.8,4.8,-21.41,R,0.0,100.0,Safe R,False,-21.58,5.26
-OH-02,David Taylor,R,R+21,-21.0,False,,0.8,4.8,-21.42,R,0.0,100.0,Safe R,False,-21.8,5.5
-MA-08,Stephen Lynch,D,D+15,15.0,False,,-11.0,4.8,21.78,D,100.0,0.0,Safe D,False,21.73,5.37
-ID-01,Russ Fulcher,R,R+22,-22.0,False,,-0.5,4.8,-21.79,R,0.0,100.0,Safe R,False,-21.84,5.28
-WI-02,Mark Pocan,D,D+21,21.0,False,,0.8,4.8,21.92,D,100.0,0.0,Safe D,False,22.06,5.32
-TN-08,David Kustoff,R,R+21,-21.0,False,,1.8,4.8,-21.94,R,0.0,100.0,Safe R,False,-22.04,5.24
-TX-11,August Pfluger,R,R+22,-22.0,False,,0.0,4.8,-22.05,R,0.0,100.0,Safe R,False,-22.11,5.39
-CA-08,John Garamendi,D,D+21,21.0,False,,0.5,4.8,22.07,D,100.0,0.0,Safe D,False,22.02,5.24
-IL-12,Mike Bost,R,R+22,-22.0,False,,0.1,4.8,-22.1,R,0.0,100.0,Safe R,False,-22.21,5.32
-MS-04,Mike Ezell,R,R+21,-21.0,False,,2.2,4.8,-22.14,R,0.0,100.0,Safe R,False,-22.05,5.55
-LA-02,Troy Carter,D,D+17,17.0,False,,-7.7,4.8,22.15,D,100.0,0.0,Safe D,False,22.26,5.55
-LA-03,Clay Higgins,R,R+22,-22.0,False,,0.2,4.8,-22.15,R,0.0,100.0,Safe R,False,-22.45,5.45
-CA-52,Juan Vargas,D,D+18,18.0,False,,-5.8,4.8,22.21,D,100.0,0.0,Safe D,False,22.25,5.24
-PA-02,Brendan Boyle,D,D+19,19.0,False,,-3.9,4.8,22.27,D,100.0,0.0,Safe D,False,22.26,5.52
-CA-17,Ro Khanna,D,D+25,25.0,False,,8.1,4.8,22.3,D,100.0,0.0,Safe D,False,22.13,5.39
-UT-04,Burgess Owens,R,R+21,-21.0,False,,2.9,4.8,-22.5,R,0.0,100.0,Safe R,False,-22.56,5.14
-OR-01,Suzanne Bonamici,D,D+20,20.0,False,,-2.5,4.8,22.58,D,100.0,0.0,Safe D,False,22.44,5.37
-GA-13,David Scott,D,D+21,21.0,False,,-0.6,4.8,22.64,D,100.0,0.0,Safe D,False,23.01,5.42
-CA-30,Laura Friedman,D,D+23,23.0,False,,3.2,4.8,22.75,D,100.0,0.0,Safe D,False,22.68,5.52
-NY-05,Gregory Meeks,D,D+24,24.0,False,,5.1,4.8,22.81,D,100.0,0.0,Safe D,False,22.92,5.26
-HI-01,Ed Case,D,D+13,13.0,False,,-17.1,4.8,22.85,D,100.0,0.0,Safe D,False,22.76,5.42
-NC-04,Valerie Foushee,D,D+21,21.0,False,,-1.2,4.8,22.95,D,100.0,0.0,Safe D,False,23.01,5.25
-WY-AL,Harriet Hageman,R,R+23,-23.0,True,Running for Senate,0.0,4.8,-23.08,R,0.0,100.0,Safe R,False,-22.86,5.16
-AL-03,Mike Rogers,R,R+23,-23.0,False,,0.0,4.8,-23.08,R,0.0,100.0,Safe R,False,-23.09,5.29
-OK-03,Frank Lucas,R,R+23,-23.0,False,,0.0,4.8,-23.08,R,0.0,100.0,Safe R,False,-22.97,5.15
-NY-16,George Latimer,D,D+18,18.0,False,,-7.6,4.8,23.13,D,100.0,0.0,Safe D,False,23.18,5.34
-PA-13,John Joyce,R,R+23,-23.0,False,,0.1,4.8,-23.13,R,0.0,100.0,Safe R,False,-22.91,5.3
-KY-01,James Comer,R,R+23,-23.0,False,,0.2,4.8,-23.18,R,0.0,100.0,Safe R,False,-23.34,5.51
-MI-12,Rashida Tlaib,D,D+21,21.0,False,,-1.7,4.8,23.2,D,100.0,0.0,Safe D,False,23.08,5.17
-WA-09,Adam Smith,D,D+22,22.0,False,,0.0,4.8,23.36,D,100.0,0.0,Safe D,False,23.44,5.13
-FL-20,Sheila Cherfilus-McCormick,D,D+22,22.0,False,,0.0,4.8,23.36,D,100.0,0.0,Safe D,False,23.52,5.44
-SC-03,Sheri Biggs,R,R+21,-21.0,False,,4.7,4.8,-23.43,R,0.0,100.0,Safe R,False,-23.63,5.45
-MI-13,Shri Thanedar,D,D+22,22.0,False,,-0.4,4.8,23.57,D,100.0,0.0,Safe D,False,23.27,5.35
-TX-13,Ronny Jackson,R,R+24,-24.0,False,,0.0,4.8,-24.11,R,0.0,100.0,Safe R,False,-23.77,5.45
-MO-07,Eric Burlison,R,R+24,-24.0,False,,0.2,4.8,-24.21,R,0.0,100.0,Safe R,False,-23.85,5.22
-NC-12,Alma Adams,D,D+23,23.0,False,,0.3,4.8,24.24,D,100.0,0.0,Safe D,False,24.43,5.41
-CA-14,Eric Swalwell,D,D+23,23.0,True,Running for Governor,0.0,4.8,24.39,D,100.0,0.0,Safe D,False,24.45,5.49
-AR-01,Rick Crawford,R,R+23,-23.0,False,,2.8,4.8,-24.51,R,0.0,100.0,Safe R,False,-24.31,5.26
-TX-29,Sylvia Garcia,D,D+21,21.0,False,,-4.7,4.8,24.74,D,100.0,0.0,Safe D,False,24.62,5.18
-AZ-03,Yassamin Ansari,D,D+22,22.0,False,,-2.9,4.8,24.85,D,100.0,0.0,Safe D,False,24.77,5.15
-TN-09,Steve Cohen,D,D+23,23.0,False,,-1.1,4.8,24.96,D,100.0,0.0,Safe D,False,24.84,5.14
-TX-19,Jodey Arrington,R,R+25,-25.0,True,Retiring,0.0,4.8,-25.14,R,0.0,100.0,Safe R,False,-25.01,5.17
-TX-01,Nathaniel Moran,R,R+25,-25.0,False,,0.0,4.8,-25.14,R,0.0,100.0,Safe R,False,-25.06,5.35
-GA-06,Lucy McBath,D,D+25,25.0,False,,2.4,4.8,25.23,D,100.0,0.0,Safe D,False,25.42,5.51
-MA-05,Katherine Clark,D,D+24,24.0,False,,0.0,4.8,25.43,D,100.0,0.0,Safe D,False,25.5,5.09
-OR-03,Maxine Dexter,D,D+24,24.0,False,,0.0,4.8,25.43,D,100.0,0.0,Safe D,False,25.31,5.42
-NY-09,Yvette Clarke,D,D+22,22.0,False,,-4.1,4.8,25.47,D,100.0,0.0,Safe D,False,25.29,5.51
-VA-08,Don Beyer,D,D+26,26.0,False,,3.8,4.8,25.54,D,100.0,0.0,Safe D,False,25.6,5.0
-OK-02,Josh Brecheen,R,R+28,-28.0,False,,-4.9,4.8,-25.72,R,0.0,100.0,Safe R,False,-25.4,5.3
-NY-08,Hakeem Jeffries,D,D+24,24.0,False,,-0.8,4.8,25.84,D,100.0,0.0,Safe D,False,25.86,5.44
-LA-04,Mike Johnson,R,R+26,-26.0,False,,0.0,4.8,-26.17,R,0.0,100.0,Safe R,False,-26.2,5.35
-MO-08,Jason Smith,R,R+27,-27.0,False,,-1.5,4.8,-26.44,R,0.0,100.0,Safe R,False,-26.66,5.3
-TX-30,Jasmine Crockett,D,D+25,25.0,True,Running for Senate,0.0,4.8,26.46,D,100.0,0.0,Safe D,False,26.42,5.33
-NY-07,Nydia Velázquez,D,D+25,25.0,True,Retiring,0.0,4.8,26.46,D,100.0,0.0,Safe D,False,26.36,5.26
-GA-04,Hank Johnson,D,D+27,27.0,False,,4.0,4.8,26.47,D,100.0,0.0,Safe D,False,26.74,5.31
-MN-05,Ilhan Omar,D,D+32,32.0,False,,13.1,4.8,26.96,D,100.0,0.0,Safe D,False,27.12,5.38
-AL-01,Barry Moore,R,R+27,-27.0,True,Running for Senate,0.0,4.8,-27.21,R,0.0,100.0,Safe R,False,-27.27,5.27
-TX-37,Lloyd Doggett,D,D+26,26.0,True,Retiring,0.0,4.8,27.49,D,100.0,0.0,Safe D,False,27.55,5.47
-CA-15,Kevin Mullin,D,D+29,29.0,False,,6.0,4.8,27.51,D,100.0,0.0,Safe D,False,27.18,5.23
-NJ-10,LaMonica McIver,D,D+27,27.0,False,,1.7,4.8,27.65,D,100.0,0.0,Safe D,False,27.83,5.48
-NY-15,Ritchie Torres,D,D+27,27.0,False,,1.2,4.8,27.91,D,100.0,0.0,Safe D,False,27.59,5.38
-WI-04,Gwen Moore,D,D+26,26.0,False,,-1.0,4.8,28.0,D,100.0,0.0,Safe D,False,28.17,5.38
-CA-16,Sam Liccardo,D,D+27,27.0,False,,0.0,4.8,28.52,D,100.0,0.0,Safe D,False,28.44,5.53
-NE-03,Adrian Smith,R,R+27,-27.0,False,,2.6,4.8,-28.54,R,0.0,100.0,Safe R,False,-28.43,5.46
-TN-01,Diana Harshbarger,R,R+29,-29.0,False,,-0.5,4.8,-29.01,R,0.0,100.0,Safe R,False,-29.11,5.42
-CO-01,Diana DeGette,D,D+29,29.0,False,,2.9,4.8,29.1,D,100.0,0.0,Safe D,False,28.91,5.4
-CA-29,Luz Rivas,D,D+27,27.0,False,,-1.6,4.8,29.34,D,100.0,0.0,Safe D,False,29.46,5.22
-MD-08,Jamie Raskin,D,D+30,30.0,False,,3.0,4.8,30.08,D,100.0,0.0,Safe D,False,29.95,5.4
-UT-03,Mike Kennedy,R,R+25,-25.0,False,,10.5,4.8,-30.53,R,0.0,100.0,Safe R,False,-30.61,5.15
-MO-01,Wesley Bell,D,D+27,27.0,False,,-4.1,4.8,30.63,D,100.0,0.0,Safe D,False,30.71,5.27
-CA-44,Nanette Barragan,D,D+29,29.0,False,,-3.2,4.8,32.23,D,100.0,0.0,Safe D,False,32.17,5.17
-KY-05,Hal Rogers,R,R+32,-32.0,False,,0.0,4.8,-32.37,R,0.0,100.0,Safe R,False,-32.41,5.46
-TX-18,Sylvester Turner,D,D+31,31.0,True,Deceased,0.0,4.8,32.65,D,100.0,0.0,Safe D,False,32.72,5.44
-OH-11,Shontel Brown,D,D+29,29.0,False,,-4.1,4.8,32.69,D,100.0,0.0,Safe D,False,32.78,5.41
-CA-43,Maxine Waters,D,D+34,34.0,False,,4.7,4.8,33.33,D,100.0,0.0,Safe D,False,32.89,5.18
-AL-04,Robert Aderholt,R,R+33,-33.0,False,,0.0,4.8,-33.4,R,0.0,100.0,Safe R,False,-33.25,5.38
-MD-07,Kweisi Mfume,D,D+31,31.0,False,,-2.8,4.8,34.09,D,100.0,0.0,Safe D,False,34.37,5.31
-NY-13,Adriano Espaillat,D,D+32,32.0,False,,-1.4,4.8,34.4,D,100.0,0.0,Safe D,False,34.55,5.42
-NY-12,Jerry Nadler,D,D+33,33.0,True,Retiring,0.0,4.8,34.71,D,100.0,0.0,Safe D,False,34.89,5.42
-NY-10,Dan Goldman,D,D+32,32.0,False,,-4.0,4.8,35.73,D,100.0,0.0,Safe D,False,35.47,5.5
-IL-07,Danny Davis,D,D+34,34.0,True,Retiring,0.0,4.8,35.75,D,100.0,0.0,Safe D,False,35.95,5.27
-MA-07,Ayanna Pressley,D,D+34,34.0,False,,0.0,4.8,35.75,D,100.0,0.0,Safe D,False,35.63,5.2
-CA-34,Jimmy Gomez,D,D+34,34.0,False,,0.0,4.8,35.75,D,100.0,0.0,Safe D,False,35.97,5.34
-WA-07,Pramila Jayapal,D,D+39,39.0,False,,9.1,4.8,36.24,D,100.0,0.0,Safe D,False,36.2,5.29
-GA-05,Nikema Williams,D,D+36,36.0,False,,1.1,4.8,37.25,D,100.0,0.0,Safe D,False,37.12,5.52
-CA-11,Nancy Pelosi,D,D+36,36.0,True,Retiring,0.0,4.8,37.81,D,100.0,0.0,Safe D,False,37.66,5.34
-CA-37,Sydney Kamlager-Dove,D,D+38,38.0,False,,0.0,4.8,39.87,D,100.0,0.0,Safe D,False,40.13,5.29
-MD-04,Glenn Ivey,D,D+39,39.0,False,,0.8,4.8,40.5,D,100.0,0.0,Safe D,False,40.44,5.42
-CA-12,Lateefah Simon,D,D+39,39.0,False,,0.0,4.8,40.91,D,100.0,0.0,Safe D,False,41.05,5.34
-PA-03,Dwight Evans,D,D+40,40.0,True,Retiring,0.0,4.8,41.94,D,100.0,0.0,Safe D,False,41.98,5.28
+MI-07,Tom Barrett,R,EVEN,0.0,False,,1.4,5.0,-0.02,R,49.0,51.0,Tilt R,False,-0.08,5.52
+NY-17,Mike Lawler,R,D+1,1.0,False,,3.8,5.0,-0.22,R,47.6,52.4,Tilt R,False,-0.45,5.22
+AZ-01,David Schweikert,R,R+1,-1.0,True,Running for Governor,0.0,5.0,-0.34,R,48.4,51.6,Tilt R,False,-0.18,5.3
+CO-08,Gabe Evans,R,EVEN,0.0,False,,2.1,5.0,-0.38,R,46.7,53.3,Tilt R,False,-0.34,5.31
+PA-07,Ryan MacKenzie,R,R+1,-1.0,False,,0.1,5.0,-0.39,R,43.6,56.4,Tilt R,False,-0.54,5.38
+OH-01,Greg Landsman,D,R+2,-2.0,False,,-1.7,5.0,-0.5,R,44.5,55.5,Tilt R,True,-0.55,5.24
+NJ-07,Thomas Kean Jr.,R,EVEN,0.0,False,,0.0,5.0,0.7,D,54.2,45.8,Tilt D,True,0.73,5.51
+MT-01,Ryan Zinke,R,R+5,-5.0,False,,-7.1,5.0,-0.82,R,40.1,59.9,Tilt R,False,-1.08,5.26
+AK-AL,Nick Begich,R,R+6,-6.0,False,,-9.1,5.0,-0.83,R,46.6,53.4,Tilt R,False,-0.67,5.21
+IA-03,Zach Nunn,R,R+2,-2.0,False,,-4.6,5.0,0.99,D,58.2,41.8,Tilt D,True,0.91,5.32
+CO-03,Jeff Hurd,R,R+5,-5.0,False,,-6.3,5.0,-1.23,R,40.7,59.3,Tilt R,False,-1.14,5.44
+VA-02,Jen Kiggans,R,EVEN,0.0,False,,-1.1,5.0,1.26,D,58.2,41.8,Tilt D,True,1.18,5.45
+FL-13,Anna Paulina Luna,R,R+5,-5.0,False,,-6.1,5.0,-1.34,R,40.8,59.2,Tilt R,False,-1.38,5.31
+WI-03,Derrick Van Orden,R,R+3,-3.0,False,,-7.3,5.0,1.34,D,57.9,42.1,Tilt D,True,1.12,5.3
+TX-34,Vicente Gonzalez,D,EVEN,0.0,False,,-1.3,5.0,1.36,D,60.5,39.5,Tilt D,False,1.49,5.35
+NY-03,Tom Suozzi,D,EVEN,0.0,False,,-1.9,5.0,1.67,D,63.1,36.9,Tilt D,False,1.74,5.2
+WA-03,Marie Gluesenkamp Perez,D,R+2,-2.0,False,,-6.0,5.0,1.71,D,64.1,35.9,Tilt D,False,1.75,5.31
+NV-03,Susie Lee,D,D+1,1.0,False,,-0.3,5.0,1.88,D,64.5,35.5,Tilt D,False,2.13,5.29
+CA-48,Darrell Issa,R,EVEN,0.0,False,,-2.4,5.0,1.93,D,65.6,34.4,Tilt D,True,2.09,5.36
+PA-08,Rob Bresnahan,R,R+4,-4.0,False,,-2.9,5.0,-1.94,R,34.6,65.4,Tilt R,False,-2.21,5.38
+OH-09,Marcy Kaptur,D,R+5,-5.0,False,,-4.8,5.0,-2.0,R,37.5,62.5,Tilt R,True,-1.96,5.58
+OH-13,Emilia Sykes,D,D+1,1.0,False,,-0.6,5.0,2.04,D,62.8,37.2,Tilt D,False,1.73,5.35
+FL-23,Jared Moskowitz,D,D+2,2.0,False,,1.3,5.0,2.09,D,64.3,35.7,Tilt D,False,2.18,5.33
+NC-01,Don Davis,D,R+4,-4.0,False,,-2.6,5.0,-2.1,R,33.7,66.3,Tilt R,True,-2.31,5.3
+PA-10,Scott Perry,R,R+3,-3.0,False,,-8.8,5.0,2.11,D,61.9,38.1,Tilt D,True,1.75,5.28
+NY-01,Nick LaLota,R,R+4,-4.0,False,,-2.5,5.0,-2.15,R,33.6,66.4,Tilt R,False,-2.16,5.54
+AZ-02,Eli Crane,R,R+7,-7.0,False,,-8.5,5.0,-2.17,R,35.2,64.8,Tilt R,False,-2.0,5.46
+WI-01,Bryan Steil,R,R+2,-2.0,False,,1.8,5.0,-2.29,R,31.9,68.1,Tilt R,False,-2.23,5.21
+NM-02,Gabe Vasquez,D,EVEN,0.0,False,,-3.1,5.0,2.29,D,66.0,34.0,Tilt D,False,2.14,5.41
+IA-01,Mariannette Miller-Meeks,R,R+4,-4.0,False,,-11.3,5.0,2.36,D,69.5,30.5,Tilt D,True,2.57,5.4
+MI-10,John James,R,R+3,-3.0,True,Running for Governor,0.0,5.0,-2.4,R,31.4,68.6,Tilt R,False,-2.52,5.23
+AZ-06,Juan Ciscomani,R,EVEN,0.0,False,,-3.7,5.0,2.59,D,66.4,33.6,Tilt D,True,2.63,5.51
+FL-07,Cory Mills,R,R+5,-5.0,False,,-3.4,5.0,-2.72,R,30.3,69.7,Tilt R,False,-2.81,5.39
+NH-01,Chris Pappas,D,D+2,2.0,True,Running for Senate,0.0,5.0,2.76,D,68.6,31.4,Tilt D,False,2.69,5.62
+VA-01,Rob Wittman,R,R+3,-3.0,False,,0.7,5.0,-2.76,R,28.3,71.7,Tilt R,False,-2.88,5.31
+PA-01,Brian Fitzpatrick,R,D+1,1.0,False,,8.8,5.0,-2.79,R,32.4,67.6,Tilt R,False,-2.44,5.34
+TX-28,Henry Cuellar,D,R+2,-2.0,False,,-8.3,5.0,2.89,D,71.1,28.9,Tilt D,False,2.93,5.26
+FL-15,Laurel Lee,R,R+5,-5.0,False,,-2.6,5.0,-3.13,R,26.6,73.4,Tilt R,False,-3.26,5.36
+CT-05,Jahana Hayes,D,D+3,3.0,False,,1.1,5.0,3.23,D,68.2,31.8,Tilt D,False,2.79,5.43
+CA-49,Mike Levin,D,D+5,5.0,False,,4.9,5.0,3.34,D,75.4,24.6,Lean D,False,3.46,5.25
+OR-06,Andrea Salinas,D,D+6,6.0,False,,6.9,5.0,3.35,D,74.5,25.5,Tilt D,False,3.37,5.24
+VA-07,Eugene Vindman,D,D+2,2.0,False,,-1.2,5.0,3.38,D,71.3,28.7,Tilt D,False,2.95,5.24
+MI-04,Bill Huizenga,R,R+3,-3.0,False,,2.0,5.0,-3.43,R,26.6,73.4,Tilt R,False,-3.43,5.4
+ME-02,Jared Golden,D,R+4,-4.0,True,Retiring,0.0,5.0,-3.43,R,26.5,73.5,Tilt R,True,-3.21,5.23
+IA-02,Ashley Hinson,R,R+4,-4.0,True,Running for Senate,0.0,5.0,-3.43,R,26.1,73.9,Tilt R,False,-3.38,5.19
+FL-04,Aaron Bean,R,R+5,-5.0,False,,-1.8,5.0,-3.54,R,26.4,73.6,Tilt R,False,-3.42,5.27
+IL-06,Sean Casten,D,D+3,3.0,False,,0.4,5.0,3.59,D,74.1,25.9,Tilt D,False,3.17,5.23
+NH-02,Maggie Goodlander,D,D+2,2.0,False,,-1.7,5.0,3.63,D,74.3,25.7,Tilt D,False,3.68,5.28
+TX-15,Monica De La Cruz,R,R+7,-7.0,False,,-5.6,5.0,-3.66,R,24.3,75.7,Lean R,False,-3.94,5.51
+OR-04,Val Hoyle,D,D+6,6.0,False,,6.3,5.0,3.66,D,74.8,25.2,Tilt D,False,3.86,5.48
+MN-02,Angie Craig,D,D+3,3.0,True,Running for Senate,0.0,5.0,3.79,D,74.6,25.4,Tilt D,False,3.64,5.49
+NE-02,Don Bacon,R,D+3,3.0,True,Retiring,0.0,5.0,3.79,D,75.8,24.2,Lean D,True,3.97,5.11
+NY-19,Josh Riley,D,D+1,1.0,False,,-4.1,5.0,3.83,D,77.3,22.7,Lean D,False,3.98,5.42
+CO-04,Lauren Boebert,R,R+9,-9.0,False,,-9.2,5.0,-3.87,R,24.7,75.3,Lean R,False,-3.98,5.55
+AZ-04,Greg Stanton,D,D+4,4.0,False,,1.7,5.0,3.95,D,77.4,22.6,Lean D,False,3.98,5.36
+NV-01,Dina Titus,D,D+2,2.0,False,,-2.4,5.0,3.99,D,75.8,24.2,Lean D,False,3.78,5.21
+NJ-09,Nellie Pou,D,D+2,2.0,False,,-2.4,5.0,3.99,D,76.1,23.9,Lean D,False,3.7,5.18
+NY-04,Laura Gillen,D,D+2,2.0,False,,-2.5,5.0,4.04,D,79.4,20.6,Lean D,False,4.14,5.3
+MI-08,Kristen McDonald Rivet,D,R+1,-1.0,False,,-8.6,5.0,4.08,D,76.3,23.7,Lean D,False,3.8,5.32
+IN-01,Frank J. Mrvan,D,D+1,1.0,False,,-4.6,5.0,4.09,D,76.1,23.9,Lean D,False,3.84,5.28
+WA-08,Kim Schrier,D,D+3,3.0,False,,-0.7,5.0,4.15,D,78.1,21.9,Lean D,False,4.11,5.48
+MD-06,April McClain Delaney,D,D+3,3.0,False,,-0.8,5.0,4.2,D,81.4,18.6,Lean D,False,4.63,5.25
+VA-10,Suhas Subramanyam,D,D+6,6.0,False,,5.1,5.0,4.27,D,77.0,23.0,Lean D,False,3.94,5.31
+AZ-08,Abe Hamadeh,R,R+8,-8.0,False,,-6.4,5.0,-4.28,R,20.7,79.3,Lean R,False,-4.11,5.4
+IL-17,Eric Sorensen,D,D+3,3.0,False,,-1.1,5.0,4.36,D,79.1,20.9,Lean D,False,4.24,5.38
+CA-06,Ami Bera,D,D+4,4.0,False,,0.9,5.0,4.36,D,78.4,21.6,Lean D,False,4.41,5.45
+OR-05,Janelle Bynum,D,D+4,4.0,False,,0.9,5.0,4.36,D,78.4,21.6,Lean D,False,4.56,5.58
+NV-04,Steven Horsford,D,D+2,2.0,False,,-3.2,5.0,4.4,D,78.4,21.6,Lean D,False,4.16,5.25
+TX-35,Greg Casar,D,R+3,-3.0,False,,3.9,5.0,-4.4,R,18.6,81.4,Lean R,True,-4.6,5.25
+TX-09,Al Green,D,R+5,-5.0,False,,0.0,5.0,-4.46,R,21.2,78.8,Lean R,True,-4.49,5.35
+IL-14,Lauren Underwood,D,D+3,3.0,False,,-1.3,5.0,4.46,D,79.0,21.0,Lean D,False,4.47,5.36
+PA-17,Chris Deluzio,D,D+3,3.0,False,,-1.8,5.0,4.71,D,79.5,20.5,Lean D,False,4.59,5.45
+CA-03,Kevin Kiley,R,D+5,5.0,False,,2.1,5.0,4.78,D,82.5,17.5,Lean D,True,4.87,5.43
+OH-15,Mike Carey,R,R+6,-6.0,False,,-1.3,5.0,-4.83,R,19.1,80.9,Lean R,False,-4.67,5.18
+MI-03,Hillary Scholten,D,D+4,4.0,False,,-0.4,5.0,5.03,D,82.9,17.1,Lean D,False,4.99,5.44
+FL-22,Lois Frankel,D,D+4,4.0,False,,-0.5,5.0,5.08,D,83.3,16.7,Lean D,False,5.07,5.24
+FL-25,Debbie Wasserman Schultz,D,D+5,5.0,False,,1.3,5.0,5.19,D,84.0,16.0,Lean D,False,5.22,5.69
+NJ-02,Jeff Van Drew,R,R+5,-5.0,False,,1.6,5.0,-5.29,R,15.4,84.6,Lean R,False,-5.31,5.27
+IL-11,Bill Foster,D,D+6,6.0,False,,3.1,5.0,5.3,D,84.0,16.0,Lean D,False,5.02,5.18
+NJ-05,Josh Gottheimer,D,D+2,2.0,False,,-5.1,5.0,5.38,D,84.3,15.7,Lean D,False,5.36,5.21
+SC-01,Nancy Mace,R,R+6,-6.0,True,Running for Governor,0.0,5.0,-5.5,R,16.1,83.9,Lean R,False,-5.57,5.54
+NC-03,Greg Murphy,R,R+6,-6.0,False,,0.0,5.0,-5.5,R,13.8,86.2,Lean R,False,-5.68,5.3
+TN-05,Andy Ogles,R,R+8,-8.0,False,,-3.9,5.0,-5.56,R,15.5,84.5,Lean R,False,-5.45,5.42
+CO-05,Jeff Crank,R,R+5,-5.0,False,,2.6,5.0,-5.8,R,13.0,87.0,Lean R,False,-6.01,5.25
+NJ-11,Mikie Sherrill,D,D+5,5.0,True,Resigned - Now Governor,0.0,5.0,5.86,D,86.6,13.4,Lean D,False,5.89,5.31
+IL-08,Raja Krishnamoorthi,D,D+5,5.0,True,Running for Senate,0.0,5.0,5.86,D,86.8,13.2,Lean D,False,5.94,5.48
+AR-02,French Hill,R,R+8,-8.0,False,,-3.3,5.0,-5.87,R,14.8,85.2,Lean R,False,-5.88,5.48
+FL-16,Vern Buchanan,R,R+7,-7.0,False,,-1.0,5.0,-6.02,R,11.8,88.2,Lean R,False,-6.23,5.29
+MN-01,Brad Finstad,R,R+6,-6.0,False,,1.1,5.0,-6.06,R,13.6,86.4,Lean R,False,-6.04,5.36
+MN-08,Pete Stauber,R,R+7,-7.0,False,,-0.9,5.0,-6.07,R,13.1,86.9,Lean R,False,-6.0,5.31
+NM-03,Teresa Leger Fernandez,D,D+3,3.0,False,,-4.5,5.0,6.1,D,87.5,12.5,Lean D,False,6.1,5.35
+WI-08,Tony Wied,R,R+8,-8.0,False,,-2.8,5.0,-6.12,R,11.2,88.8,Lean R,False,-6.3,5.3
+PA-06,Chrissy Houlahan,D,D+6,6.0,False,,1.5,5.0,6.12,D,88.2,11.8,Lean D,False,6.09,5.35
+MA-09,Bill Keating,D,D+6,6.0,False,,1.4,5.0,6.17,D,86.8,13.2,Lean D,False,6.14,5.27
+KS-03,Sharice Davids,D,D+2,2.0,False,,-6.7,5.0,6.2,D,84.7,15.3,Lean D,False,5.89,5.53
+NC-07,David Rouzer,R,R+8,-8.0,False,,-2.6,5.0,-6.23,R,10.9,89.1,Lean R,False,-6.55,5.49
+GA-02,Sanford Bishop,D,D+4,4.0,False,,-3.0,5.0,6.36,D,87.4,12.6,Lean D,False,6.33,5.16
+NC-09,Richard Hudson,R,R+8,-8.0,False,,-2.3,5.0,-6.38,R,12.3,87.7,Lean R,False,-6.45,5.37
+VA-05,John McGuire,R,R+6,-6.0,False,,1.8,5.0,-6.42,R,9.6,90.4,Likely R,False,-6.36,5.12
+CA-01,Doug LaMalfa,R,D+7,7.0,False,,2.9,5.0,6.43,D,87.9,12.1,Lean D,True,6.23,5.5
+NC-05,Virginia Foxx,R,R+9,-9.0,False,,-4.1,5.0,-6.49,R,11.9,88.1,Lean R,False,-6.27,5.32
+TX-24,Beth Van Duyne,R,R+7,-7.0,False,,0.0,5.0,-6.53,R,10.6,89.4,Lean R,False,-6.51,5.33
+NV-02,Mark Amodei,R,R+7,-7.0,False,,0.0,5.0,-6.53,R,11.1,88.9,Lean R,False,-6.43,5.17
+KY-06,Andy Barr,R,R+7,-7.0,True,Running for Senate,0.0,5.0,-6.53,R,10.3,89.7,Lean R,False,-6.83,5.38
+NJ-03,Herb Conaway,D,D+5,5.0,False,,-1.4,5.0,6.57,D,88.0,12.0,Lean D,False,6.37,5.31
+NE-01,Mike Flood,R,R+6,-6.0,False,,2.2,5.0,-6.63,R,10.9,89.1,Lean R,False,-6.67,5.38
+CA-47,Dave Min,D,D+6,6.0,False,,0.4,5.0,6.68,D,90.0,10.0,Likely D,False,6.71,5.23
+OH-07,Max Miller,R,R+7,-7.0,False,,0.6,5.0,-6.84,R,11.0,89.0,Lean R,False,-6.8,5.34
+CA-50,Scott Peters,D,D+8,8.0,False,,4.1,5.0,6.85,D,89.9,10.1,Lean D,False,6.77,5.24
+NY-18,Pat Ryan,D,D+2,2.0,False,,-8.1,5.0,6.91,D,89.0,11.0,Lean D,False,6.76,5.43
+AL-02,Shomari Figures,D,D+5,5.0,False,,-2.2,5.0,6.98,D,90.8,9.2,Likely D,False,6.82,5.14
+PA-12,Summer Lee,D,D+10,10.0,False,,7.8,5.0,7.01,D,89.6,10.4,Lean D,False,6.89,5.34
+FL-27,Maria Elvira Salazar,R,R+6,-6.0,False,,3.0,5.0,-7.04,R,9.5,90.5,Likely R,False,-6.91,5.37
+SC-02,Joe Wilson,R,R+7,-7.0,False,,1.1,5.0,-7.09,R,9.0,91.0,Likely R,False,-6.95,5.45
+OK-05,Stephanie Bice,R,R+9,-9.0,False,,-2.6,5.0,-7.26,R,7.9,92.1,Likely R,False,-7.13,5.04
+NM-01,Melanie Stansbury,D,D+7,7.0,False,,1.1,5.0,7.36,D,90.6,9.4,Likely D,False,7.07,5.33
+NY-02,Andrew Garbarino,R,R+6,-6.0,False,,3.7,5.0,-7.39,R,7.9,92.1,Likely R,False,-7.06,5.11
+NY-22,John Mannion,D,D+4,4.0,False,,-5.1,5.0,7.44,D,91.2,8.8,Likely D,False,7.2,5.19
+FL-09,Darren Soto,D,D+4,4.0,False,,-5.3,5.0,7.54,D,89.8,10.2,Lean D,False,7.4,5.62
+IL-13,Nikki Budzinski,D,D+5,5.0,False,,-3.3,5.0,7.55,D,90.3,9.7,Likely D,False,7.17,5.37
+GA-01,Buddy Carter,R,R+8,-8.0,True,Running for Senate,0.0,5.0,-7.56,R,6.8,93.2,Likely R,False,-7.77,5.22
+MO-02,Ann Wagner,R,R+9,-9.0,False,,-2.0,5.0,-7.57,R,6.9,93.1,Likely R,False,-7.6,5.29
+CT-02,Joe Courtney,D,D+4,4.0,False,,-5.8,5.0,7.8,D,92.2,7.8,Likely D,False,7.82,5.44
+RI-02,Seth Magaziner,D,D+4,4.0,False,,-5.8,5.0,7.8,D,93.0,7.0,Likely D,False,8.02,5.43
+CA-22,David Valadao,R,D+8,8.0,False,,2.2,5.0,7.82,D,93.9,6.1,Likely D,True,8.09,5.35
+NC-11,Chuck Edwards,R,R+9,-9.0,False,,-1.5,5.0,-7.82,R,6.8,93.2,Likely R,False,-7.57,5.2
+FL-11,Daniel Webster,R,R+8,-8.0,False,,0.6,5.0,-7.87,R,7.2,92.8,Likely R,False,-7.92,5.35
+GA-12,Rick Allen,R,R+7,-7.0,False,,2.7,5.0,-7.91,R,7.7,92.3,Likely R,False,-7.92,5.49
+FL-21,Brian Mast,R,R+7,-7.0,False,,2.7,5.0,-7.91,R,8.0,92.0,Likely R,False,-7.55,5.22
+CO-07,Brittany Pettersen,D,D+8,8.0,False,,2.0,5.0,7.93,D,92.5,7.5,Likely D,False,7.78,5.33
+CA-40,Young Kim,R,R+7,-7.0,False,,2.8,5.0,-7.96,R,7.4,92.6,Likely R,False,-7.84,5.47
+NJ-06,Frank Pallone,D,D+5,5.0,False,,-4.1,5.0,7.96,D,93.1,6.9,Likely D,False,7.81,5.33
+IN-05,Victoria Spartz,R,R+8,-8.0,False,,0.9,5.0,-8.02,R,8.3,91.7,Likely R,False,-7.38,5.34
+FL-14,Kathy Castor,D,D+5,5.0,False,,-4.3,5.0,8.06,D,94.0,6.0,Likely D,False,8.09,5.34
+CA-42,Robert Garcia,D,D+8,8.0,False,,1.7,5.0,8.08,D,92.4,7.6,Likely D,False,7.75,5.38
+CA-21,Jim Costa,D,D+10,10.0,False,,5.4,5.0,8.25,D,93.7,6.3,Likely D,False,8.32,5.48
+MD-01,Andy Harris,R,R+8,-8.0,False,,1.6,5.0,-8.38,R,6.0,94.0,Likely R,False,-8.34,5.36
+WA-10,Marilyn Strickland,D,D+9,9.0,False,,3.1,5.0,8.39,D,93.8,6.2,Likely D,False,8.28,5.27
+SC-04,William Timmons,R,R+11,-11.0,False,,-4.4,5.0,-8.4,R,5.6,94.4,Likely R,False,-8.39,5.28
+OH-08,Warren Davidson,R,R+10,-10.0,False,,-2.3,5.0,-8.44,R,5.5,94.5,Likely R,False,-8.46,5.34
+TX-22,Troy Nehls,R,R+9,-9.0,True,Retiring,0.0,5.0,-8.59,R,4.9,95.1,Likely R,False,-8.87,5.36
+FL-03,Kat Cammack,R,R+10,-10.0,False,,-2.0,5.0,-8.6,R,6.8,93.2,Likely R,False,-8.33,5.34
+TX-23,Tony Gonzales,R,R+7,-7.0,False,,4.2,5.0,-8.68,R,5.8,94.2,Likely R,False,-8.96,5.43
+CA-26,Julia Brownley,D,D+10,10.0,False,,4.5,5.0,8.71,D,95.1,4.9,Likely D,False,8.82,5.24
+FL-02,Neal Dunn,R,R+8,-8.0,False,,2.3,5.0,-8.74,R,5.5,94.5,Likely R,False,-8.66,5.29
+WI-06,Glenn Grothman,R,R+8,-8.0,False,,2.5,5.0,-8.84,R,4.5,95.5,Likely R,False,-8.71,5.25
+CA-23,Jay Obernolte,R,R+9,-9.0,False,,0.5,5.0,-8.85,R,4.2,95.8,Likely R,False,-8.88,5.23
+NC-13,Brad Knott,R,R+11,-11.0,False,,-3.5,5.0,-8.86,R,5.6,94.4,Likely R,False,-8.75,5.35
+CA-51,Sara Jacobs,D,D+10,10.0,False,,4.2,5.0,8.86,D,94.9,5.1,Likely D,False,9.06,5.33
+CA-04,Mike Thompson,D,D+9,9.0,False,,2.1,5.0,8.91,D,96.3,3.7,Likely D,False,8.86,5.33
+OH-10,Mike Turner,R,R+5,-5.0,False,,8.7,5.0,-8.93,R,4.6,95.4,Likely R,False,-8.87,5.23
+MA-01,Richard Neal,D,D+8,8.0,False,,0.0,5.0,8.95,D,95.5,4.5,Likely D,False,8.86,5.28
+MO-05,Emanuel Cleaver,D,R+9,-9.0,False,,0.7,5.0,-8.95,R,5.1,94.9,Likely R,True,-8.92,5.41
+CT-03,Rosa DeLauro,D,D+8,8.0,False,,-0.1,5.0,9.0,D,95.5,4.5,Likely D,False,8.74,5.27
+DE-AL,Sarah McBride,D,D+8,8.0,False,,-0.1,5.0,9.0,D,95.2,4.8,Likely D,False,9.26,5.38
+WA-06,Emily Randall,D,D+10,10.0,False,,3.9,5.0,9.01,D,94.8,5.2,Likely D,False,8.68,5.21
+NJ-01,Donald Norcross,D,D+10,10.0,False,,3.9,5.0,9.01,D,96.0,4.0,Likely D,False,9.04,5.35
+WA-05,Michael Baumgartner,R,R+5,-5.0,False,,8.9,5.0,-9.03,R,4.6,95.4,Likely R,False,-8.79,5.19
+PA-04,Madeleine Dean,D,D+8,8.0,False,,-0.3,5.0,9.11,D,95.5,4.5,Likely D,False,8.93,5.33
+NC-14,Tim Moore,R,R+11,-11.0,False,,-3.0,5.0,-9.12,R,5.4,94.6,Likely R,False,-9.02,5.34
+NC-10,Pat Harrigan,R,R+10,-10.0,False,,-0.9,5.0,-9.16,R,4.3,95.7,Likely R,False,-9.2,5.4
+NC-08,Mark Harris,R,R+11,-11.0,False,,-2.7,5.0,-9.27,R,4.6,95.4,Likely R,False,-9.52,5.41
+MI-01,Jack Bergman,R,R+11,-11.0,False,,-2.6,5.0,-9.32,R,3.0,97.0,Likely R,False,-9.44,5.13
+KS-02,Derek Schmidt,R,R+10,-10.0,False,,-0.4,5.0,-9.42,R,4.0,96.0,Likely R,False,-9.45,5.38
+TX-32,Julie Johnson,D,R+9,-9.0,False,,1.7,5.0,-9.46,R,4.8,95.2,Likely R,True,-8.97,5.23
+MN-06,Tom Emmer,R,R+10,-10.0,False,,-0.1,5.0,-9.57,R,4.2,95.8,Likely R,False,-9.56,5.35
+TX-38,Wesley Hunt,R,R+10,-10.0,True,Running for Senate,0.0,5.0,-9.62,R,3.7,96.3,Likely R,False,-9.35,5.28
+NY-21,Elise Stefanik,R,R+10,-10.0,True,Retiring,0.0,5.0,-9.62,R,3.3,96.7,Likely R,False,-9.47,5.27
+TN-07,Mark Green,R,R+10,-10.0,True,Resigned,0.0,5.0,-9.62,R,3.9,96.1,Likely R,False,-9.48,5.25
+CA-27,George Whitesides,D,D+8,8.0,False,,-1.3,5.0,9.62,D,96.0,4.0,Likely D,False,9.58,5.4
+CA-05,Tom McClintock,R,R+9,-9.0,False,,2.0,5.0,-9.62,R,3.0,97.0,Likely R,False,-9.53,5.34
+AZ-05,Andy Biggs,R,R+10,-10.0,True,Running for Governor,0.0,5.0,-9.62,R,3.0,97.0,Likely R,False,-9.45,5.0
+WA-04,Dan Newhouse,R,R+10,-10.0,True,Retiring,0.0,5.0,-9.62,R,4.2,95.8,Likely R,False,-9.4,5.4
+CA-45,Derek Tran,D,D+7,7.0,False,,-3.9,5.0,9.92,D,96.4,3.6,Likely D,False,9.95,5.49
+FL-05,John Rutherford,R,R+10,-10.0,False,,0.6,5.0,-9.93,R,2.8,97.2,Likely R,False,-10.07,5.38
+CA-25,Raul Ruiz,D,D+7,7.0,False,,-4.0,5.0,9.97,D,96.9,3.1,Likely D,False,9.81,5.35
+MI-11,Haley Stevens,D,D+9,9.0,True,Running for Senate,0.0,5.0,9.98,D,97.3,2.7,Likely D,False,9.82,5.3
+PA-11,Lloyd Smucker,R,R+11,-11.0,False,,-1.1,5.0,-10.09,R,3.0,97.0,Likely R,False,-10.32,5.28
+CA-07,Doris Matsui,D,D+9,9.0,False,,-0.5,5.0,10.24,D,97.0,3.0,Likely D,False,10.22,5.5
+UT-01,Blake Moore,R,D+12,12.0,False,,5.4,5.0,10.31,D,97.4,2.6,Likely D,True,10.4,5.29
+OK-01,Kevin Hern,R,R+11,-11.0,False,,-0.5,5.0,-10.4,R,2.1,97.9,Likely R,False,-10.38,5.29
+TX-05,Lance Gooden,R,R+12,-12.0,False,,-2.3,5.0,-10.51,R,2.6,97.4,Likely R,False,-10.32,5.44
+GA-10,Mike Collins,R,R+11,-11.0,True,Running for Senate,0.0,5.0,-10.66,R,2.9,97.1,Likely R,False,-10.73,5.52
+TX-21,Chip Roy,R,R+11,-11.0,True,Running for AG,0.0,5.0,-10.66,R,2.0,98.0,Likely R,False,-10.68,5.24
+NC-06,Addison McDowell,R,R+11,-11.0,False,,0.0,5.0,-10.66,R,2.7,97.3,Likely R,False,-10.74,5.45
+WI-07,Tom Tiffany,R,R+11,-11.0,True,Running for Governor,0.0,5.0,-10.66,R,2.4,97.6,Likely R,False,-10.73,5.31
+IL-16,Darin LaHood,R,R+11,-11.0,False,,0.0,5.0,-10.66,R,2.4,97.6,Likely R,False,-10.6,5.49
+SC-05,Ralph Norman,R,R+11,-11.0,True,Running for Governor,0.0,5.0,-10.66,R,1.5,98.5,Likely R,False,-10.96,5.37
+FL-08,Mike Haridopolos,R,R+11,-11.0,False,,0.2,5.0,-10.76,R,2.4,97.6,Likely R,False,-10.64,5.46
+TX-36,Brian Babin,R,R+12,-12.0,False,,-1.8,5.0,-10.77,R,2.1,97.9,Likely R,False,-10.91,5.43
+MN-03,Kelly Morrison,D,D+11,11.0,False,,2.4,5.0,10.82,D,97.7,2.3,Likely D,False,10.74,5.43
+FL-17,Greg Steube,R,R+11,-11.0,False,,0.5,5.0,-10.91,R,2.4,97.6,Likely R,False,-10.84,5.33
+NY-11,Nicole Malliotakis,R,R+10,-10.0,False,,2.6,5.0,-10.96,R,2.6,97.4,Likely R,False,-10.96,5.41
+FL-28,Carlos A. Giménez,R,R+10,-10.0,False,,2.7,5.0,-11.01,R,1.9,98.1,Likely R,False,-10.86,5.38
+PA-16,Mike Kelly,R,R+11,-11.0,False,,0.7,5.0,-11.02,R,1.6,98.4,Likely R,False,-11.26,5.32
+IL-10,Brad Schneider,D,D+12,12.0,False,,4.0,5.0,11.03,D,98.3,1.7,Likely D,False,11.39,5.35
+CA-02,Jared Huffman,D,D+12,12.0,False,,4.0,5.0,11.03,D,97.7,2.3,Likely D,False,10.69,5.51
+CO-06,Jason Crow,D,D+11,11.0,False,,1.9,5.0,11.07,D,97.9,2.1,Likely D,False,11.11,5.44
+WI-05,Scott Fitzgerald,R,R+11,-11.0,False,,1.0,5.0,-11.17,R,2.1,97.9,Likely R,False,-10.83,5.33
+NY-06,Grace Meng,D,D+6,6.0,False,,-8.4,5.0,11.2,D,98.2,1.8,Likely D,False,11.07,5.21
+TX-31,John Carter,R,R+11,-11.0,False,,1.2,5.0,-11.27,R,1.5,98.5,Likely R,False,-11.35,5.29
+NY-20,Paul Tonko,D,D+8,8.0,False,,-4.6,5.0,11.31,D,98.0,2.0,Likely D,False,11.3,5.35
+GA-07,Rich McCormick,R,R+11,-11.0,False,,1.4,5.0,-11.37,R,1.1,98.9,Likely R,False,-11.53,5.39
+MO-03,Bob Onder,R,R+13,-13.0,False,,-2.4,5.0,-11.49,R,1.4,98.6,Likely R,False,-11.51,5.43
+TX-26,Brandon Gill,R,R+11,-11.0,False,,1.8,5.0,-11.58,R,1.2,98.8,Likely R,False,-11.66,5.21
+TX-10,Michael McCaul,R,R+12,-12.0,True,Retiring,0.0,5.0,-11.69,R,1.4,98.6,Likely R,False,-11.84,5.32
+MD-02,Johnny Olszewski,D,D+10,10.0,False,,-1.4,5.0,11.73,D,98.0,2.0,Likely D,False,11.76,5.53
+NY-25,Joseph Morelle,D,D+10,10.0,False,,-1.5,5.0,11.79,D,98.6,1.4,Likely D,False,12.02,5.48
+TX-12,Craig Goldman,R,R+11,-11.0,False,,2.2,5.0,-11.79,R,1.1,98.9,Likely R,False,-12.03,5.28
+TX-07,Lizzie Fletcher,D,D+12,12.0,False,,2.5,5.0,11.8,D,98.2,1.8,Likely D,False,11.49,5.45
+OH-14,David Joyce,R,R+10,-10.0,False,,4.3,5.0,-11.83,R,0.8,99.2,Safe R,False,-12.07,5.42
+KY-03,Morgan McGarvey,D,D+10,10.0,False,,-1.7,5.0,11.89,D,98.6,1.4,Likely D,False,11.8,5.27
+ME-01,Chellie Pingree,D,D+11,11.0,False,,0.0,5.0,12.05,D,98.7,1.3,Likely D,False,12.0,5.47
+MA-04,Jake Auchincloss,D,D+11,11.0,False,,0.0,5.0,12.05,D,98.6,1.4,Likely D,False,11.83,5.46
+MA-03,Lori Trahan,D,D+11,11.0,False,,0.0,5.0,12.05,D,98.9,1.1,Likely D,False,12.08,5.16
+MA-06,Seth Moulton,D,D+11,11.0,True,Running for Senate,0.0,5.0,12.05,D,98.7,1.3,Likely D,False,12.23,5.45
+IN-02,Rudy Yakym,R,R+13,-13.0,False,,-1.2,5.0,-12.1,R,1.5,98.5,Likely R,False,-12.15,5.23
+VA-06,Ben Cline,R,R+12,-12.0,False,,1.1,5.0,-12.25,R,0.9,99.1,Safe R,False,-12.38,5.25
+KS-04,Ron Estes,R,R+12,-12.0,False,,1.3,5.0,-12.36,R,1.5,98.5,Likely R,False,-12.4,5.24
+CT-04,Jim Himes,D,D+13,13.0,False,,3.4,5.0,12.37,D,99.2,0.8,Safe D,False,12.0,5.29
+MD-03,Sarah Elfreth,D,D+12,12.0,False,,1.3,5.0,12.41,D,98.7,1.3,Likely D,False,12.28,5.38
+CA-31,Gil Cisneros,D,D+12,12.0,False,,1.3,5.0,12.41,D,98.9,1.1,Likely D,False,12.49,5.23
+SC-07,Russell Fry,R,R+12,-12.0,False,,1.4,5.0,-12.41,R,0.9,99.1,Safe R,False,-12.68,5.52
+OH-05,Bob Latta,R,R+12,-12.0,False,,1.5,5.0,-12.46,R,1.6,98.4,Likely R,False,-12.5,5.51
+GA-14,Marjorie Taylor Greene,R,R+19,-19.0,False,,-12.5,5.0,-12.5,R,1.4,98.6,Likely R,False,-12.62,5.39
+MS-02,Bennie Thompson,D,D+11,11.0,False,,-1.0,5.0,12.56,D,98.4,1.6,Likely D,False,12.24,5.5
+CA-24,Salud Carbajal,D,D+13,13.0,False,,3.0,5.0,12.57,D,99.4,0.6,Safe D,False,12.49,5.17
+SC-06,Jim Clyburn,D,D+13,13.0,False,,3.0,5.0,12.57,D,99.1,0.9,Safe D,False,12.8,5.23
+CA-13,Adam Gray,D,D+9,9.0,False,,-5.2,5.0,12.65,D,99.1,0.9,Safe D,False,12.38,5.22
+TX-06,Jake Ellzey,R,R+14,-14.0,False,,-2.1,5.0,-12.68,R,1.0,99.0,Likely R,False,-12.54,5.13
+CA-39,Mark Takano,D,D+13,13.0,False,,2.8,5.0,12.68,D,99.4,0.6,Safe D,False,12.66,5.38
+AZ-09,Paul Gosar,R,R+15,-15.0,False,,-4.0,5.0,-12.73,R,1.3,98.7,Likely R,False,-12.44,5.44
+FL-10,Maxwell Frost,D,D+13,13.0,False,,2.5,5.0,12.83,D,99.3,0.7,Safe D,False,13.07,5.32
+NJ-08,Rob Menendez,D,D+15,15.0,False,,6.3,5.0,12.94,D,99.7,0.3,Safe D,False,12.84,5.06
+TX-04,Pat Fallon,R,R+13,-13.0,False,,0.5,5.0,-12.98,R,0.7,99.3,Safe R,False,-12.78,5.36
+CA-09,Josh Harder,D,D+12,12.0,False,,0.1,5.0,13.03,D,98.9,1.1,Likely D,False,12.96,5.42
+NY-23,Nick Langworthy,R,R+10,-10.0,False,,6.7,5.0,-13.06,R,0.4,99.6,Safe R,False,-13.37,5.27
+TX-20,Joaquin Castro,D,D+12,12.0,False,,0.0,5.0,13.08,D,99.0,1.0,Safe D,False,12.91,5.32
+CA-35,Norma Torres,D,D+12,12.0,False,,0.0,5.0,13.08,D,99.5,0.5,Safe D,False,13.26,5.23
+MO-04,Mark Alford,R,R+13,-13.0,False,,0.9,5.0,-13.18,R,0.5,99.5,Safe R,False,-13.35,5.58
+NY-24,Claudia Tenney,R,R+11,-11.0,False,,5.0,5.0,-13.22,R,0.5,99.5,Safe R,False,-13.15,5.45
+FL-18,Scott Franklin,R,R+14,-14.0,False,,-1.0,5.0,-13.24,R,0.5,99.5,Safe R,False,-13.18,5.36
+ID-02,Mike Simpson,R,R+13,-13.0,False,,1.2,5.0,-13.34,R,0.3,99.7,Safe R,False,-13.62,5.46
+TX-27,Michael Cloud,R,R+14,-14.0,False,,-0.8,5.0,-13.34,R,0.5,99.5,Safe R,False,-13.24,5.12
+FL-01,Matt Gaetz,R,R+18,-18.0,False,,-8.5,5.0,-13.52,R,0.2,99.8,Safe R,False,-13.27,5.33
+WA-01,Suzan DelBene,D,D+15,15.0,False,,4.9,5.0,13.66,D,99.0,1.0,Safe D,False,13.65,5.28
+MS-03,Michael Guest,R,R+14,-14.0,False,,0.0,5.0,-13.75,R,0.4,99.6,Safe R,False,-13.81,5.38
+FL-06,Michael Waltz,R,R+14,-14.0,True,Resigned - NSA,0.0,5.0,-13.75,R,0.5,99.5,Safe R,False,-13.76,5.19
+FL-19,Byron Donalds,R,R+14,-14.0,True,Running for Governor,0.0,5.0,-13.75,R,0.5,99.5,Safe R,False,-13.71,5.27
+CA-38,Linda Sánchez,D,D+14,14.0,False,,2.4,5.0,13.91,D,99.5,0.5,Safe D,False,13.83,5.46
+AL-07,Terri Sewell,D,D+13,13.0,False,,0.2,5.0,14.01,D,99.5,0.5,Safe D,False,14.04,5.5
+NJ-12,Bonnie Watson Coleman,D,D+13,13.0,True,Retiring,0.0,5.0,14.11,D,99.7,0.3,Safe D,False,14.16,5.31
+TX-17,Pete Sessions,R,R+14,-14.0,False,,0.7,5.0,-14.11,R,0.0,100.0,Safe R,False,-13.93,5.11
+MA-02,Jim McGovern,D,D+13,13.0,False,,0.0,5.0,14.11,D,99.6,0.4,Safe D,False,14.16,5.43
+MI-06,Debbie Dingell,D,D+12,12.0,False,,-2.0,5.0,14.11,D,99.8,0.2,Safe D,False,14.11,5.27
+AZ-07,Raúl Grijalva,D,D+13,13.0,True,Deceased,0.0,5.0,14.11,D,99.5,0.5,Safe D,False,14.23,5.44
+AR-03,Steve Womack,R,R+13,-13.0,False,,2.9,5.0,-14.21,R,0.5,99.5,Safe R,False,-13.96,5.16
+WA-02,Rick Larsen,D,D+12,12.0,False,,-2.2,5.0,14.21,D,99.6,0.4,Safe D,False,14.36,5.36
+TX-03,Keith Self,R,R+14,-14.0,False,,1.0,5.0,-14.27,R,0.3,99.7,Safe R,False,-14.27,5.32
+IN-09,Erin Houchin,R,R+15,-15.0,False,,-0.9,5.0,-14.32,R,0.8,99.2,Safe R,False,-14.23,5.54
+LA-06,Cleo Fields,D,D+8,8.0,False,,-10.5,5.0,14.34,D,99.5,0.5,Safe D,False,14.3,5.51
+CT-01,John B. Larson,D,D+12,12.0,False,,-2.5,5.0,14.36,D,99.6,0.4,Safe D,False,14.26,5.19
+GA-03,Brian Jack,R,R+15,-15.0,False,,-0.3,5.0,-14.63,R,0.2,99.8,Safe R,False,-14.76,5.33
+CA-33,Pete Aguilar,D,D+13,13.0,False,,-1.1,5.0,14.68,D,99.7,0.3,Safe D,False,14.89,5.52
+MI-05,Tim Walberg,R,R+13,-13.0,False,,3.9,5.0,-14.72,R,0.2,99.8,Safe R,False,-14.36,5.16
+GA-11,Barry Loudermilk,R,R+12,-12.0,False,,6.0,5.0,-14.77,R,0.3,99.7,Safe R,False,-15.04,5.38
+CA-20,Vince Fong,R,R+15,-15.0,False,,0.0,5.0,-14.78,R,0.4,99.6,Safe R,False,-14.64,5.42
+MT-02,Troy Downing,R,R+15,-15.0,False,,0.0,5.0,-14.78,R,0.1,99.9,Safe R,False,-14.9,5.34
+IA-04,Randy Feenstra,R,R+15,-15.0,True,Running for Governor,0.0,5.0,-14.78,R,0.3,99.7,Safe R,False,-14.82,5.43
+SD-AL,Dusty Johnson,R,R+15,-15.0,True,Running for Governor,0.0,5.0,-14.78,R,0.1,99.9,Safe R,False,-14.58,5.26
+AL-05,Dale Strong,R,R+15,-15.0,False,,0.0,5.0,-14.78,R,0.3,99.7,Safe R,False,-14.58,5.23
+PA-14,Guy Reschenthaler,R,R+17,-17.0,False,,-4.0,5.0,-14.8,R,0.3,99.7,Safe R,False,-14.72,5.36
+OR-02,Cliff Bentz,R,R+14,-14.0,False,,2.1,5.0,-14.83,R,0.5,99.5,Safe R,False,-14.75,5.46
+OH-06,Michael Rulli,R,R+16,-16.0,False,,-1.5,5.0,-15.05,R,0.1,99.9,Safe R,False,-15.22,5.31
+TX-02,Dan Crenshaw,R,R+15,-15.0,False,,0.7,5.0,-15.14,R,0.3,99.7,Safe R,False,-15.13,5.36
+IN-06,Jefferson Shreve,R,R+16,-16.0,False,,-1.3,5.0,-15.15,R,0.0,100.0,Safe R,False,-15.17,5.33
+NJ-04,Chris Smith,R,R+14,-14.0,False,,2.9,5.0,-15.24,R,0.1,99.9,Safe R,False,-15.27,5.31
+GA-08,Austin Scott,R,R+15,-15.0,False,,1.3,5.0,-15.45,R,0.1,99.9,Safe R,False,-15.28,5.35
+NY-26,Tim Kennedy,D,D+11,11.0,False,,-6.7,5.0,15.48,D,100.0,0.0,Safe D,False,15.62,5.44
+IN-04,Jim Baird,R,R+15,-15.0,False,,1.8,5.0,-15.71,R,0.2,99.8,Safe R,False,-15.49,5.42
+MI-02,John Moolenaar,R,R+15,-15.0,False,,1.8,5.0,-15.71,R,0.1,99.9,Safe R,False,-15.58,5.42
+TX-08,Morgan Luttrell,R,R+16,-16.0,True,Retiring,0.0,5.0,-15.82,R,0.2,99.8,Safe R,False,-15.49,5.43
+CA-28,Judy Chu,D,D+15,15.0,False,,0.6,5.0,15.87,D,100.0,0.0,Safe D,False,16.03,5.3
+NC-02,Deborah Ross,D,D+15,15.0,False,,0.5,5.0,15.92,D,100.0,0.0,Safe D,False,16.35,5.23
+RI-01,Gabe Amo,D,D+12,12.0,False,,-6.3,5.0,16.31,D,99.8,0.2,Safe D,False,16.11,5.43
+PA-05,Mary Gay Scanlon,D,D+15,15.0,False,,-0.5,5.0,16.43,D,100.0,0.0,Safe D,False,16.53,5.29
+GA-09,Andrew Clyde,R,R+17,-17.0,False,,-0.5,5.0,-16.59,R,0.1,99.9,Safe R,False,-16.71,5.23
+TX-14,Randy Weber,R,R+17,-17.0,False,,-0.5,5.0,-16.59,R,0.0,100.0,Safe R,False,-16.72,5.28
+MO-06,Sam Graves,R,R+16,-16.0,False,,1.8,5.0,-16.74,R,0.2,99.8,Safe R,False,-16.39,5.5
+CA-32,Brad Sherman,D,D+17,17.0,False,,2.8,5.0,16.8,D,100.0,0.0,Safe D,False,17.0,5.3
+TN-06,John Rose,R,R+17,-17.0,True,Running for Governor,0.0,5.0,-16.85,R,0.1,99.9,Safe R,False,-17.06,5.44
+OK-04,Tom Cole,R,R+17,-17.0,False,,0.4,5.0,-17.05,R,0.0,100.0,Safe R,False,-17.18,5.37
+TX-16,Veronica Escobar,D,D+18,18.0,False,,4.0,5.0,17.22,D,99.9,0.1,Safe D,False,17.06,5.25
+KS-01,Tracey Mann,R,R+16,-16.0,False,,2.9,5.0,-17.3,R,0.0,100.0,Safe R,False,-17.39,5.39
+OH-12,Troy Balderson,R,R+17,-17.0,False,,0.9,5.0,-17.31,R,0.0,100.0,Safe R,False,-17.49,5.51
+IL-01,Jonathan Jackson,D,D+18,18.0,False,,3.8,5.0,17.32,D,100.0,0.0,Safe D,False,17.25,5.47
+CA-41,Ken Calvert,R,D+13,13.0,False,,-6.4,5.0,17.39,D,100.0,0.0,Safe D,True,17.38,5.19
+TN-03,Chuck Fleischmann,R,R+18,-18.0,False,,-0.6,5.0,-17.57,R,0.0,100.0,Safe R,False,-17.58,5.45
+CA-10,Mark DeSaulnier,D,D+18,18.0,False,,3.3,5.0,17.58,D,100.0,0.0,Safe D,False,17.77,5.32
+MI-09,Lisa McClain,R,R+16,-16.0,False,,3.5,5.0,-17.61,R,0.0,100.0,Safe R,False,-17.78,5.33
+IN-03,Marlin Stutzman,R,R+16,-16.0,False,,3.5,5.0,-17.61,R,0.1,99.9,Safe R,False,-17.72,5.47
+TN-02,Tim Burchett,R,R+17,-17.0,False,,1.5,5.0,-17.62,R,0.0,100.0,Safe R,False,-17.58,5.41
+MD-05,Steny Hoyer,D,D+17,17.0,False,,1.2,5.0,17.62,D,99.9,0.1,Safe D,False,17.5,5.48
+AL-06,Gary Palmer,R,R+20,-20.0,False,,-4.5,5.0,-17.64,R,0.1,99.9,Safe R,False,-17.43,5.28
+FL-26,Mario Díaz-Balart,R,R+16,-16.0,False,,3.6,5.0,-17.66,R,0.0,100.0,Safe R,False,-17.99,5.18
+MN-04,Betty McCollum,D,D+18,18.0,False,,3.0,5.0,17.73,D,100.0,0.0,Safe D,False,18.0,5.24
+VA-04,Jennifer McClellan,D,D+17,17.0,False,,0.9,5.0,17.78,D,100.0,0.0,Safe D,False,17.81,5.47
+MS-01,Trent Kelly,R,R+18,-18.0,False,,-0.1,5.0,-17.83,R,0.1,99.9,Safe R,False,-17.55,5.4
+TX-25,Roger Williams,R,R+18,-18.0,False,,0.0,5.0,-17.88,R,0.1,99.9,Safe R,False,-17.64,5.34
+KY-04,Thomas Massie,R,R+18,-18.0,False,,0.0,5.0,-17.88,R,0.0,100.0,Safe R,False,-18.09,5.28
+IL-03,Delia Ramirez,D,D+17,17.0,False,,0.2,5.0,18.14,D,99.9,0.1,Safe D,False,18.35,5.38
+IL-04,Chuy García,D,D+17,17.0,True,Retiring,0.0,5.0,18.24,D,99.9,0.1,Safe D,False,18.29,5.54
+VT-AL,Becca Balint,D,D+17,17.0,False,,-0.3,5.0,18.39,D,100.0,0.0,Safe D,False,18.4,5.29
+ND-AL,Julie Fedorchak,R,R+18,-18.0,False,,1.2,5.0,-18.5,R,0.0,100.0,Safe R,False,-18.43,5.27
+CA-46,Lou Correa,D,D+15,15.0,False,,-4.6,5.0,18.54,D,99.9,0.1,Safe D,False,18.4,5.19
+MN-07,Michelle Fischbach,R,R+18,-18.0,False,,1.3,5.0,-18.55,R,0.1,99.9,Safe R,False,-18.44,5.31
+UT-02,Celeste Maloy,R,R+19,-19.0,False,,-0.4,5.0,-18.71,R,0.0,100.0,Safe R,False,-18.58,5.37
+PA-09,Dan Meuser,R,R+19,-19.0,False,,-0.2,5.0,-18.81,R,0.1,99.9,Safe R,False,-18.84,5.32
+FL-12,Gus Bilirakis,R,R+17,-17.0,False,,4.6,5.0,-19.21,R,0.0,100.0,Safe R,False,-19.15,5.26
+VA-11,Gerry Connolly,D,D+18,18.0,True,Deceased,0.0,5.0,19.27,D,100.0,0.0,Safe D,False,19.53,5.37
+IL-02,Robin Kelly,D,D+18,18.0,True,Running for Senate,0.0,5.0,19.27,D,100.0,0.0,Safe D,False,19.42,5.38
+FL-24,Frederica Wilson,D,D+18,18.0,False,,-0.5,5.0,19.53,D,100.0,0.0,Safe D,False,19.57,5.45
+NY-14,Alexandria Ocasio-Cortez,D,D+19,19.0,False,,1.5,5.0,19.53,D,100.0,0.0,Safe D,False,19.56,5.29
+PA-15,Glenn Thompson,R,R+19,-19.0,False,,1.4,5.0,-19.63,R,0.0,100.0,Safe R,False,-19.72,5.34
+HI-02,Jill Tokuda,D,D+12,12.0,False,,-13.0,5.0,19.75,D,100.0,0.0,Safe D,False,19.72,5.3
+CA-18,Zoe Lofgren,D,D+22,22.0,False,,6.9,5.0,19.86,D,100.0,0.0,Safe D,False,19.94,5.31
+IN-08,Mark Messmer,R,R+18,-18.0,False,,4.0,5.0,-19.93,R,0.0,100.0,Safe R,False,-19.74,5.34
+IL-15,Mary Miller,R,R+20,-20.0,False,,0.0,5.0,-19.94,R,0.0,100.0,Safe R,False,-19.76,5.17
+OH-04,Jim Jordan,R,R+22,-22.0,False,,-3.9,5.0,-20.01,R,0.0,100.0,Safe R,False,-19.95,5.27
+CA-36,Ted Lieu,D,D+21,21.0,False,,4.5,5.0,20.06,D,100.0,0.0,Safe D,False,20.09,5.33
+IL-09,Jan Schakowsky,D,D+19,19.0,True,Retiring,0.0,5.0,20.3,D,100.0,0.0,Safe D,False,20.11,5.39
+TX-33,Marc Veasey,D,D+19,19.0,True,Retiring,0.0,5.0,20.3,D,100.0,0.0,Safe D,False,20.48,5.43
+WV-01,Carol Miller,R,R+22,-22.0,False,,-3.2,5.0,-20.37,R,0.0,100.0,Safe R,False,-20.72,5.2
+TN-04,Scott DesJarlais,R,R+21,-21.0,False,,-1.0,5.0,-20.46,R,0.0,100.0,Safe R,False,-20.55,5.2
+OH-03,Joyce Beatty,D,D+20,20.0,False,,1.6,5.0,20.51,D,100.0,0.0,Safe D,False,20.3,5.37
+CO-02,Joe Neguse,D,D+20,20.0,False,,1.4,5.0,20.62,D,100.0,0.0,Safe D,False,20.27,5.4
+IL-05,Mike Quigley,D,D+19,19.0,False,,-0.7,5.0,20.66,D,100.0,0.0,Safe D,False,20.69,5.47
+CA-19,Jimmy Panetta,D,D+19,19.0,False,,-0.7,5.0,20.66,D,100.0,0.0,Safe D,False,20.78,5.28
+AR-04,Bruce Westerman,R,R+20,-20.0,False,,1.7,5.0,-20.82,R,0.0,100.0,Safe R,False,-20.83,5.32
+LA-05,Julia Letlow,R,R+18,-18.0,False,,5.8,5.0,-20.86,R,0.0,100.0,Safe R,False,-20.68,5.48
+VA-03,Bobby Scott,D,D+18,18.0,False,,-3.2,5.0,20.91,D,100.0,0.0,Safe D,False,20.69,5.35
+KY-02,Brett Guthrie,R,R+20,-20.0,False,,2.1,5.0,-21.02,R,0.0,100.0,Safe R,False,-21.21,5.44
+WV-02,Riley Moore,R,R+20,-20.0,False,,2.2,5.0,-21.07,R,0.0,100.0,Safe R,False,-21.24,5.37
+IN-07,André Carson,D,D+21,21.0,False,,2.3,5.0,21.19,D,100.0,0.0,Safe D,False,21.16,5.43
+VA-09,Morgan Griffith,R,R+22,-22.0,False,,-1.4,5.0,-21.29,R,0.0,100.0,Safe R,False,-21.21,5.35
+LA-01,Steve Scalise,R,R+19,-19.0,False,,4.8,5.0,-21.37,R,0.0,100.0,Safe R,False,-21.44,5.34
+OH-02,David Taylor,R,R+21,-21.0,False,,0.8,5.0,-21.39,R,0.0,100.0,Safe R,False,-21.36,5.44
+ID-01,Russ Fulcher,R,R+22,-22.0,False,,-0.5,5.0,-21.75,R,0.0,100.0,Safe R,False,-21.72,5.61
+MA-08,Stephen Lynch,D,D+15,15.0,False,,-11.0,5.0,21.82,D,100.0,0.0,Safe D,False,22.11,5.34
+TN-08,David Kustoff,R,R+21,-21.0,False,,1.8,5.0,-21.9,R,0.0,100.0,Safe R,False,-21.86,5.31
+WI-02,Mark Pocan,D,D+21,21.0,False,,0.8,5.0,21.96,D,100.0,0.0,Safe D,False,21.85,5.26
+TX-11,August Pfluger,R,R+22,-22.0,False,,0.0,5.0,-22.01,R,0.0,100.0,Safe R,False,-22.13,5.21
+IL-12,Mike Bost,R,R+22,-22.0,False,,0.1,5.0,-22.06,R,0.0,100.0,Safe R,False,-21.99,5.5
+CA-08,John Garamendi,D,D+21,21.0,False,,0.5,5.0,22.11,D,100.0,0.0,Safe D,False,22.26,5.42
+MS-04,Mike Ezell,R,R+21,-21.0,False,,2.2,5.0,-22.11,R,0.0,100.0,Safe R,False,-22.14,5.4
+LA-03,Clay Higgins,R,R+22,-22.0,False,,0.2,5.0,-22.11,R,0.0,100.0,Safe R,False,-22.45,5.44
+LA-02,Troy Carter,D,D+17,17.0,False,,-7.7,5.0,22.19,D,100.0,0.0,Safe D,False,22.07,5.39
+CA-52,Juan Vargas,D,D+18,18.0,False,,-5.8,5.0,22.25,D,100.0,0.0,Safe D,False,22.25,5.22
+PA-02,Brendan Boyle,D,D+19,19.0,False,,-3.9,5.0,22.3,D,100.0,0.0,Safe D,False,22.44,5.34
+CA-17,Ro Khanna,D,D+25,25.0,False,,8.1,5.0,22.34,D,100.0,0.0,Safe D,False,22.62,5.45
+UT-04,Burgess Owens,R,R+21,-21.0,False,,2.9,5.0,-22.46,R,0.0,100.0,Safe R,False,-22.6,5.33
+OR-01,Suzanne Bonamici,D,D+20,20.0,False,,-2.5,5.0,22.62,D,100.0,0.0,Safe D,False,22.49,5.43
+GA-13,David Scott,D,D+21,21.0,False,,-0.6,5.0,22.68,D,100.0,0.0,Safe D,False,22.74,5.17
+CA-30,Laura Friedman,D,D+23,23.0,False,,3.2,5.0,22.79,D,100.0,0.0,Safe D,False,22.94,5.34
+NY-05,Gregory Meeks,D,D+24,24.0,False,,5.1,5.0,22.85,D,100.0,0.0,Safe D,False,23.0,5.33
+HI-01,Ed Case,D,D+13,13.0,False,,-17.1,5.0,22.88,D,100.0,0.0,Safe D,False,22.96,5.26
+NC-04,Valerie Foushee,D,D+21,21.0,False,,-1.2,5.0,22.98,D,100.0,0.0,Safe D,False,23.18,5.35
+AL-03,Mike Rogers,R,R+23,-23.0,False,,0.0,5.0,-23.04,R,0.0,100.0,Safe R,False,-23.3,5.38
+OK-03,Frank Lucas,R,R+23,-23.0,False,,0.0,5.0,-23.04,R,0.0,100.0,Safe R,False,-23.21,5.46
+WY-AL,Harriet Hageman,R,R+23,-23.0,True,Running for Senate,0.0,5.0,-23.04,R,0.0,100.0,Safe R,False,-23.12,5.53
+PA-13,John Joyce,R,R+23,-23.0,False,,0.1,5.0,-23.09,R,0.0,100.0,Safe R,False,-22.97,5.37
+KY-01,James Comer,R,R+23,-23.0,False,,0.2,5.0,-23.14,R,0.0,100.0,Safe R,False,-23.19,5.17
+NY-16,George Latimer,D,D+18,18.0,False,,-7.6,5.0,23.17,D,100.0,0.0,Safe D,False,23.52,5.31
+MI-12,Rashida Tlaib,D,D+21,21.0,False,,-1.7,5.0,23.24,D,100.0,0.0,Safe D,False,23.11,5.55
+SC-03,Sheri Biggs,R,R+21,-21.0,False,,4.7,5.0,-23.39,R,0.0,100.0,Safe R,False,-23.3,5.25
+WA-09,Adam Smith,D,D+22,22.0,False,,0.0,5.0,23.4,D,100.0,0.0,Safe D,False,23.17,5.2
+FL-20,Sheila Cherfilus-McCormick,D,D+22,22.0,False,,0.0,5.0,23.4,D,100.0,0.0,Safe D,False,23.48,5.26
+MI-13,Shri Thanedar,D,D+22,22.0,False,,-0.4,5.0,23.6,D,100.0,0.0,Safe D,False,23.91,5.47
+TX-13,Ronny Jackson,R,R+24,-24.0,False,,0.0,5.0,-24.07,R,0.0,100.0,Safe R,False,-24.07,5.56
+MO-07,Eric Burlison,R,R+24,-24.0,False,,0.2,5.0,-24.18,R,0.0,100.0,Safe R,False,-23.74,5.36
+NC-12,Alma Adams,D,D+23,23.0,False,,0.3,5.0,24.28,D,100.0,0.0,Safe D,False,24.34,5.42
+CA-14,Eric Swalwell,D,D+23,23.0,True,Running for Governor,0.0,5.0,24.43,D,100.0,0.0,Safe D,False,24.48,5.3
+AR-01,Rick Crawford,R,R+23,-23.0,False,,2.8,5.0,-24.48,R,0.0,100.0,Safe R,False,-24.62,5.29
+TX-29,Sylvia Garcia,D,D+21,21.0,False,,-4.7,5.0,24.78,D,100.0,0.0,Safe D,False,24.88,5.35
+AZ-03,Yassamin Ansari,D,D+22,22.0,False,,-2.9,5.0,24.89,D,100.0,0.0,Safe D,False,25.13,5.36
+TN-09,Steve Cohen,D,D+23,23.0,False,,-1.1,5.0,25.0,D,100.0,0.0,Safe D,False,24.77,5.2
+TX-01,Nathaniel Moran,R,R+25,-25.0,False,,0.0,5.0,-25.1,R,0.0,100.0,Safe R,False,-25.21,5.39
+TX-19,Jodey Arrington,R,R+25,-25.0,True,Retiring,0.0,5.0,-25.1,R,0.0,100.0,Safe R,False,-25.01,5.29
+GA-06,Lucy McBath,D,D+25,25.0,False,,2.4,5.0,25.26,D,100.0,0.0,Safe D,False,25.35,5.27
+MA-05,Katherine Clark,D,D+24,24.0,False,,0.0,5.0,25.46,D,100.0,0.0,Safe D,False,25.42,5.44
+OR-03,Maxine Dexter,D,D+24,24.0,False,,0.0,5.0,25.46,D,100.0,0.0,Safe D,False,25.06,5.25
+NY-09,Yvette Clarke,D,D+22,22.0,False,,-4.1,5.0,25.5,D,100.0,0.0,Safe D,False,25.44,5.29
+VA-08,Don Beyer,D,D+26,26.0,False,,3.8,5.0,25.58,D,100.0,0.0,Safe D,False,25.73,5.4
+OK-02,Josh Brecheen,R,R+28,-28.0,False,,-4.9,5.0,-25.69,R,0.0,100.0,Safe R,False,-25.81,5.14
+NY-08,Hakeem Jeffries,D,D+24,24.0,False,,-0.8,5.0,25.87,D,100.0,0.0,Safe D,False,26.03,5.22
+LA-04,Mike Johnson,R,R+26,-26.0,False,,0.0,5.0,-26.14,R,0.0,100.0,Safe R,False,-26.18,5.2
+MO-08,Jason Smith,R,R+27,-27.0,False,,-1.5,5.0,-26.4,R,0.0,100.0,Safe R,False,-26.35,5.23
+TX-30,Jasmine Crockett,D,D+25,25.0,True,Running for Senate,0.0,5.0,26.5,D,100.0,0.0,Safe D,False,26.34,5.53
+NY-07,Nydia Velázquez,D,D+25,25.0,True,Retiring,0.0,5.0,26.5,D,100.0,0.0,Safe D,False,26.39,5.32
+GA-04,Hank Johnson,D,D+27,27.0,False,,4.0,5.0,26.51,D,100.0,0.0,Safe D,False,26.14,5.27
+MN-05,Ilhan Omar,D,D+32,32.0,False,,13.1,5.0,27.0,D,100.0,0.0,Safe D,False,27.11,5.34
+AL-01,Barry Moore,R,R+27,-27.0,True,Running for Senate,0.0,5.0,-27.17,R,0.0,100.0,Safe R,False,-26.74,5.38
+TX-37,Lloyd Doggett,D,D+26,26.0,True,Retiring,0.0,5.0,27.53,D,100.0,0.0,Safe D,False,27.61,5.19
+CA-15,Kevin Mullin,D,D+29,29.0,False,,6.0,5.0,27.55,D,100.0,0.0,Safe D,False,27.5,5.46
+NJ-10,LaMonica McIver,D,D+27,27.0,False,,1.7,5.0,27.69,D,100.0,0.0,Safe D,False,27.8,5.13
+NY-15,Ritchie Torres,D,D+27,27.0,False,,1.2,5.0,27.94,D,100.0,0.0,Safe D,False,28.09,5.29
+WI-04,Gwen Moore,D,D+26,26.0,False,,-1.0,5.0,28.04,D,100.0,0.0,Safe D,False,27.88,5.39
+NE-03,Adrian Smith,R,R+27,-27.0,False,,2.6,5.0,-28.5,R,0.0,100.0,Safe R,False,-28.49,5.44
+CA-16,Sam Liccardo,D,D+27,27.0,False,,0.0,5.0,28.56,D,100.0,0.0,Safe D,False,28.39,5.26
+TN-01,Diana Harshbarger,R,R+29,-29.0,False,,-0.5,5.0,-28.98,R,0.0,100.0,Safe R,False,-29.12,5.38
+CO-01,Diana DeGette,D,D+29,29.0,False,,2.9,5.0,29.14,D,100.0,0.0,Safe D,False,29.26,5.38
+CA-29,Luz Rivas,D,D+27,27.0,False,,-1.6,5.0,29.38,D,100.0,0.0,Safe D,False,29.23,5.31
+MD-08,Jamie Raskin,D,D+30,30.0,False,,3.0,5.0,30.12,D,100.0,0.0,Safe D,False,30.12,5.15
+UT-03,Mike Kennedy,R,R+25,-25.0,False,,10.5,5.0,-30.49,R,0.0,100.0,Safe R,False,-30.46,5.24
+MO-01,Wesley Bell,D,D+27,27.0,False,,-4.1,5.0,30.66,D,100.0,0.0,Safe D,False,30.63,5.34
+CA-44,Nanette Barragan,D,D+29,29.0,False,,-3.2,5.0,32.27,D,100.0,0.0,Safe D,False,32.48,5.23
+KY-05,Hal Rogers,R,R+32,-32.0,False,,0.0,5.0,-32.33,R,0.0,100.0,Safe R,False,-32.56,5.42
+TX-18,Sylvester Turner,D,D+31,31.0,True,Deceased,0.0,5.0,32.69,D,100.0,0.0,Safe D,False,32.9,5.35
+OH-11,Shontel Brown,D,D+29,29.0,False,,-4.1,5.0,32.73,D,100.0,0.0,Safe D,False,33.11,5.16
+AL-04,Robert Aderholt,R,R+33,-33.0,False,,0.0,5.0,-33.36,R,0.0,100.0,Safe R,False,-33.51,5.57
+CA-43,Maxine Waters,D,D+34,34.0,False,,4.7,5.0,33.37,D,100.0,0.0,Safe D,False,33.27,5.16
+MD-07,Kweisi Mfume,D,D+31,31.0,False,,-2.8,5.0,34.12,D,100.0,0.0,Safe D,False,34.1,5.49
+NY-13,Adriano Espaillat,D,D+32,32.0,False,,-1.4,5.0,34.44,D,100.0,0.0,Safe D,False,34.43,5.47
+NY-12,Jerry Nadler,D,D+33,33.0,True,Retiring,0.0,5.0,34.75,D,100.0,0.0,Safe D,False,34.58,5.14
+NY-10,Dan Goldman,D,D+32,32.0,False,,-4.0,5.0,35.77,D,100.0,0.0,Safe D,False,35.84,5.4
+CA-34,Jimmy Gomez,D,D+34,34.0,False,,0.0,5.0,35.78,D,100.0,0.0,Safe D,False,35.58,5.43
+IL-07,Danny Davis,D,D+34,34.0,True,Retiring,0.0,5.0,35.78,D,100.0,0.0,Safe D,False,35.73,5.28
+MA-07,Ayanna Pressley,D,D+34,34.0,False,,0.0,5.0,35.78,D,100.0,0.0,Safe D,False,35.53,5.25
+WA-07,Pramila Jayapal,D,D+39,39.0,False,,9.1,5.0,36.28,D,100.0,0.0,Safe D,False,36.42,5.39
+GA-05,Nikema Williams,D,D+36,36.0,False,,1.1,5.0,37.28,D,100.0,0.0,Safe D,False,37.34,5.28
+CA-11,Nancy Pelosi,D,D+36,36.0,True,Retiring,0.0,5.0,37.85,D,100.0,0.0,Safe D,False,37.79,5.38
+CA-37,Sydney Kamlager-Dove,D,D+38,38.0,False,,0.0,5.0,39.91,D,100.0,0.0,Safe D,False,40.02,5.29
+MD-04,Glenn Ivey,D,D+39,39.0,False,,0.8,5.0,40.53,D,100.0,0.0,Safe D,False,40.57,5.23
+CA-12,Lateefah Simon,D,D+39,39.0,False,,0.0,5.0,40.94,D,100.0,0.0,Safe D,False,40.97,5.07
+PA-03,Dwight Evans,D,D+40,40.0,True,Retiring,0.0,5.0,41.98,D,100.0,0.0,Safe D,False,41.63,5.44
