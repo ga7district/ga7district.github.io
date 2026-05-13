@@ -169,7 +169,7 @@ def main():
     print()
 
     # Step 1: Scrape Generic Ballot
-    generic_ballot = scrape_generic_ballot()
+    generic_ballot = 6.6
 
     # Step 2: Run forecast
     run_forecast(generic_ballot)
