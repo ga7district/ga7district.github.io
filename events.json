@@ -100,16 +100,6 @@
     "description": "Join us for a ribbon cutting to celebrate Resonant Clinical Solutions. Friday, August 28 at 11:30 AM 4000 Chamblee Rd Ste 100 Oakwood, GA 30566 230 E.E. Butler Parkway Gainesville, GA 30501 | Phone: (770) 532-6206"
   },
   {
-    "title": "The Crow's Nest",
-    "start": "2026-08-28T19:00:00",
-    "end": null,
-    "allDay": false,
-    "location": "",
-    "url": "https://members.dlcchamber.org/events/details/the-crow-s-nest-87319",
-    "source": "DLC Chamber",
-    "description": "The Crow's Nest Get ready to set sail on a one-of-a-kind theatrical adventure with The Crow's Nest , an original children's production making its debut at the Historic Holly Theatre! Written and directed by Halli Rider and Ansleigh Funk —two talented artists who have grown up in the Holly Theatre family through productions like Seussical Kids , Winnie the Pooh Kids , The Little Red Hen , A Year With Frog and Toad Kids , and many more—this delightful new show is filled with humor, heart, and high-seas adventure. Join the quirky Crow Crew as they navigate life aboard their ship. When the newest"
-  },
-  {
     "title": "Martini Monday",
     "start": "2026-08-31T00:00:00",
     "end": null,
@@ -198,6 +188,26 @@
     "url": "https://members.dlcchamber.org/events/details/karaoke-night-at-shenanigans-irish-pub-09-02-2026-82367",
     "source": "DLC Chamber",
     "description": "Karaoke Night at Shenanigans Irish Pub! Join us at the Pub each week for Wednesday Night Karaoke with Melissa Little! Shenanigans is open Wednesday-Sunday. Every Wednesday Karaoke at 6:30. Every Thursday Trivia Night at 7 & 8pm. Concerts every Fri & Sat night 6:30-9:30pm with rotating performers! Every Saturday 1-4pm with Tom and Juli. Wing Night every Sunday 4-9pm. Brunch every Sunday 11am-2pm. Regular menu all day! WE NOW OFFER SUNDAY BRUNCH! Join us 11am on Sunday for the Irish Breakfast that'll have you saying 'Top O' the Morning to Ya!' Check out our Brunch Menu here. CHECK OUR SOCIAL MED"
+  },
+  {
+    "title": "Planet Acorn's The Game Show Dahlonega",
+    "start": "2026-09-02T19:00:00",
+    "end": null,
+    "allDay": false,
+    "location": "",
+    "url": "https://members.dlcchamber.org/events/details/planet-acorn-s-the-game-show-dahlonega-87320",
+    "source": "DLC Chamber",
+    "description": "Planet Acorn's The Game Show Dahlonega Planet Acorn's The Game Show Dahlonega is a one-of-a-kind live entertainment experience where the audience isn't just watching the fun—they're part of it. Hosted by local storyteller and entertainer Bobby Youngblood, each show features friendly competition between local businesses, nonprofits, first responders, schools, or community groups through a series of hilarious games, unexpected challenges, and audience participation. Inspired by the energy of classic television game shows while celebrating the unique personalities of Dahlonega, every performance"
+  },
+  {
+    "title": "The Game Show Dahlonega",
+    "start": "2026-09-02T19:00:00",
+    "end": null,
+    "allDay": false,
+    "location": "",
+    "url": "https://members.dlcchamber.org/events/details/the-game-show-dahlonega-87302",
+    "source": "DLC Chamber",
+    "description": "The Game Show Dahlonega Get ready for an evening of laughter, friendly competition, and hometown fun as Planet Acorn's The Game Show Dahlonega begins at the Historic Holly Theater on Wednesday, September 2 ! Cheer on local contestants as they compete in an interactive game show packed with surprises, audience participation, and plenty of community spirit. Competing teams and ticket information will be announced soon , so mark your calendar now and stay tuned for more details. We can't wait to see you, your friends and family of all ages at the Holly for another unforgettable night of family-fr"
   },
   {
     "title": "South Hall Business Coalition - Michelin Raceway Road Atlanta",
@@ -560,16 +570,6 @@
     "description": "119th Annual Gala May 13, 2027 6:00 Cocktail Reception | 7:30 Dinner & Program Ramsey Conference Center at Lanier Technical College 2535 Lanier Tech Dr More Details to come! 230 E.E. Butler Parkway Gainesville, GA 30501 | Phone: (770) 532-6206"
   },
   {
-    "title": "Broadway Cabaret",
-    "start": null,
-    "end": null,
-    "allDay": false,
-    "location": "406 East Main Street Suite A2 DAHLONEGA GA 30533",
-    "url": "https://members.dlcchamber.org/events/details/broadway-cabaret-87308",
-    "source": "DLC Chamber",
-    "description": "Broadway Cabaret Come see the Best of Broadway! Musical numbers from your favorite Broadway shows, performed by our stellar vocalists! Set a Reminder Enter your email address below to receive a reminder message. Email address Select the amount of Days before the event -- Select Days Before Event -- 1 Day 2 Days 3 Days 1 Week Captcha Validation Please complete the Captcha Submit Date and Time Friday Aug 21, 2026 Sunday Aug 30, 2026 August 21st, 7:30pm August 22nd, 7:30pm August 23rd, 3:00pm August 28th, 7:30pm August 29th, 7:30pm August 30th, 3:00pm Location The Menagerie Theatre and Event Cent"
-  },
-  {
     "title": "Contact Us",
     "start": null,
     "end": null,
@@ -606,6 +606,16 @@
     "allDay": false,
     "location": "",
     "url": "https://web.focochamber.org/events/Forsyth-County-Leadership-Lab-9325/details",
+    "source": "Forsyth County Chamber",
+    "description": "Visit Us : 212 Webb Street Cumming, GA 30040"
+  },
+  {
+    "title": "Human Resource Council Q4",
+    "start": null,
+    "end": null,
+    "allDay": false,
+    "location": "",
+    "url": "https://web.focochamber.org/events/Human-Resource-Council-Q4-9332/details",
     "source": "Forsyth County Chamber",
     "description": "Visit Us : 212 Webb Street Cumming, GA 30040"
   },
