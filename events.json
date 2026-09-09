@@ -50,16 +50,6 @@
     "description": "About the presentation: Small businesses may fail to scale due to lack of access to resources. Often times, partnering with local technical colleges and universities is not included in discussions when exploring options to scale a business. However, technical colleges and universities are a good resource for small businesses seeking talent, development, and funding support. This session will highlight various ways that small businesses can expand capabilities by partnering with higher education institutions to build a talent pipeline, provide upskilling opportunities for current employees, and to pursue research and grant funding. About the speaker: Dr. Shatrela Washington-Hubbard serves as the Swinton A. Griffith III Dean of the Jacobs College of Business & Media at Brenau University. She holds an earned doctor of philosophy in learning, leadership, and organization development from the University of Georgia. Her professional experience includes industry experience in the fields of human resources and education. Dr. Washington-Hubbard’s research agenda focuses on topics in entrepreneurship, experiential learning, and career development. 8:15 - 8:30 AM Networking 8:30 - 9:30 AM Sem"
   },
   {
-    "title": "Find your Bargains at the Locally Crafted Market & Dahlonega Baby Boutique",
-    "start": "2026-09-08T10:00:00",
-    "end": null,
-    "allDay": false,
-    "location": "",
-    "url": "https://members.dlcchamber.org/events/details/find-your-bargains-at-the-locally-crafted-market-dahlonega-baby-boutique-09-08-2026-85299",
-    "source": "DLC Chamber",
-    "description": "Find your Bargains at the Locally Crafted Market & Dahlonega Baby Boutique Love Unique and Hand-Crafted Items? Come see what is made LOCALLY at the Locally Crafted Market! Shop to help moms and babies at local non-profit (NGPSC) while supporting local craftsmen/artists. Art and gifts of all types. Check website calendar (Locally Crafted Market) or the Facebook page for different events or just stop by. Located within 1/2 mile of Dahlonega Square - rental space cost for vendors much lower than on square so cost of items they sell are lower too - savings passed on to you (bargains)! New addition"
-  },
-  {
     "title": "Network Over Coffee - Spec Event Center",
     "start": "2026-09-09T09:00:00",
     "end": null,
@@ -128,6 +118,16 @@
     "url": "https://members.ghcc.com/events/Details/ribbon-cutting-gardens-of-gainesville-1844312",
     "source": "GHCC",
     "description": "Join us for a ribbon cutting to celebrate Gardens of Gainesville. Friday, September 11 at 1:00 PM 230 E.E. Butler Parkway Gainesville, GA 30501 | Phone: (770) 532-6206"
+  },
+  {
+    "title": "Join us for the Community Health Day!",
+    "start": "2026-09-12T00:00:00",
+    "end": null,
+    "allDay": false,
+    "location": "",
+    "url": "https://members.dlcchamber.org/events/details/join-us-for-the-community-health-day-87335",
+    "source": "DLC Chamber",
+    "description": "Join us for the Community Health Day! Set a Reminder Enter your email address below to receive a reminder message. Email address Select the amount of Days before the event -- Select Days Before Event -- 1 Day 2 Days 3 Days 1 Week Captcha Validation Please complete the Captcha Submit Date and Time Saturday Sep 12, 2026 Set a Reminder Enter your email address below to receive a reminder message. Email address Select the amount of Days before the event -- Select Days Before Event -- 1 Day 2 Days 3 Days 1 Week Captcha Validation Please complete the Captcha Submit Business Directory Events Calendar"
   },
   {
     "title": "Find your Bargains at the Locally Crafted Market & Dahlonega Baby Boutique",
@@ -500,6 +500,16 @@
     "description": "Visit Us : 212 Webb Street Cumming, GA 30040"
   },
   {
+    "title": "2026 Transportation Summit",
+    "start": null,
+    "end": null,
+    "allDay": false,
+    "location": "",
+    "url": "https://web.focochamber.org/events/2026-Transportation-Summit-9336/details",
+    "source": "Forsyth County Chamber",
+    "description": "Visit Us : 212 Webb Street Cumming, GA 30040"
+  },
+  {
     "title": "Forsyth County Leadership Lab",
     "start": null,
     "end": null,
@@ -555,7 +565,7 @@
     "end": null,
     "allDay": false,
     "location": "",
-    "url": "https://web.focochamber.org/events/Power-Networking-Lunch-9303/details",
+    "url": "https://web.focochamber.org/events/Power-Networking-Lunch-9306/details",
     "source": "Forsyth County Chamber",
     "description": "Visit Us : 212 Webb Street Cumming, GA 30040"
   },
