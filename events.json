@@ -80,16 +80,6 @@
     "description": "Join us for a ribbon cutting to celebrate Gardens of Gainesville. Friday, September 11 at 1:00 PM 230 E.E. Butler Parkway Gainesville, GA 30501 | Phone: (770) 532-6206"
   },
   {
-    "title": "Martini Monday",
-    "start": "2026-09-14T00:00:00",
-    "end": null,
-    "allDay": false,
-    "location": "",
-    "url": "https://members.dlcchamber.org/events/details/martini-monday-09-14-2026-75590",
-    "source": "DLC Chamber",
-    "description": "Martini Monday Martinis are $5 all day every Monday. Come wind down at Grapevine's and enjoy a nice Martini. Martini Monday Set a Reminder Enter your email address below to receive a reminder message. Email address Select the amount of Days before the event -- Select Days Before Event -- 1 Day 2 Days 3 Days 1 Week Captcha Validation Please complete the Captcha Submit Date and Time Monday Sep 14, 2026 12:00 AM - 11:59 PM EDT Website https://www.gvitalian.com/ Set a Reminder Enter your email address below to receive a reminder message. Email address Select the amount of Days before the event --"
-  },
-  {
     "title": "Find your Bargains at the Locally Crafted Market & Dahlonega Baby Boutique",
     "start": "2026-09-15T10:00:00",
     "end": null,
@@ -218,6 +208,16 @@
     "url": "https://members.dlcchamber.org/events/details/gold-city-lions-club-meeting-09-21-2026-87094",
     "source": "DLC Chamber",
     "description": "Gold City Lions Club meeting The newly forming Gold City Lions Club offers those with servant hearts the opportunity to serve Dahlonega and Lumpkin County whenever and wherever there is a need. We serve several local non-profits with volunteers to do eye screenings for elementary school children. We serve the Dahlonega and Lumpkin County Chamber of Commerce members when they need volunteers with parking, ticket sales, and vending when they have events. If anyone needs eye exams, eye glasses, or eye surgeries, and they cannot afford it, we will provide them with financial help so that they can"
+  },
+  {
+    "title": "Find your Bargains at the Locally Crafted Market & Dahlonega Baby Boutique",
+    "start": "2026-09-22T10:00:00",
+    "end": null,
+    "allDay": false,
+    "location": "",
+    "url": "https://members.dlcchamber.org/events/details/find-your-bargains-at-the-locally-crafted-market-dahlonega-baby-boutique-09-22-2026-85307",
+    "source": "DLC Chamber",
+    "description": "Find your Bargains at the Locally Crafted Market & Dahlonega Baby Boutique Love Unique and Hand-Crafted Items? Come see what is made LOCALLY at the Locally Crafted Market! Shop to help moms and babies at local non-profit (NGPSC) while supporting local craftsmen/artists. Art and gifts of all types. Check website calendar (Locally Crafted Market) or the Facebook page for different events or just stop by. Located within 1/2 mile of Dahlonega Square - rental space cost for vendors much lower than on square so cost of items they sell are lower too - savings passed on to you (bargains)! New addition"
   },
   {
     "title": "Ribbon Cutting: Hilton Garden Inn",
@@ -536,16 +536,6 @@
     "allDay": false,
     "location": "",
     "url": "https://web.focochamber.org/events/2026-Transportation-Summit-9336/details",
-    "source": "Forsyth County Chamber",
-    "description": "Visit Us : 212 Webb Street Cumming, GA 30040"
-  },
-  {
-    "title": "Forsyth County Leadership Lab",
-    "start": null,
-    "end": null,
-    "allDay": false,
-    "location": "",
-    "url": "https://web.focochamber.org/events/Forsyth-County-Leadership-Lab-9325/details",
     "source": "Forsyth County Chamber",
     "description": "Visit Us : 212 Webb Street Cumming, GA 30040"
   },
