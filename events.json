@@ -90,16 +90,6 @@
     "description": "Join us to kick-off our new Alumni Association for Leadership Hall County! Registration is required and open to all past Leadership Hall Alumni. 230 E.E. Butler Parkway Gainesville, GA 30501 | Phone: (770) 532-6206"
   },
   {
-    "title": "Karaoke Night at Shenanigans Irish Pub!",
-    "start": "2026-09-16T18:30:00",
-    "end": null,
-    "allDay": false,
-    "location": "",
-    "url": "https://members.dlcchamber.org/events/details/karaoke-night-at-shenanigans-irish-pub-09-16-2026-82369",
-    "source": "DLC Chamber",
-    "description": "Karaoke Night at Shenanigans Irish Pub! Join us at the Pub each week for Wednesday Night Karaoke with Melissa Little! Shenanigans is open Wednesday-Sunday. Every Wednesday Karaoke at 6:30. Every Thursday Trivia Night at 7 & 8pm. Concerts every Fri & Sat night 6:30-9:30pm with rotating performers! Every Saturday 1-4pm with Tom and Juli. Wing Night every Sunday 4-9pm. Brunch every Sunday 11am-2pm. Regular menu all day! WE NOW OFFER SUNDAY BRUNCH! Join us 11am on Sunday for the Irish Breakfast that'll have you saying 'Top O' the Morning to Ya!' Check out our Brunch Menu here. CHECK OUR SOCIAL MED"
-  },
-  {
     "title": "Find your Bargains at the Locally Crafted Market & Dahlonega Baby Boutique",
     "start": "2026-09-17T10:00:00",
     "end": null,
@@ -228,6 +218,16 @@
     "url": "https://members.ghcc.com/events/Details/ribbon-cutting-hilton-garden-inn-1766685",
     "source": "GHCC",
     "description": "New Date!! Join us for a ribbon cutting to celebrate Hilton Garden Inn Tuesday, September 22 at 4:00 PM 230 E.E. Butler Parkway Gainesville, GA 30501 | Phone: (770) 532-6206"
+  },
+  {
+    "title": "Bunco Night",
+    "start": "2026-09-22T17:30:00",
+    "end": null,
+    "allDay": false,
+    "location": "30 pm Location American Legion, 132 Legion Rd,",
+    "url": "https://members.dlcchamber.org/events/details/bunco-night-87312",
+    "source": "DLC Chamber",
+    "description": "Bunco Night A fun night of bunco with new and old friends. Funds raised will go to the Woman's Club scholarship programs. Bunco Night Set a Reminder Enter your email address below to receive a reminder message. Email address Select the amount of Days before the event -- Select Days Before Event -- 1 Day 2 Days 3 Days 1 Week Captcha Validation Please complete the Captcha Submit Date and Time Tuesday Sep 22, 2026 5:30 PM - 7:30 PM EDT Tuesday, Sept 22, 2026 5:30 pm-7:30 pm Location American Legion, 132 Legion Rd, Dahlonega GA 30533 (behind the Chik-Fil-A) Fees/Admission $15 donation Set a Remind"
   },
   {
     "title": "Vision 2030's Next Gen Meet and Mingle - Elachee Nature Science Center",
@@ -520,16 +520,6 @@
     "description": "Home > Membership > Events Calendar"
   },
   {
-    "title": "2026 State of the Schools Address",
-    "start": null,
-    "end": null,
-    "allDay": false,
-    "location": "",
-    "url": "https://web.focochamber.org/events/2026-State-of-the-Schools-Address-9312/details",
-    "source": "Forsyth County Chamber",
-    "description": "Visit Us : 212 Webb Street Cumming, GA 30040"
-  },
-  {
     "title": "2026 Transportation Summit",
     "start": null,
     "end": null,
@@ -546,16 +536,6 @@
     "allDay": false,
     "location": "",
     "url": "https://web.focochamber.org/events/Human-Resource-Council-Q4-9332/details",
-    "source": "Forsyth County Chamber",
-    "description": "Visit Us : 212 Webb Street Cumming, GA 30040"
-  },
-  {
-    "title": "Industry Roundtable - HVAC",
-    "start": null,
-    "end": null,
-    "allDay": false,
-    "location": "",
-    "url": "https://web.focochamber.org/events/Industry-Roundtable-HVAC-9317/details",
     "source": "Forsyth County Chamber",
     "description": "Visit Us : 212 Webb Street Cumming, GA 30040"
   },
