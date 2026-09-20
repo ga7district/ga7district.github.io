@@ -130,26 +130,6 @@
     "description": "Honoring US Air Force Event Weekend Dahlonega's Military Heritage Museum invites you in honoring the Air Force. Saturday Sept. 19th Lumpkin County Library 10am-12pm: Open house with artifacts and memorabilia 12pm: Reception with Air Force cake cutting 1pm: Guest Speaker Doug Campbell Sunday Sept. 20 The Holly Theatre 1pm: Special Army Air Corp presentation 2pm: Showtime \"Memphis Belle\" Sponsored by Diane & Lew Houser Watch for Free Donate to Support Honoring US Air Force Event Weekend Set a Reminder Enter your email address below to receive a reminder message. Email address Select the amount o"
   },
   {
-    "title": "Find your Bargains at the Locally Crafted Market & Dahlonega Baby Boutique",
-    "start": "2026-09-19T10:00:00",
-    "end": null,
-    "allDay": false,
-    "location": "",
-    "url": "https://members.dlcchamber.org/events/details/find-your-bargains-at-the-locally-crafted-market-dahlonega-baby-boutique-09-19-2026-85306",
-    "source": "DLC Chamber",
-    "description": "Find your Bargains at the Locally Crafted Market & Dahlonega Baby Boutique Love Unique and Hand-Crafted Items? Come see what is made LOCALLY at the Locally Crafted Market! Shop to help moms and babies at local non-profit (NGPSC) while supporting local craftsmen/artists. Art and gifts of all types. Check website calendar (Locally Crafted Market) or the Facebook page for different events or just stop by. Located within 1/2 mile of Dahlonega Square - rental space cost for vendors much lower than on square so cost of items they sell are lower too - savings passed on to you (bargains)! New addition"
-  },
-  {
-    "title": "Live Music with Tom & Juli at Shenanigans!",
-    "start": "2026-09-19T13:00:00",
-    "end": null,
-    "allDay": false,
-    "location": "",
-    "url": "https://members.dlcchamber.org/events/details/live-music-with-tom-juli-at-shenanigans-09-19-2026-83048",
-    "source": "DLC Chamber",
-    "description": "Live Music with Tom & Juli at Shenanigans! Grab a drink, a bite to eat, and be serenaded with classic covers and guest requests by Dahlonega's husband and wife music duo, Tom & Juli! You’ll be in good company with the tunes you know and the people you love! See y’all here every Saturday from 1-4pm! Tom & Juli Theobald, have been playing and singing together for years and performing at listening venues like Atlanta's renowned 'Swallow at the Hollow', as well as many years at late The Crimson Moon. With Tom's guitarmanship and vocals, and Juli's amazing harmonies and vocals, they are a delight t"
-  },
-  {
     "title": "Martini Monday",
     "start": "2026-09-21T00:00:00",
     "end": null,
@@ -248,6 +228,26 @@
     "url": "https://members.ghcc.com/events/Details/ribbon-cutting-fifth-third-bank-1857277",
     "source": "GHCC",
     "description": "230 E.E. Butler Parkway Gainesville, GA 30501 | Phone: (770) 532-6206"
+  },
+  {
+    "title": "Fiddler on the Roof",
+    "start": "2026-09-25T19:30:00",
+    "end": null,
+    "allDay": false,
+    "location": "",
+    "url": "https://members.dlcchamber.org/events/details/fiddler-on-the-roof-87321",
+    "source": "DLC Chamber",
+    "description": "Fiddler on the Roof Fiddler on the Roof Historic Holly Theater Mainstage, 69 West Main Street, Dahlonega, GA Set in the little village of Anatevka, the story centers on Tevye, a poor milkman, and his five daughters. With the help of a colorful and tight-knit Jewish community, Tevye tries to protect his daughters and instill them with traditional values in the face of changing social mores and the growing anti-Semitism of Czarist Russia. Rich in historical and ethnic detail, Fiddler on the Roof's universal theme of tradition cuts across barriers of race, class, nationality and religion, leaving"
+  },
+  {
+    "title": "Job Fair",
+    "start": "2026-09-26T00:00:00",
+    "end": null,
+    "allDay": false,
+    "location": "",
+    "url": "https://members.dlcchamber.org/events/details/job-fair-09-26-2026-79664",
+    "source": "DLC Chamber",
+    "description": "Job Fair Job fair at Chelsey Park Health & Rehab the last Friday of every month 11:00-2:00. Job Fair Set a Reminder Enter your email address below to receive a reminder message. Email address Select the amount of Days before the event -- Select Days Before Event -- 1 Day 2 Days 3 Days 1 Week Captcha Validation Please complete the Captcha Submit Date and Time Saturday Sep 26, 2026 12:00 AM - 11:59 PM EDT Set a Reminder Enter your email address below to receive a reminder message. Email address Select the amount of Days before the event -- Select Days Before Event -- 1 Day 2 Days 3 Days 1 Week C"
   },
   {
     "title": "Ribbon Cutting: Tag Kiosk at Mundy Mill Kroger",
@@ -556,6 +556,16 @@
     "allDay": false,
     "location": "",
     "url": "https://web.focochamber.org/events/Power-Networking-Lunch-9306/details",
+    "source": "Forsyth County Chamber",
+    "description": "Visit Us : 212 Webb Street Cumming, GA 30040"
+  },
+  {
+    "title": "Professional Skills Workshop - Session Three",
+    "start": null,
+    "end": null,
+    "allDay": false,
+    "location": "",
+    "url": "https://web.focochamber.org/events/Professional-Skills-Workshop-Session-Three-9292/details",
     "source": "Forsyth County Chamber",
     "description": "Visit Us : 212 Webb Street Cumming, GA 30040"
   },
