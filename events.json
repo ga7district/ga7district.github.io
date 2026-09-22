@@ -120,26 +120,6 @@
     "description": "Join us for coffee and conversations at Peachtree Orthopedics. They are are located in the Braselton Surgery Center, Medical Plaza 2 at 1524 River Place in Suite 200 on the 2nd floor. 230 E.E. Butler Parkway Gainesville, GA 30501 | Phone: (770) 532-6206"
   },
   {
-    "title": "Martini Monday",
-    "start": "2026-09-21T00:00:00",
-    "end": null,
-    "allDay": false,
-    "location": "",
-    "url": "https://members.dlcchamber.org/events/details/martini-monday-09-21-2026-75591",
-    "source": "DLC Chamber",
-    "description": "Martini Monday Martinis are $5 all day every Monday. Come wind down at Grapevine's and enjoy a nice Martini. Martini Monday Set a Reminder Enter your email address below to receive a reminder message. Email address Select the amount of Days before the event -- Select Days Before Event -- 1 Day 2 Days 3 Days 1 Week Captcha Validation Please complete the Captcha Submit Date and Time Monday Sep 21, 2026 12:00 AM - 11:59 PM EDT Website https://www.gvitalian.com/ Set a Reminder Enter your email address below to receive a reminder message. Email address Select the amount of Days before the event --"
-  },
-  {
-    "title": "Gold City Lions Club meeting",
-    "start": "2026-09-21T18:00:00",
-    "end": null,
-    "allDay": false,
-    "location": "",
-    "url": "https://members.dlcchamber.org/events/details/gold-city-lions-club-meeting-09-21-2026-87094",
-    "source": "DLC Chamber",
-    "description": "Gold City Lions Club meeting The newly forming Gold City Lions Club offers those with servant hearts the opportunity to serve Dahlonega and Lumpkin County whenever and wherever there is a need. We serve several local non-profits with volunteers to do eye screenings for elementary school children. We serve the Dahlonega and Lumpkin County Chamber of Commerce members when they need volunteers with parking, ticket sales, and vending when they have events. If anyone needs eye exams, eye glasses, or eye surgeries, and they cannot afford it, we will provide them with financial help so that they can"
-  },
-  {
     "title": "Find your Bargains at the Locally Crafted Market & Dahlonega Baby Boutique",
     "start": "2026-09-22T10:00:00",
     "end": null,
@@ -248,6 +228,26 @@
     "url": "https://members.dlcchamber.org/events/details/job-fair-09-26-2026-79664",
     "source": "DLC Chamber",
     "description": "Job Fair Job fair at Chelsey Park Health & Rehab the last Friday of every month 11:00-2:00. Job Fair Set a Reminder Enter your email address below to receive a reminder message. Email address Select the amount of Days before the event -- Select Days Before Event -- 1 Day 2 Days 3 Days 1 Week Captcha Validation Please complete the Captcha Submit Date and Time Saturday Sep 26, 2026 12:00 AM - 11:59 PM EDT Set a Reminder Enter your email address below to receive a reminder message. Email address Select the amount of Days before the event -- Select Days Before Event -- 1 Day 2 Days 3 Days 1 Week C"
+  },
+  {
+    "title": "Find your Bargains at the Locally Crafted Market & Dahlonega Baby Boutique",
+    "start": "2026-09-26T10:00:00",
+    "end": null,
+    "allDay": false,
+    "location": "",
+    "url": "https://members.dlcchamber.org/events/details/find-your-bargains-at-the-locally-crafted-market-dahlonega-baby-boutique-09-26-2026-85310",
+    "source": "DLC Chamber",
+    "description": "Find your Bargains at the Locally Crafted Market & Dahlonega Baby Boutique Love Unique and Hand-Crafted Items? Come see what is made LOCALLY at the Locally Crafted Market! Shop to help moms and babies at local non-profit (NGPSC) while supporting local craftsmen/artists. Art and gifts of all types. Check website calendar (Locally Crafted Market) or the Facebook page for different events or just stop by. Located within 1/2 mile of Dahlonega Square - rental space cost for vendors much lower than on square so cost of items they sell are lower too - savings passed on to you (bargains)! New addition"
+  },
+  {
+    "title": "Live Music with Tom & Juli at Shenanigans!",
+    "start": "2026-09-26T13:00:00",
+    "end": null,
+    "allDay": false,
+    "location": "",
+    "url": "https://members.dlcchamber.org/events/details/live-music-with-tom-juli-at-shenanigans-09-26-2026-83049",
+    "source": "DLC Chamber",
+    "description": "Live Music with Tom & Juli at Shenanigans! Grab a drink, a bite to eat, and be serenaded with classic covers and guest requests by Dahlonega's husband and wife music duo, Tom & Juli! You’ll be in good company with the tunes you know and the people you love! See y’all here every Saturday from 1-4pm! Tom & Juli Theobald, have been playing and singing together for years and performing at listening venues like Atlanta's renowned 'Swallow at the Hollow', as well as many years at late The Crimson Moon. With Tom's guitarmanship and vocals, and Juli's amazing harmonies and vocals, they are a delight t"
   },
   {
     "title": "Ribbon Cutting: Tag Kiosk at Mundy Mill Kroger",
@@ -530,12 +530,32 @@
     "description": "Visit Us : 212 Webb Street Cumming, GA 30040"
   },
   {
+    "title": "Commercial Real Estate Roundtable",
+    "start": null,
+    "end": null,
+    "allDay": false,
+    "location": "",
+    "url": "https://web.focochamber.org/events/Commercial-Real-Estate-Roundtable-9349/details",
+    "source": "Forsyth County Chamber",
+    "description": "Visit Us : 212 Webb Street Cumming, GA 30040"
+  },
+  {
     "title": "Human Resource Council Q4",
     "start": null,
     "end": null,
     "allDay": false,
     "location": "",
     "url": "https://web.focochamber.org/events/Human-Resource-Council-Q4-9332/details",
+    "source": "Forsyth County Chamber",
+    "description": "Visit Us : 212 Webb Street Cumming, GA 30040"
+  },
+  {
+    "title": "Innovation Lab",
+    "start": null,
+    "end": null,
+    "allDay": false,
+    "location": "",
+    "url": "https://web.focochamber.org/events/Innovation-Lab-9348/details",
     "source": "Forsyth County Chamber",
     "description": "Visit Us : 212 Webb Street Cumming, GA 30040"
   },
