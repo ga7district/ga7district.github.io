@@ -160,16 +160,6 @@
     "description": "Fiddler on the Roof Fiddler on the Roof Historic Holly Theater Mainstage, 69 West Main Street, Dahlonega, GA Set in the little village of Anatevka, the story centers on Tevye, a poor milkman, and his five daughters. With the help of a colorful and tight-knit Jewish community, Tevye tries to protect his daughters and instill them with traditional values in the face of changing social mores and the growing anti-Semitism of Czarist Russia. Rich in historical and ethnic detail, Fiddler on the Roof's universal theme of tradition cuts across barriers of race, class, nationality and religion, leaving"
   },
   {
-    "title": "6GAP WEEKEND!",
-    "start": "2026-09-26T00:00:00",
-    "end": null,
-    "allDay": false,
-    "location": "",
-    "url": "https://members.dlcchamber.org/events/details/6gap-weekend-87317",
-    "source": "DLC Chamber",
-    "description": "6GAP WEEKEND! Set a Reminder Enter your email address below to receive a reminder message. Email address Select the amount of Days before the event -- Select Days Before Event -- 1 Day 2 Days 3 Days 1 Week Captcha Validation Please complete the Captcha Submit Date and Time Saturday Sep 26, 2026 Sunday Sep 27, 2026 September 26-27th 2026 Location Dahlonega, GA Fees/Admission https://www.bikesignup.com/Race/GA/Dahlonega/SixGapCentury Set a Reminder Enter your email address below to receive a reminder message. Email address Select the amount of Days before the event -- Select Days Before Event --"
-  },
-  {
     "title": "Martini Monday",
     "start": "2026-09-28T00:00:00",
     "end": null,
@@ -288,6 +278,16 @@
     "url": "https://members.dlcchamber.org/events/details/5k-walk-run-for-noa-no-one-alone-87337",
     "source": "DLC Chamber",
     "description": "5K Walk & Run for NOA-No One Alone http://www.noonealone.org Set a Reminder Enter your email address below to receive a reminder message. Email address Select the amount of Days before the event -- Select Days Before Event -- 1 Day 2 Days 3 Days 1 Week Captcha Validation Please complete the Captcha Submit Date and Time Saturday Oct 3, 2026 Set a Reminder Enter your email address below to receive a reminder message. Email address Select the amount of Days before the event -- Select Days Before Event -- 1 Day 2 Days 3 Days 1 Week Captcha Validation Please complete the Captcha Submit Business Dir"
+  },
+  {
+    "title": "DAA Spooky Art in the Park",
+    "start": "2026-10-03T10:00:00",
+    "end": null,
+    "allDay": false,
+    "location": "",
+    "url": "https://members.dlcchamber.org/events/details/daa-spooky-art-in-the-park-86515",
+    "source": "DLC Chamber",
+    "description": "DAA Spooky Art in the Park Trick or treat art lovers! Fall is approaching and it’s time to get ready for the season with artistic flair! Find hand crafted jewelry, ceramics, paintings, photography, wood gifts, live entertainment, and so much more from local artists across North Georgia! Bring your candy bag and enjoy trick or treating from all of our artists! It's a party celebrating the Arts in all forms and you're invited! Don't miss out! Learn more at https://artsdahlonega.org/events ! Set a Reminder Enter your email address below to receive a reminder message. Email address Select the amou"
   },
   {
     "title": "Find your Bargains at the Locally Crafted Market & Dahlonega Baby Boutique",
@@ -586,6 +586,16 @@
     "allDay": false,
     "location": "",
     "url": "https://web.focochamber.org/events/Human-Resource-Council-Q4-9332/details",
+    "source": "Forsyth County Chamber",
+    "description": "Visit Us : 212 Webb Street Cumming, GA 30040"
+  },
+  {
+    "title": "Industry Roundtable - HVAC",
+    "start": null,
+    "end": null,
+    "allDay": false,
+    "location": "",
+    "url": "https://web.focochamber.org/events/Industry-Roundtable-HVAC-9317/details",
     "source": "Forsyth County Chamber",
     "description": "Visit Us : 212 Webb Street Cumming, GA 30040"
   },
