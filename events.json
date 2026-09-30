@@ -1,8 +1,8 @@
 [
   {
     "title": "Health & Wellness Seminar - Eyes Wide Open: The Secrets of Sight and the Business Behind Your Care",
-    "start": "2026-09-02T09:00:00",
-    "end": null,
+    "start": "2026-09-02T00:00:00",
+    "end": "2026-09-02T00:00:00",
     "allDay": false,
     "location": "2003 male United States Presidential Scholar for the state of Georgia. Afterward, Dr. Hollar enrolled in the Duke University School of Medicine where he received his Doctor of Medicine (M.D.) degree a",
     "url": "https://members.ghcc.com/events/Details/health-wellness-seminar-eyes-wide-open-the-secrets-of-sight-and-the-business-behind-your-care-1859964",
@@ -10,19 +10,9 @@
     "description": "How is an optician different from an optometrist and when do you need an ophthalmologist? Which eye diseases steal vision silently, which warning signs cannot wait, and what can today’s cataract surgeries really accomplish? In this presentation, ophthalmologist Matthew Hollar, MD, will explore eye health from cataracts, glaucoma, macular degeneration, and retinal emergencies, while revealing the remarkable technologies now preserving and restoring sight. He will also cover on how insurance, consolidation, and corporate ownership are transforming the relationship among patients, physicians, and the businesses that deliver care, what these changes can improve, what they may put at risk, and how you can become a wiser healthcare consumer. Come find out who's really watching your eyes. Presented by: Dr. Matthew Hollar Dr. Matthew Hollar joined the team of comprehensive ophthalmologists at North Georgia Eye Clinic in 2016, specializing in medical and surgical care of the eye. A native of western North Carolina, he and his family have lived north of Atlanta since 1999. For his undergraduate studies, Dr. Hollar graduated summa cum laude from Vanderbilt University in Nashville, TN where he"
   },
   {
-    "title": "South Hall Business Coalition - Michelin Raceway Road Atlanta",
-    "start": "2026-09-03T09:00:00",
-    "end": null,
-    "allDay": false,
-    "location": "00 AM 5300 Winder Hwy Braselton,",
-    "url": "https://members.ghcc.com/events/Details/south-hall-business-coalition-michelin-raceway-road-atlanta-1742561",
-    "source": "GHCC",
-    "description": "Michelin Raceway Road Atlanta Thursday, September 3, 2026 9:00 - 10:00 AM 5300 Winder Hwy Braselton, GA 30517 REGISTER HERE Meet us at the Michelin Tower, and get all the updates on the exciting 29th Annual Motul Petit Le Mans (September 30 - October 3). For the past 25+ years, Motul Petit Le Mans has been THE sporting event in the southeast to experience. With four days of on-track battles, culminating in the 10-hour IMSA WeatherTech Championship finale showdown on Saturday, October 3, the action is nonstop. Enjoy the Kids Zone, vendors, food trucks, displays, car corrals, camping, and so much more, this event has it all, and at family-friendly prices, too! For event details and tickets, visit MichelinRacewayRoadAtlanta.com $8.00 Member $15.00 Non-Member Light breakfast included 230 E.E. Butler Parkway Gainesville, GA 30501 | Phone: (770) 532-6206"
-  },
-  {
     "title": "Ribbon Cutting: Uptown Cheapskate",
-    "start": "2026-09-03T12:00:00",
-    "end": null,
+    "start": "2026-09-03T00:00:00",
+    "end": "2026-09-03T00:00:00",
     "allDay": false,
     "location": "00 Noon. 858 Dawsonville Hwy Gainesville,",
     "url": "https://members.ghcc.com/events/Details/ribbon-cutting-uptown-cheapskate-1900268",
@@ -30,9 +20,19 @@
     "description": "Join us for a ribbon cutting to celebrate the opening of Uptown Cheapskate . Thursday, September 3 at 12:00 Noon. 858 Dawsonville Hwy Gainesville, GA 30501 230 E.E. Butler Parkway Gainesville, GA 30501 | Phone: (770) 532-6206"
   },
   {
+    "title": "South Hall Business Coalition - Michelin Raceway Road Atlanta",
+    "start": "2026-09-03T00:00:00",
+    "end": "2026-09-03T00:00:00",
+    "allDay": false,
+    "location": "00 AM 5300 Winder Hwy Braselton,",
+    "url": "https://members.ghcc.com/events/Details/south-hall-business-coalition-michelin-raceway-road-atlanta-1742561",
+    "source": "GHCC",
+    "description": "Michelin Raceway Road Atlanta Thursday, September 3, 2026 9:00 - 10:00 AM 5300 Winder Hwy Braselton, GA 30517 REGISTER HERE Meet us at the Michelin Tower, and get all the updates on the exciting 29th Annual Motul Petit Le Mans (September 30 - October 3). For the past 25+ years, Motul Petit Le Mans has been THE sporting event in the southeast to experience. With four days of on-track battles, culminating in the 10-hour IMSA WeatherTech Championship finale showdown on Saturday, October 3, the action is nonstop. Enjoy the Kids Zone, vendors, food trucks, displays, car corrals, camping, and so much more, this event has it all, and at family-friendly prices, too! For event details and tickets, visit MichelinRacewayRoadAtlanta.com $8.00 Member $15.00 Non-Member Light breakfast included 230 E.E. Butler Parkway Gainesville, GA 30501 | Phone: (770) 532-6206"
+  },
+  {
     "title": "Ribbon Cutting: Hoopla at the Hive",
-    "start": "2026-09-04T13:00:00",
-    "end": null,
+    "start": "2026-09-04T00:00:00",
+    "end": "2026-09-04T00:00:00",
     "allDay": false,
     "location": "00 PM 804 Washington St NW Gainesville,",
     "url": "https://members.ghcc.com/events/Details/ribbon-cutting-hoopla-at-the-hive-1900248",
@@ -41,8 +41,8 @@
   },
   {
     "title": "Small Business Seminar - Expanding Small Business Capabilities through Higher Education Partnerships",
-    "start": "2026-09-08T08:15:00",
-    "end": null,
+    "start": "2026-09-08T00:00:00",
+    "end": "2026-09-08T00:00:00",
     "allDay": false,
     "location": "",
     "url": "https://members.ghcc.com/events/Details/small-business-seminar-expanding-small-business-capabilities-through-higher-education-partnerships-1844618",
@@ -51,8 +51,8 @@
   },
   {
     "title": "Network Over Coffee - Spec Event Center",
-    "start": "2026-09-09T09:00:00",
-    "end": null,
+    "start": "2026-09-09T00:00:00",
+    "end": "2026-09-09T00:00:00",
     "allDay": false,
     "location": "7421 Spout Springs Rd Flowery Branch ,",
     "url": "https://members.ghcc.com/events/Details/network-over-coffee-spec-event-center-1844328",
@@ -61,8 +61,8 @@
   },
   {
     "title": "Job Fair - Fall 2026",
-    "start": "2026-09-10T10:00:00",
-    "end": null,
+    "start": "2026-09-10T00:00:00",
+    "end": "2026-09-10T00:00:00",
     "allDay": false,
     "location": "",
     "url": "https://members.ghcc.com/events/Details/job-fair-fall-2026-1529468",
@@ -71,8 +71,8 @@
   },
   {
     "title": "Ribbon Cutting: Gardens of Gainesville",
-    "start": "2026-09-11T13:00:00",
-    "end": null,
+    "start": "2026-09-11T00:00:00",
+    "end": "2026-09-11T00:00:00",
     "allDay": false,
     "location": "",
     "url": "https://members.ghcc.com/events/Details/ribbon-cutting-gardens-of-gainesville-1844312",
@@ -81,8 +81,8 @@
   },
   {
     "title": "Leadership Hall County Alumni Association",
-    "start": "2026-09-15T17:00:00",
-    "end": null,
+    "start": "2026-09-15T00:00:00",
+    "end": "2026-09-15T00:00:00",
     "allDay": false,
     "location": "",
     "url": "https://members.ghcc.com/events/Details/leadership-hall-county-alumni-association-1891868",
@@ -90,19 +90,9 @@
     "description": "Join us to kick-off our new Alumni Association for Leadership Hall County! Registration is required and open to all past Leadership Hall Alumni. 230 E.E. Butler Parkway Gainesville, GA 30501 | Phone: (770) 532-6206"
   },
   {
-    "title": "Ribbon Cutting: Huntington Bank",
-    "start": "2026-09-17T16:15:00",
-    "end": null,
-    "allDay": false,
-    "location": "",
-    "url": "https://members.ghcc.com/events/Details/ribbon-cutting-huntington-bank-1875184",
-    "source": "GHCC",
-    "description": "Join us for a ribbon cutting to celebrate Huntington Bank Stay for Business After Hours. Thursday, September 17 at 4:15 PM 500 Jesse Jewel Parkway Gainesville, GA 30501 230 E.E. Butler Parkway Gainesville, GA 30501 | Phone: (770) 532-6206"
-  },
-  {
     "title": "Business After Hours - Huntington National Bank",
-    "start": "2026-09-17T17:00:00",
-    "end": null,
+    "start": "2026-09-17T00:00:00",
+    "end": "2026-09-17T00:00:00",
     "allDay": false,
     "location": "00 PM 500 Jesse Jewell Pkwy Gainesville,",
     "url": "https://members.ghcc.com/events/Details/business-after-hours-huntington-national-bank-1742615",
@@ -110,9 +100,19 @@
     "description": "Business After Hours Thursday, September 17, 2026 5:00 - 7:00 PM 500 Jesse Jewell Pkwy Gainesville, GA 30501 Huntington Bank is a National Bank that is regionally organized to empower those closest to the client & community. For GHCC Members that means you get all the benefits of a large bank with the benefit of local bankers you’ve known for many years. Julie Taylor, J.D. Mealor and Mary Livesay look forward to hosting you for the September Business After Hours and introducing you to Huntington Bank. huntington.com REGISTER HERE $8.00 Members $15.00 Non-Members 230 E.E. Butler Parkway Gainesville, GA 30501 | Phone: (770) 532-6206"
   },
   {
+    "title": "Ribbon Cutting: Huntington Bank",
+    "start": "2026-09-17T00:00:00",
+    "end": "2026-09-17T00:00:00",
+    "allDay": false,
+    "location": "",
+    "url": "https://members.ghcc.com/events/Details/ribbon-cutting-huntington-bank-1875184",
+    "source": "GHCC",
+    "description": "Join us for a ribbon cutting to celebrate Huntington Bank Stay for Business After Hours. Thursday, September 17 at 4:15 PM 500 Jesse Jewel Parkway Gainesville, GA 30501 230 E.E. Butler Parkway Gainesville, GA 30501 | Phone: (770) 532-6206"
+  },
+  {
     "title": "Network Over Coffee - Peachtree Orthopedics",
-    "start": "2026-09-18T09:00:00",
-    "end": null,
+    "start": "2026-09-18T00:00:00",
+    "end": "2026-09-18T00:00:00",
     "allDay": false,
     "location": "",
     "url": "https://members.ghcc.com/events/Details/network-over-coffee-peachtree-orthopedics-1844343",
@@ -121,8 +121,8 @@
   },
   {
     "title": "Ribbon Cutting: Hilton Garden Inn",
-    "start": "2026-09-22T16:00:00",
-    "end": null,
+    "start": "2026-09-22T00:00:00",
+    "end": "2026-09-22T00:00:00",
     "allDay": false,
     "location": "",
     "url": "https://members.ghcc.com/events/Details/ribbon-cutting-hilton-garden-inn-1766685",
@@ -131,8 +131,8 @@
   },
   {
     "title": "Vision 2030's Next Gen Meet and Mingle - Elachee Nature Science Center",
-    "start": "2026-09-24T17:30:00",
-    "end": null,
+    "start": "2026-09-24T00:00:00",
+    "end": "2026-09-24T00:00:00",
     "allDay": false,
     "location": "00 pm Elachee Nature Science Center 2125 Elachee Dr Free Event,",
     "url": "https://members.ghcc.com/events/Details/vision-2030-s-next-gen-meet-and-mingle-elachee-nature-science-center-1689290",
@@ -141,8 +141,8 @@
   },
   {
     "title": "Ribbon Cutting: Fifth Third Bank",
-    "start": "2026-09-25T10:00:00",
-    "end": null,
+    "start": "2026-09-25T00:00:00",
+    "end": "2026-09-25T00:00:00",
     "allDay": false,
     "location": "3654 Thompson Bridge Rd Gainesville ,",
     "url": "https://members.ghcc.com/events/Details/ribbon-cutting-fifth-third-bank-1857277",
@@ -161,8 +161,8 @@
   },
   {
     "title": "Ribbon Cutting: Tag Kiosk at Mundy Mill Kroger",
-    "start": "2026-09-29T09:00:00",
-    "end": null,
+    "start": "2026-09-29T00:00:00",
+    "end": "2026-09-29T00:00:00",
     "allDay": false,
     "location": "00 AM Mundy Mill Kroger 4085 Mundy Mill Rd Oakwood,",
     "url": "https://members.ghcc.com/events/Details/ribbon-cutting-tag-kiosk-at-mundy-mill-kroger-1922888",
@@ -170,19 +170,9 @@
     "description": "Join us for a ribbon cutting to celebrate the 5th Kiosk for tag payments in Hall County. Tuesday, September 9 at 9:00 AM Mundy Mill Kroger 4085 Mundy Mill Rd Oakwood, GA 30566 230 E.E. Butler Parkway Gainesville, GA 30501 | Phone: (770) 532-6206"
   },
   {
-    "title": "Find your Bargains at the Locally Crafted Market & Dahlonega Baby Boutique",
-    "start": "2026-09-29T10:00:00",
-    "end": null,
-    "allDay": false,
-    "location": "",
-    "url": "https://members.dlcchamber.org/events/details/find-your-bargains-at-the-locally-crafted-market-dahlonega-baby-boutique-09-29-2026-85311",
-    "source": "DLC Chamber",
-    "description": "Find your Bargains at the Locally Crafted Market & Dahlonega Baby Boutique Love Unique and Hand-Crafted Items? Come see what is made LOCALLY at the Locally Crafted Market! Shop to help moms and babies at local non-profit (NGPSC) while supporting local craftsmen/artists. Art and gifts of all types. Check website calendar (Locally Crafted Market) or the Facebook page for different events or just stop by. Located within 1/2 mile of Dahlonega Square - rental space cost for vendors much lower than on square so cost of items they sell are lower too - savings passed on to you (bargains)! New addition"
-  },
-  {
     "title": "Ribbon Cutting: Sheila Davis Group",
-    "start": "2026-09-30T16:00:00",
-    "end": null,
+    "start": "2026-09-30T00:00:00",
+    "end": "2026-09-30T00:00:00",
     "allDay": false,
     "location": "",
     "url": "https://members.ghcc.com/events/Details/ribbon-cutting-sheila-davis-group-1892223",
@@ -201,8 +191,8 @@
   },
   {
     "title": "HealthSmart Wellness Expo 2026",
-    "start": "2026-10-01T07:30:00",
-    "end": null,
+    "start": "2026-10-01T00:00:00",
+    "end": "2026-10-01T00:00:00",
     "allDay": false,
     "location": "",
     "url": "https://members.ghcc.com/events/Details/healthsmart-wellness-expo-2026-1529461",
@@ -231,13 +221,23 @@
   },
   {
     "title": "Network Over Coffee: The Phoenix at Lake Lanier",
-    "start": "2026-10-02T09:00:00",
-    "end": null,
+    "start": "2026-10-02T00:00:00",
+    "end": "2026-10-02T00:00:00",
     "allDay": false,
     "location": "",
     "url": "https://members.ghcc.com/events/Details/network-over-coffee-the-phoenix-at-lake-lanier-1885076",
     "source": "GHCC",
     "description": "Join us for coffee and conversations. 230 E.E. Butler Parkway Gainesville, GA 30501 | Phone: (770) 532-6206"
+  },
+  {
+    "title": "Ribbon Cutting: Hot Spot Studios",
+    "start": "2026-10-02T00:00:00",
+    "end": "2026-10-02T00:00:00",
+    "allDay": false,
+    "location": "00 AM 821 Dawsonville Hwy,",
+    "url": "https://members.ghcc.com/events/Details/ribbon-cutting-hot-spot-studios-1877882",
+    "source": "GHCC",
+    "description": "Join us for a ribbon cutting to celebrate the opening of Hot Spot Studios . Friday, October 2 at 11:00 AM 821 Dawsonville Hwy, Suite 235 Gainesville, GA 30501 230 E.E. Butler Parkway Gainesville, GA 30501 | Phone: (770) 532-6206"
   },
   {
     "title": "Find your Bargains at the Locally Crafted Market & Dahlonega Baby Boutique",
@@ -248,16 +248,6 @@
     "url": "https://members.dlcchamber.org/events/details/find-your-bargains-at-the-locally-crafted-market-dahlonega-baby-boutique-10-02-2026-85313",
     "source": "DLC Chamber",
     "description": "Find your Bargains at the Locally Crafted Market & Dahlonega Baby Boutique Love Unique and Hand-Crafted Items? Come see what is made LOCALLY at the Locally Crafted Market! Shop to help moms and babies at local non-profit (NGPSC) while supporting local craftsmen/artists. Art and gifts of all types. Check website calendar (Locally Crafted Market) or the Facebook page for different events or just stop by. Located within 1/2 mile of Dahlonega Square - rental space cost for vendors much lower than on square so cost of items they sell are lower too - savings passed on to you (bargains)! New addition"
-  },
-  {
-    "title": "Ribbon Cutting: Hot Spot Studios",
-    "start": "2026-10-02T11:00:00",
-    "end": null,
-    "allDay": false,
-    "location": "00 AM 821 Dawsonville Hwy,",
-    "url": "https://members.ghcc.com/events/Details/ribbon-cutting-hot-spot-studios-1877882",
-    "source": "GHCC",
-    "description": "Join us for a ribbon cutting to celebrate the opening of Hot Spot Studios . Friday, October 2 at 11:00 AM 821 Dawsonville Hwy, Suite 235 Gainesville, GA 30501 230 E.E. Butler Parkway Gainesville, GA 30501 | Phone: (770) 532-6206"
   },
   {
     "title": "5K Walk & Run for NOA-No One Alone",
@@ -300,19 +290,29 @@
     "description": "Live Music with Tom & Juli at Shenanigans! Grab a drink, a bite to eat, and be serenaded with classic covers and guest requests by Dahlonega's husband and wife music duo, Tom & Juli! You’ll be in good company with the tunes you know and the people you love! See y’all here every Saturday from 1-4pm! Tom & Juli Theobald, have been playing and singing together for years and performing at listening venues like Atlanta's renowned 'Swallow at the Hollow', as well as many years at late The Crimson Moon. With Tom's guitarmanship and vocals, and Juli's amazing harmonies and vocals, they are a delight t"
   },
   {
-    "title": "Ribbon Cutting: Private Bank & Trust",
-    "start": "2026-10-06T17:00:00",
+    "title": "Dolly Parton Tribute and Look-alike contest",
+    "start": "2026-10-03T19:00:00",
     "end": null,
+    "allDay": false,
+    "location": "406 East Main Street Suite A2 Dahlonega Georgia 30533",
+    "url": "https://members.dlcchamber.org/events/details/dolly-parton-tribute-and-look-alike-contest-87331",
+    "source": "DLC Chamber",
+    "description": "Dolly Parton Tribute and Look-alike contest A loving tribute to the amazing Dolly Parton. Come hear all your favorite Dolly songs and vote in our Dolly look-alike contest. One night only! Regular Tickets: $25 Senior/Student Tickets: $20 Menagerie logo Set a Reminder Enter your email address below to receive a reminder message. Email address Select the amount of Days before the event -- Select Days Before Event -- 1 Day 2 Days 3 Days 1 Week Captcha Validation Please complete the Captcha Submit Date and Time Saturday Oct 3, 2026 7:00 PM - 9:00 PM EDT October 3rd, 2026 7:00pm Location The Menager"
+  },
+  {
+    "title": "Ribbon Cutting: Private Bank & Trust",
+    "start": "2026-10-06T00:00:00",
+    "end": "2026-10-06T00:00:00",
     "allDay": false,
     "location": "",
     "url": "https://members.ghcc.com/events/Details/ribbon-cutting-private-bank-trust-1941009",
     "source": "GHCC",
-    "description": "Join us for a ribbon cutting to celebrate Private Bank & Trust. Tuesday, October 6 at 5 PM 424 Green Street NE Gainesville, GA 30501 230 E.E. Butler Parkway Gainesville, GA 30501 | Phone: (770) 532-6206"
+    "description": "230 E.E. Butler Parkway Gainesville, GA 30501 | Phone: (770) 532-6206"
   },
   {
     "title": "Fall New Member Breakfast",
-    "start": "2026-10-07T09:00:00",
-    "end": null,
+    "start": "2026-10-07T00:00:00",
+    "end": "2026-10-07T00:00:00",
     "allDay": false,
     "location": "",
     "url": "https://members.ghcc.com/events/Details/fall-new-member-breakfast-1869126",
@@ -321,8 +321,8 @@
   },
   {
     "title": "Ribbon Cutting: Comfort Keepers",
-    "start": "2026-10-07T14:00:00",
-    "end": null,
+    "start": "2026-10-07T00:00:00",
+    "end": "2026-10-07T00:00:00",
     "allDay": false,
     "location": "00 PM Comfort Keepers 1001 Riverside Dr. Gainesville,",
     "url": "https://members.ghcc.com/events/Details/ribbon-cutting-comfort-keepers-1916117",
@@ -331,8 +331,8 @@
   },
   {
     "title": "South Hall Business Coalition - Elachee Nature Science Center",
-    "start": "2026-10-08T09:00:00",
-    "end": null,
+    "start": "2026-10-08T00:00:00",
+    "end": "2026-10-08T00:00:00",
     "allDay": false,
     "location": "00 AM 2125 Elachee Dr Gainesville,",
     "url": "https://members.ghcc.com/events/Details/south-hall-business-coalition-elachee-nature-science-center-1742576",
@@ -341,8 +341,8 @@
   },
   {
     "title": "Ribbon Cutting: Braselton Endodontics",
-    "start": "2026-10-09T14:00:00",
-    "end": null,
+    "start": "2026-10-09T00:00:00",
+    "end": "2026-10-09T00:00:00",
     "allDay": false,
     "location": "00 PM 1235 Friendship Rd,",
     "url": "https://members.ghcc.com/events/Details/ribbon-cutting-braselton-endodontics-1899234",
@@ -351,8 +351,8 @@
   },
   {
     "title": "Leadership & AI Forum",
-    "start": "2026-10-13T08:00:00",
-    "end": null,
+    "start": "2026-10-13T00:00:00",
+    "end": "2026-10-13T00:00:00",
     "allDay": false,
     "location": "",
     "url": "https://members.ghcc.com/events/Details/leadership-ai-forum-1888419",
@@ -361,8 +361,8 @@
   },
   {
     "title": "Ribbon Cutting: DePoe Eye Center",
-    "start": "2026-10-15T11:00:00",
-    "end": null,
+    "start": "2026-10-15T00:00:00",
+    "end": "2026-10-15T00:00:00",
     "allDay": false,
     "location": "00 AM 1201 Sherwood Park Dr. NE Gainesville,",
     "url": "https://members.ghcc.com/events/Details/ribbon-cutting-depoe-eye-center-1921750",
@@ -371,8 +371,8 @@
   },
   {
     "title": "Business Before Hours - Hulsey, Oliver & Mahar",
-    "start": "2026-10-16T07:30:00",
-    "end": null,
+    "start": "2026-10-16T00:00:00",
+    "end": "2026-10-16T00:00:00",
     "allDay": false,
     "location": "00 AM Hulsey, Oliver & Mahar 200 EE Butler Pkwy Gainesville,",
     "url": "https://members.ghcc.com/events/Details/business-before-hours-hulsey-oliver-mahar-1891870",
@@ -381,8 +381,8 @@
   },
   {
     "title": "Ribbon Cutting: Lumen Living",
-    "start": "2026-10-16T10:30:00",
-    "end": null,
+    "start": "2026-10-16T00:00:00",
+    "end": "2026-10-16T00:00:00",
     "allDay": false,
     "location": "",
     "url": "https://members.ghcc.com/events/Details/ribbon-cutting-lumen-living-1936124",
@@ -390,19 +390,9 @@
     "description": "Join us for a ribbon cutting to celebrate Lumen Living, LLC Friday, October 16 at 10:30 AM 466 Green Street NE Gainesville, GA 30501 230 E.E. Butler Parkway Gainesville, GA 30501 | Phone: (770) 532-6206"
   },
   {
-    "title": "Ribbon Cutting: Lawson Air Conditioning & Plumbing",
-    "start": "2026-10-22T16:30:00",
-    "end": null,
-    "allDay": false,
-    "location": "30 PM 1700 Fulenwider Rd Gainesville,",
-    "url": "https://members.ghcc.com/events/Details/ribbon-cutting-lawson-air-conditioning-plumbing-1937086",
-    "source": "GHCC",
-    "description": "Join us for a ribbon cutting to celebrate the new location of Lawson Air Conditioning & Plumbing. Thursday, October 22 at 4:30 PM 1700 Fulenwider Rd Gainesville, GA 30507 230 E.E. Butler Parkway Gainesville, GA 30501 | Phone: (770) 532-6206"
-  },
-  {
     "title": "Business After Hours - Lawson Air Conditioning & Plumbing",
-    "start": "2026-10-22T17:00:00",
-    "end": null,
+    "start": "2026-10-22T00:00:00",
+    "end": "2026-10-22T00:00:00",
     "allDay": false,
     "location": "00 PM 1700 Fulenwider Rd Gainesville,",
     "url": "https://members.ghcc.com/events/Details/business-after-hours-lawson-air-conditioning-plumbing-1742620",
@@ -410,9 +400,19 @@
     "description": "Business After Hours Thursday, October 22, 2026 5:00 -7:00 PM 1700 Fulenwider Rd Gainesville, GA 30507 REGISTER HERE Since 1946, Lawson Air Conditioning & Plumbing has proudly served North Georgia with quality workmanship, trusted service, and lasting relationships. Join us as we celebrate the grand opening of our new headquarters and 80 years of serving North Georgia. Enjoy networking, refreshments, and tours of our new 64,000-square-foot facility while learning more about the people, values, and history that have shaped Lawson for eight decades. We look forward to welcoming fellow Chamber members, business leaders, customers, and friends for an evening of connection and celebration as we honor 80 years of partnership, progress, and service to North Georgia while sharing a look at what's next for Lawson Air Conditioning & Plumbing. $8.00 Members $15.00 Non-Members 230 E.E. Butler Parkway Gainesville, GA 30501 | Phone: (770) 532-6206"
   },
   {
+    "title": "Ribbon Cutting: Lawson Air Conditioning & Plumbing",
+    "start": "2026-10-22T00:00:00",
+    "end": "2026-10-22T00:00:00",
+    "allDay": false,
+    "location": "30 PM 1700 Fulenwider Rd Gainesville,",
+    "url": "https://members.ghcc.com/events/Details/ribbon-cutting-lawson-air-conditioning-plumbing-1937086",
+    "source": "GHCC",
+    "description": "Join us for a ribbon cutting to celebrate the new location of Lawson Air Conditioning & Plumbing. Thursday, October 22 at 4:30 PM 1700 Fulenwider Rd Gainesville, GA 30507 230 E.E. Butler Parkway Gainesville, GA 30501 | Phone: (770) 532-6206"
+  },
+  {
     "title": "Women in Business Networking",
-    "start": "2026-10-23T09:00:00",
-    "end": null,
+    "start": "2026-10-23T00:00:00",
+    "end": "2026-10-23T00:00:00",
     "allDay": false,
     "location": "821 Dawsonville Hwy,",
     "url": "https://members.ghcc.com/events/Details/women-in-business-networking-1869630",
@@ -421,8 +421,8 @@
   },
   {
     "title": "Ribbon Cutting: CHR Steak",
-    "start": "2026-10-27T16:00:00",
-    "end": null,
+    "start": "2026-10-27T00:00:00",
+    "end": "2026-10-27T00:00:00",
     "allDay": false,
     "location": "00 PM 126 Bradford St NE Gainesville,",
     "url": "https://members.ghcc.com/events/Details/ribbon-cutting-chr-steak-1941012",
@@ -431,8 +431,8 @@
   },
   {
     "title": "Ribbon Cutting: HiLiT Pilates",
-    "start": "2026-10-30T11:30:00",
-    "end": null,
+    "start": "2026-10-30T00:00:00",
+    "end": "2026-10-30T00:00:00",
     "allDay": false,
     "location": "30 AM 130 John W Morrow Jr Pkwy,",
     "url": "https://members.ghcc.com/events/Details/ribbon-cutting-hilit-pilates-1923214",
@@ -441,8 +441,8 @@
   },
   {
     "title": "Business After Hours - Quinlan Visual Arts Center",
-    "start": "2026-11-03T17:00:00",
-    "end": null,
+    "start": "2026-11-03T00:00:00",
+    "end": "2026-11-04T00:00:00",
     "allDay": false,
     "location": "00 PM Quinlan Visual Arts Center 514 Green St Gainesville,",
     "url": "https://members.ghcc.com/events/Details/business-after-hours-quinlan-visual-arts-center-1748524",
@@ -451,8 +451,8 @@
   },
   {
     "title": "Health & Wellness Seminar - The Neuroscience of Leading Without Burning Out",
-    "start": "2026-11-04T09:00:00",
-    "end": null,
+    "start": "2026-11-04T00:00:00",
+    "end": "2026-11-04T00:00:00",
     "allDay": false,
     "location": "",
     "url": "https://members.ghcc.com/events/Details/health-wellness-seminar-the-neuroscience-of-leading-without-burning-out-1941722",
@@ -461,18 +461,18 @@
   },
   {
     "title": "South Hall Business Coalition - Economic Development Update",
-    "start": "2026-11-05T09:00:00",
-    "end": null,
+    "start": "2026-11-05T00:00:00",
+    "end": "2026-11-05T00:00:00",
     "allDay": false,
-    "location": "",
+    "location": "00 AM Jack's Public House 6332 Grand Hickory Dr Braselton,",
     "url": "https://members.ghcc.com/events/Details/south-hall-business-coalition-economic-development-update-1937571",
     "source": "GHCC",
-    "description": "Join us for an exciting Economic Development Update from T im Evans, Chamber President & CEO . Sponsored by Tony Funari and Funari Realty , this annual program features all the news on current and upcoming projects as well as the Gainesville Inland Port and much more! Don’t miss this event featuring a delicious full breakfast from Jacks Public House and superior networking opportunities with South Hall leaders! $8.00 Member $15.00 Non-Member Light breakfast included 230 E.E. Butler Parkway Gainesville, GA 30501 | Phone: (770) 532-6206"
+    "description": "Economic Development Update Thursday, November 5 9:00- 10:00 AM Jack's Public House 6332 Grand Hickory Dr Braselton, GA 30517 Join us for an exciting Economic Development Update from T im Evans, Chamber President & CEO . Sponsored by Tony Funari and Funari Realty , this annual program features all the news on current and upcoming projects as well as the Gainesville Inland Port and much more! Don’t miss this event featuring a delicious full breakfast from Jacks Public House and superior networking opportunities with South Hall leaders! $8.00 Member $15.00 Non-Member Light breakfast included 230 E.E. Butler Parkway Gainesville, GA 30501 | Phone: (770) 532-6206"
   },
   {
     "title": "Vision 2030's Next Gen Meet and Mingle - Decoy",
-    "start": "2026-11-12T17:00:00",
-    "end": null,
+    "start": "2026-11-12T00:00:00",
+    "end": "2026-11-12T00:00:00",
     "allDay": false,
     "location": "123 Green St NE Gainesville ,",
     "url": "https://members.ghcc.com/events/Details/vision-2030-s-next-gen-meet-and-mingle-decoy-1689295",
@@ -481,8 +481,8 @@
   },
   {
     "title": "Network Over Coffee: Pressworks at The Times",
-    "start": "2026-11-13T09:00:00",
-    "end": null,
+    "start": "2026-11-13T00:00:00",
+    "end": "2026-11-13T00:00:00",
     "allDay": false,
     "location": "",
     "url": "https://members.ghcc.com/events/Details/network-over-coffee-pressworks-at-the-times-1885080",
@@ -491,8 +491,8 @@
   },
   {
     "title": "Ribbon Cutting: Alliance Prosthetics + Orthotics",
-    "start": "2026-11-17T16:00:00",
-    "end": null,
+    "start": "2026-11-17T00:00:00",
+    "end": "2026-11-17T00:00:00",
     "allDay": false,
     "location": "00 PM 655 Jesse Jewell Pkwy,",
     "url": "https://members.ghcc.com/events/Details/ribbon-cutting-alliance-prosthetics-orthotics-1937049",
@@ -501,8 +501,8 @@
   },
   {
     "title": "Farm City Breakfast",
-    "start": "2026-11-18T07:30:00",
-    "end": null,
+    "start": "2026-11-18T00:00:00",
+    "end": "2026-11-18T00:00:00",
     "allDay": false,
     "location": "4175 Nopone Rd Gainesville ,",
     "url": "https://members.ghcc.com/events/Details/farm-city-breakfast-1871724",
@@ -511,8 +511,8 @@
   },
   {
     "title": "Industry Appreciation Luncheon",
-    "start": "2026-11-18T11:30:00",
-    "end": null,
+    "start": "2026-11-18T00:00:00",
+    "end": "2026-11-18T00:00:00",
     "allDay": false,
     "location": "",
     "url": "https://members.ghcc.com/events/Details/industry-appreciation-luncheon-1536347",
@@ -521,8 +521,8 @@
   },
   {
     "title": "Eggs & Issues 2026",
-    "start": "2026-12-10T07:30:00",
-    "end": null,
+    "start": "2026-12-10T00:00:00",
+    "end": "2026-12-10T00:00:00",
     "allDay": false,
     "location": "",
     "url": "https://members.ghcc.com/events/Details/eggs-issues-2026-1720502",
@@ -531,8 +531,8 @@
   },
   {
     "title": "Women in Business Networking",
-    "start": "2026-12-11T09:00:00",
-    "end": null,
+    "start": "2026-12-11T00:00:00",
+    "end": "2026-12-11T00:00:00",
     "allDay": false,
     "location": "",
     "url": "https://members.ghcc.com/events/Details/women-in-business-networking-1877214",
@@ -541,8 +541,8 @@
   },
   {
     "title": "Business Showcase 2027",
-    "start": "2027-02-11T14:00:00",
-    "end": null,
+    "start": "2027-02-11T00:00:00",
+    "end": "2027-02-12T00:00:00",
     "allDay": false,
     "location": "00 PM Gainesville Civic Center 830 Green St Gainesville,",
     "url": "https://members.ghcc.com/events/Details/business-showcase-2027-1744733",
@@ -551,8 +551,8 @@
   },
   {
     "title": "Arbor Day",
-    "start": "2027-02-19T10:00:00",
-    "end": null,
+    "start": "2027-02-19T00:00:00",
+    "end": "2027-02-19T00:00:00",
     "allDay": false,
     "location": "",
     "url": "https://members.ghcc.com/events/Details/arbor-day-1871721",
@@ -561,8 +561,8 @@
   },
   {
     "title": "Chamber Chase 5K 2027",
-    "start": "2027-03-25T18:00:00",
-    "end": null,
+    "start": "2027-03-25T00:00:00",
+    "end": "2027-03-26T00:00:00",
     "allDay": false,
     "location": "00 PM Riverside Military Academy 2001 Riverside Dr Gainesville,",
     "url": "https://members.ghcc.com/events/Details/chamber-chase-5k-2027-1744746",
@@ -571,8 +571,8 @@
   },
   {
     "title": "Hackers Holiday Golf Tournament 2027",
-    "start": "2027-04-23T10:00:00",
-    "end": null,
+    "start": "2027-04-23T00:00:00",
+    "end": "2027-04-23T00:00:00",
     "allDay": false,
     "location": "",
     "url": "https://members.ghcc.com/events/Details/hackers-holiday-golf-tournament-2027-1744810",
@@ -581,8 +581,8 @@
   },
   {
     "title": "119th Annual Gala",
-    "start": "2027-05-13T18:00:00",
-    "end": null,
+    "start": "2027-05-13T00:00:00",
+    "end": "2027-05-14T00:00:00",
     "allDay": false,
     "location": "30 Dinner & Program Ramsey Conference Center at Lanier Technical College 2535 Lanier Tech Dr More Details to come! Additional Info Images × Lanier Technical College 2535 Lanier Tech Drive Gainesville",
     "url": "https://members.ghcc.com/events/Details/119th-annual-gala-1767968",
