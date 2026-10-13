@@ -90,16 +90,6 @@
     "description": "Join us for a ribbon cutting to celebrate Braselton Endodontics. Friday, October 9 at 2:00 PM 1235 Friendship Rd, Ste 115 Braselton, GA 30517 230 E.E. Butler Parkway Gainesville, GA 30501 | Phone: (770) 532-6206"
   },
   {
-    "title": "Martini Monday",
-    "start": "2026-10-12T00:00:00",
-    "end": null,
-    "allDay": false,
-    "location": "",
-    "url": "https://members.dlcchamber.org/events/details/martini-monday-10-12-2026-75594",
-    "source": "DLC Chamber",
-    "description": "Martini Monday Martinis are $5 all day every Monday. Come wind down at Grapevine's and enjoy a nice Martini. Martini Monday Set a Reminder Enter your email address below to receive a reminder message. Email address Select the amount of Days before the event -- Select Days Before Event -- 1 Day 2 Days 3 Days 1 Week Captcha Validation Please complete the Captcha Submit Date and Time Monday Oct 12, 2026 12:00 AM - 11:59 PM EDT Website https://www.gvitalian.com/ Set a Reminder Enter your email address below to receive a reminder message. Email address Select the amount of Days before the event --"
-  },
-  {
     "title": "Leadership & AI Forum",
     "start": "2026-10-13T00:00:00",
     "end": "2026-10-13T00:00:00",
@@ -208,6 +198,16 @@
     "url": "https://members.dlcchamber.org/events/details/find-your-bargains-at-the-locally-crafted-market-dahlonega-baby-boutique-10-17-2026-85322",
     "source": "DLC Chamber",
     "description": "Find your Bargains at the Locally Crafted Market & Dahlonega Baby Boutique Love Unique and Hand-Crafted Items? Come see what is made LOCALLY at the Locally Crafted Market! Shop to help moms and babies at local non-profit (NGPSC) while supporting local craftsmen/artists. Art and gifts of all types. Check website calendar (Locally Crafted Market) or the Facebook page for different events or just stop by. Located within 1/2 mile of Dahlonega Square - rental space cost for vendors much lower than on square so cost of items they sell are lower too - savings passed on to you (bargains)! New addition"
+  },
+  {
+    "title": "Live Music with Tom & Juli at Shenanigans!",
+    "start": "2026-10-17T13:00:00",
+    "end": null,
+    "allDay": false,
+    "location": "",
+    "url": "https://members.dlcchamber.org/events/details/live-music-with-tom-juli-at-shenanigans-10-17-2026-83052",
+    "source": "DLC Chamber",
+    "description": "Live Music with Tom & Juli at Shenanigans! Grab a drink, a bite to eat, and be serenaded with classic covers and guest requests by Dahlonega's husband and wife music duo, Tom & Juli! You’ll be in good company with the tunes you know and the people you love! See y’all here every Saturday from 1-4pm! Tom & Juli Theobald, have been playing and singing together for years and performing at listening venues like Atlanta's renowned 'Swallow at the Hollow', as well as many years at late The Crimson Moon. With Tom's guitarmanship and vocals, and Juli's amazing harmonies and vocals, they are a delight t"
   },
   {
     "title": "Business After Hours - Lawson Air Conditioning & Plumbing",
@@ -398,6 +398,26 @@
     "url": "https://members.ghcc.com/events/Details/chamber-chase-5k-2027-1744746",
     "source": "GHCC",
     "description": "Chamber Chase 5K & 2 Mile Wellness Walk Thursday, March 25, 2027 6:00 -8:00 PM Riverside Military Academy 2001 Riverside Dr Gainesville, GA 30501 More information to come! 230 E.E. Butler Parkway Gainesville, GA 30501 | Phone: (770) 532-6206"
+  },
+  {
+    "title": "Job Fair - Spring 2027",
+    "start": "2027-04-01T00:00:00",
+    "end": "2027-04-01T00:00:00",
+    "allDay": false,
+    "location": "",
+    "url": "https://members.ghcc.com/events/Details/job-fair-spring-2027-1953624",
+    "source": "GHCC",
+    "description": "Hiring, check out our Spring Job Fair! April 1, 2027 10am-2pm at the Gainesville Civic Center, 830 Green Street NE, Gainesville GA 30501 230 E.E. Butler Parkway Gainesville, GA 30501 | Phone: (770) 532-6206"
+  },
+  {
+    "title": "AgriBusiness Awards",
+    "start": "2027-04-20T00:00:00",
+    "end": "2027-04-20T00:00:00",
+    "allDay": false,
+    "location": "5340 Cornelia Hwy Alto ,",
+    "url": "https://members.ghcc.com/events/Details/agribusiness-awards-1955609",
+    "source": "GHCC",
+    "description": "Home > Membership > AgriBusiness Awards"
   },
   {
     "title": "Hackers Holiday Golf Tournament 2027",
